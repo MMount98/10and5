@@ -1,8 +1,33 @@
-/** @type {import('tailwindcss').Config} */
+// Importing defaultTheme from Tailwind CSS
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        // Make sure the font names match exactly with those imported from Google Fonts
+        bricolage: ['"Bricolage Grotesque"', ...defaultTheme.fontFamily.sans],
+        architects: ['"Architects Daughter"', ...defaultTheme.fontFamily.sans],
+      },
+    },
   },
   plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      "light",
+      {
+        mytheme: {
+          primary: "#242424",
+          secondary: "#242424",
+          accent: "#242424",
+          neutral: "#2b2d42",
+          success: "#52b788",
+          warning: "#f77f00",
+          error: "#d62828",
+          "base-100": "#242424",
+        },
+      },
+    ],
+  },
 };

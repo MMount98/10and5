@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "franklin";
+  src: url("../public/fonts/FranklinAve.-Oblique.otf") format("opentype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "bricolage";
+  src: url("../public/fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf")
+    format("TrueType");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "architect";
+  src: url("../public//fonts/ArchitectsDaughter-Regular.ttf") format("TrueType");
+
+  font-weight: normal;
+  font-style: normal;
+}
