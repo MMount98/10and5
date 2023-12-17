@@ -1,21 +1,20 @@
 export default function splash() {
   return (
     <>
-     <div className="flex flex-col px-12">
-  <div className="text-9xl text-#242424 font-oswald">
-    <h1> It's not about the hours <br></br> that we keep,</h1>
-  </div>
-  <div className="text-4xl relative bottom-20 left-96 pl-64 mt-2 font-architects text-#242424">
-    <h1>but the lasting impressions <br></br>that we make. </h1>
-  </div>
-</div>
-<div className="flex justify-center space-x-44 mt-28">
-    <h1 className="border border-#242424 px-24 py-4 font-bricolage">BRAND IDENTITY</h1>
-    <h1 className="border border-#242424 px-24 py-4 font-bricolage">CONTENT STRATEGY</h1>
-    <h1 className="border border-#242424
-     px-24 py-4 font-bricolage">CREATIVE DEVELOPMENT</h1>
-
-</div>
-</>
+      <div className="flex flex-col mx-6 md:mx-24">
+        <div className="text-3xl md:text-9xl text-white font-oswald tracking-tighter">
+          <h1>It's not about the hours <br /> that we keep,</h1>
+        </div>
+        <div className="text-xl md:text-4xl relative md:bottom-20 md:left-96 pl-4 md:pl-44 mt-2 font-architects text-white">
+          <h1>but our mantra for making <br />lasting impressions. </h1>
+        </div>
+      </div>
+      <div className="flex flex-col md:flex-row justify-center md:space-x-10 my-8">
+        <h1 className="border border-white px-4 py-2 md:px-20 md:py-4 font-bricolage mb-2 md:mb-0">BRAND IDENTITY</h1>
+        <h1 className="border border-white px-4 py-2 md:px-20 md:py-4 font-bricolage mb-2 md:mb-0">CONTENT STRATEGY</h1>
+        <h1 className="border border-white px-4 py-2 md:px-20 md:py-4 font-bricolage">CREATIVE DEVELOPMENT</h1>
+      </div>
+    </>
   );
 }
+
