@@ -28,8 +28,10 @@ export default function Splash() {
           </h1>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-center md:space-x-10 my-8 space-y-5">
-        <h1 className="border  px-4 py-2 md:px-20 md:py-6 font-bricolage md:mb-0 text-center">
+
+
+      <div className="flex flex-col md:flex-row justify-center md:space-x-10 my-8 space-y-">
+        <h1 className="border  px-4 py-2 md:px-20 md:py-4 font-bricolage md:mb-0 text-center">
           BRAND IDENTITY
         </h1>
         <h1 className="border px-4 py-2 md:px-20 md:py-4 font-bricolage md:mb-0 text-center">
