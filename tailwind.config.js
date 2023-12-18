@@ -27,6 +27,7 @@ module.exports = {
           warning: "#f77f00",
           error: "#d62828",
           "base-100": "#242424",
+          "base-content": "#FFFFFF",
         },
       },
       {
