@@ -15,7 +15,7 @@ export default function Splash() {
       
 
       <div className="flex flex-col mx-6 md:mx-24">
-      <input onClick={toggleTheme} className="toggle md:relative md:left-80 md:ml-96" type="checkbox" />
+      <input onClick={toggleTheme} className="toggle md:relative md:left-3/4  md:top-10 " type="checkbox" />
         <div className="text-4xl mt-10 md:text-9xl font-oswald tracking-tighter">
           <h1>
             It's not about the hours <br /> that we keep,
@@ -29,7 +29,7 @@ export default function Splash() {
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-center md:space-x-10 my-8 space-y-5">
-        <h1 className="border px-4 py-2 md:px-20 md:py-4 font-bricolage md:mb-0 text-center">
+        <h1 className="border  px-4 py-2 md:px-20 md:py-6 font-bricolage md:mb-0 text-center">
           BRAND IDENTITY
         </h1>
         <h1 className="border px-4 py-2 md:px-20 md:py-4 font-bricolage md:mb-0 text-center">

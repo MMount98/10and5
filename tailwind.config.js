@@ -40,6 +40,7 @@ module.exports = {
           warning: "#f77f00",
           error: "#d62828",
           "base-100": "#FDF9F4",
+          "base-content": "#000000",
         },
       },
     ],
