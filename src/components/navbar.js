@@ -32,7 +32,7 @@ export default function NavBar() {
       {/* Responsive menu */}
       <div className="text-right">
         <a
-          href="mailto:rrm@strokeofgeniusco.com"
+          href="mailto:admin@10and5creative.com"
           className="contact font-oswald text-lg md:text-xl"
         >
           CONTACT US
