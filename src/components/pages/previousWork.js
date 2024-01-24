@@ -12,6 +12,13 @@ export default function previousWork()  {
         image1={hartnessImg1}
         image2={ hartnessImg2 }
       />
+         <ScrollSlider
+        className="scroll-snap-element"
+        topText='Hotel'
+        bottomText="Hartness"
+        image1={hartnessImg1}
+        image2={ hartnessImg2 }
+      />
       
     </div>
   );
