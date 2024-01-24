@@ -6,10 +6,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        // Make sure the font names match exactly with those imported from Google Fonts
         bricolage: ['"Bricolage Grotesque"', ...defaultTheme.fontFamily.sans],
         architects: ['"Architects Daughter"', ...defaultTheme.fontFamily.sans],
         oswald: ['"Oswald"', ...defaultTheme.fontFamily.sans],
+        span: ['"Span"', ...defaultTheme.fontFamily.sans],
+      },
+      fontSize: {
+        "10xl": "11rem",
       },
     },
   },

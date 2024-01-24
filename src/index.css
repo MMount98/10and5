@@ -26,3 +26,11 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Span";
+  src: url("../public/fonts/Span-Compressed-Bold.otf") format("opentype");
+
+  font-weight: bold;
+  font-style: normal;
+}

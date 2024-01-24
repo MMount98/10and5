@@ -64,8 +64,8 @@ const ScrollSlider = ({ topText, bottomText, image1, image2 }) => {
       >
         <img src={image2} alt="Image 2" className="w-full sm:w-64 h-auto" />
       </motion.div>
-      <p className="z-10 text-9xl font-architects">{topText}</p>
-      <p className="z-10 text-9xl font-architects text-right">{bottomText}</p>
+      <p className="z-10 text-10xl font-span">{topText}</p>
+      <p className="z-10 text-10xl font-span text-right">{bottomText}</p>
     </div>
   );
 };
