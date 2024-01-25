@@ -29,8 +29,8 @@ const ScrollSlider = ({ topText, bottomText, image1, image2 }) => {
     if (isInView) {
       setIsAnimating(true);
       // Start animation for both images
-      controlsImage1.start({ x: 1200 });
-      controlsImage2.start({ x: 0 }).then(() => {
+      controlsImage1.start({ x: 0 });
+      controlsImage2.start({ x: 1045 }).then(() => {
         setIsAnimating(false);
       });
     }
@@ -47,25 +47,25 @@ const ScrollSlider = ({ topText, bottomText, image1, image2 }) => {
   }, [isAnimating]);
 
   return (
-    <div className="relative p-4" ref={ref}>
+    <div className="relative p-10" ref={ref}>
       <motion.div
         className="absolute inset-0 flex flex-col"
-        initial={{ x: "0%" }}
+        initial={{ x: "75%", y:"10%" }}
         animate={controlsImage1}
         transition={{ type: "spring", stiffness: 50 }}
       >
-        <img src={image1} alt="Image 1" className="mb-4 w-64 h-auto" />
+        <img src={image1} alt="Image 1" className="mb-4 sm:w-96 h-auto" />
       </motion.div>
       <motion.div
         className="absolute inset-0"
-        initial={{ x: "83%", y:"50%" }}
+        initial={{ x: "0%", y:"50%" }}
         animate={controlsImage2}
         transition={{ type: "spring", stiffness: 50 }}
       >
-        <img src={image2} alt="Image 2" className="w-full sm:w-64 h-auto" />
+        <img src={image2} alt="Image 2" className="w-full sm:w-96 h-auto" />
       </motion.div>
-      <p className="z-10 text-10xl font-span">{topText}</p>
-      <p className="z-10 text-10xl font-span text-right">{bottomText}</p>
+      <p className="z-10 text-13xl font-span">{topText}</p>
+      <p className="z-10 -mt-32 text-13xl font-span text-right">{bottomText}</p>
     </div>
   );
 };

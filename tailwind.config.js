@@ -12,7 +12,7 @@ module.exports = {
         span: ['"Span"', ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
-        "10xl": "11rem",
+        "13xl": "13rem",
       },
     },
   },
