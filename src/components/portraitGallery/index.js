@@ -17,35 +17,35 @@ const imageData = [
     
   ];
 
-const PortraitGallery = () => {
-  return (
-    <div className="flex items-center justify-center p-10">
-      <div className="rotate-[-90deg] whitespace-nowrap font-span text-2xl">
-        No man is an island
-      </div>
-
-      <div className="grid grid-cols-3 gap-12 mx-10">
-                {imageData.map((item, index) => (
-                    <div key={index} className="text-left">
-                        <motion.img
-                            src={item.src}
-                            alt={`Image ${index + 1}`}
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ duration: 1 }}
-                            className="w-full h-auto object-cover"
-                        />
-                        <p className="mt-2 font-span">{item.topText}</p> 
-                        <p>{item.bottomText}</p> 
-                    </div>
-                ))}
+  const PortraitGallery = () => {
+    return (
+      <div className="flex flex-col md:flex-row items-center justify-center p-10">
+        <div className="hidden md:block rotate-[-90deg] whitespace-nowrap font-span text-2xl mb-10 md:mb-0">
+          No man is an island
+        </div>
+  
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 mx-5 md:mx-10">
+          {imageData.map((item, index) => (
+            <div key={index} className="text-center md:text-left">
+              <motion.img
+                src={item.src}
+                alt={`Image ${index + 1}`}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+                className="w-full h-auto object-cover"
+              />
+              <p className="mt-2 font-span">{item.topText}</p>
+              <p>{item.bottomText}</p>
             </div>
-
-      <div className="rotate-[90deg] whitespace-nowrap font-span text-2xl">
-        No man is an island
+          ))}
+        </div>
+  
+        <div className="hidden md:block rotate-[90deg] whitespace-nowrap font-span text-2xl mt-10 md:mt-0">
+          No man is an island
+        </div>
       </div>
-    </div>
-  );
-};
-
-export default PortraitGallery;
+    );
+  };
+  
+  export default PortraitGallery;
