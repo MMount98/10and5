@@ -10,6 +10,7 @@ module.exports = {
         architects: ['"Architects Daughter"', ...defaultTheme.fontFamily.sans],
         oswald: ['"Oswald"', ...defaultTheme.fontFamily.sans],
         span: ['"Span"', ...defaultTheme.fontFamily.sans],
+        spanlight: ['"SpanLight"', ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
         "13xl": "13rem",

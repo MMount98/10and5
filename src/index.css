@@ -34,3 +34,11 @@
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "SpanLight";
+  src: url("../public/fonts/Span\ Compressed\ Light.otf") format("opentype");
+
+  font-weight: light;
+  font-style: normal;
+}

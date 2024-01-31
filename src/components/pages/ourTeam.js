@@ -17,7 +17,7 @@ export default function OurTeam() {
           </h3>
         </div>
         <div>
-          <h3 className="text-6xl md:text-9xl font-span italic mt-6 md:mt-12">
+          <h3 className="text-6xl md:text-9xl font-spanlight italic mt-6 md:mt-12">
             BUT
           </h3>
         </div>

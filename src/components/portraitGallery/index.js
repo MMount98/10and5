@@ -20,7 +20,7 @@ const imageData = [
   const PortraitGallery = () => {
     return (
       <div className="flex flex-col md:flex-row items-center justify-center p-10">
-        <div className="hidden md:block rotate-[-90deg] whitespace-nowrap font-span text-2xl mb-10 md:mb-0">
+        <div className="hidden md:block rotate-[-90deg] whitespace-nowrap font-spanlight text-2xl mb-10 md:mb-0">
           No man is an island
         </div>
   
@@ -41,7 +41,7 @@ const imageData = [
           ))}
         </div>
   
-        <div className="hidden md:block rotate-[90deg] whitespace-nowrap font-span text-2xl mt-10 md:mt-0">
+        <div className="hidden md:block rotate-[90deg] whitespace-nowrap font-spanlight text-2xl mt-10 md:mt-0">
           No man is an island
         </div>
       </div>
