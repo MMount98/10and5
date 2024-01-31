@@ -42,3 +42,11 @@
   font-weight: light;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Napzer";
+  src: url("../public/fonts/Napzer-Regular.otf") format("opentype");
+
+  font-weight: regular;
+  font-style: normal;
+}

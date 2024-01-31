@@ -35,8 +35,8 @@ const imageData = [
                 transition={{ duration: 1 }}
                 className="w-full h-auto object-cover"
               />
-              <p className="mt-2 font-span">{item.topText}</p>
-              <p>{item.bottomText}</p>
+              <p className="mt-2 text-3xl font-spanlight">{item.topText}</p>
+              <p className="font-napzer text-lg -mt-2">{item.bottomText}</p>
             </div>
           ))}
         </div>

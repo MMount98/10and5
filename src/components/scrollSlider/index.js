@@ -68,8 +68,8 @@ const ScrollSlider = ({ topText, bottomText, link, image1, image2 }) => {
       >
         <img src={image2} alt="Image 2" className="mb-4 sm:w-96 h-auto" />
       </motion.div>
-      <p className="z-10 text-13xl font-span">{topText} </p>
-      <p className="z-10 -mt-32 text-13xl font-span text-right">{bottomText}</p>
+      <p className="z-10 md:text-13xl font-span">{topText} </p>
+      <p className="z-10 -mt-32 md:text-13xl font-span text-right">{bottomText}</p>
       {showText && (
         <motion.p
           initial={{ opacity: 0 }}

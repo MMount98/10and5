@@ -57,7 +57,7 @@ const FlapClock = ({ timezone, location }) => {
 
   return (
     <div>
-      <p className="text-center m-2 text-lg font-span">{location}</p>
+      <p className="text-center m-2 text-2xl font-span">{location}</p>
       <div className="flex space-x-2 justify-center items-center">
         <div className="flex">{renderDigits(hour)}</div>
         <div className="flex">{renderDigits(minute)}</div>

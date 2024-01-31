@@ -38,7 +38,7 @@ const AboutPins = () => {
 
   return (
     <div className="flex justify-center items-center">
-        <div className="relative">
+        <div className="relative ">
             <img src={map} alt="Image of the United States With pinpoits scared across the map" className="unitedStatesImage" />
             {pinpoints.map(pinpoint => (
                 <button

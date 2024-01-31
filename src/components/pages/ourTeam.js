@@ -5,11 +5,11 @@ import FlapClock from "../flapClock";
 export default function OurTeam() {
   return (
     <div>
-      <h1 className="text-center text-2xl md:text-3xl font-span">
+      <h1 className="text-center text-2xl md:text-4xl font-span">
         4 Different States, Creatively Connected
       </h1>
       <AboutPins />
-      <h2 className="text-center text-2xl md:text-3xl font-span">WHO ARE WE</h2>
+      <h2 className="text-center text-2xl md:text-4xl font-span">WHO ARE WE</h2>
       <div className="flex flex-col items-center mx-4 md:m-12">
         <div>
           <h3 className="text-5xl md:text-8xl md:absolute md:left-80 md:ml-8 2xl:ml-72 font-span">
@@ -36,7 +36,7 @@ export default function OurTeam() {
       <h5 className="text-center text-2xl md:text-3xl font-span">
         WRITE SOMETHING WITTY HERE
       </h5>
-      <div className="grid grid-cols-1 md:grid-cols-2 p-10 m-8 md:gap-12 mx-5 md:mx-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 px-24 py-10 m-8 md:gap-12 mx-5 md:mx-10">
         <FlapClock timezone={17} location="COLORADO" />
         <FlapClock timezone={18} location="KANSAS"  />
         <FlapClock timezone={19} location="CHICAGO"  />

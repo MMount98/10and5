@@ -11,6 +11,7 @@ module.exports = {
         oswald: ['"Oswald"', ...defaultTheme.fontFamily.sans],
         span: ['"Span"', ...defaultTheme.fontFamily.sans],
         spanlight: ['"SpanLight"', ...defaultTheme.fontFamily.sans],
+        napzer: ['"Napzer"', ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
         "13xl": "13rem",
