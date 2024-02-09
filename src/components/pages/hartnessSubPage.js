@@ -1,6 +1,7 @@
 import heroImage from "../images/hotelhartness/Hotel-Hartness.jpg";
 import secondImage from "../images/hotelhartness/HH_Second Photo.png";
 import thridImage from "../images/hotelhartness/HH_Third Photo.jpg";
+import CarouselAnimation from "../carouselAnimation";
 
 export default function HartnessSubPage() {
   return (
@@ -67,7 +68,7 @@ export default function HartnessSubPage() {
       <div className="imageAndText flex flex-col md:grid md:grid-cols-2">
         <img
           src={thridImage}
-          className="w-full md:w-auto p-8" 
+          className="w-full md:w-auto p-8"
           alt="photo of lounge at Hotel Hartness"
         />
         <div className="text-center md:text-left md:pl-6 md:mt-72 mt-0">
@@ -81,6 +82,7 @@ export default function HartnessSubPage() {
           </ul>
         </div>
       </div>
+      <CarouselAnimation />
     </div>
   );
 }
