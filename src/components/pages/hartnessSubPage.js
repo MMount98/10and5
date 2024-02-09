@@ -1,4 +1,5 @@
 import heroImage from "../images/hotelhartness/Hotel-Hartness.jpg";
+import secondImage from "../images/hotelhartness/HH_Second Photo.png"
 
 export default function HartnessSubPage() {
   return (
@@ -30,6 +31,25 @@ export default function HartnessSubPage() {
           </div>
         </div>
       </div>
+      <div className="flex justify-center items-center">
+      <img src={secondImage}/>
+      </div>
+      <div className="flex flex-col items-center mx-4 md:m-12">
+        <div>
+          <h3 className="text-4xl md:text-8xl md:absolute md:left-80 md:ml-2 md:mt-6 2xl:ml-72 mr-44 mt-6 font-span">
+            UPGRADE
+          </h3>
+        </div>
+        <div>
+          <h3 className="text-5xl md:text-9xl font-spanlight italic ml-36 md:mt-12 md:ml-96 -mt-8">
+            THE WAY
+          </h3>
+        </div>
+        <div>
+          <h3 className="text-6xl md:text-13xl font-span">YOU STAY.</h3>
+        </div>
+      </div>
+
     </div>
   );
 }
