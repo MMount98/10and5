@@ -3,6 +3,7 @@ import secondImage from "../images/hotelhartness/HH_Second Photo.png";
 import thridImage from "../images/hotelhartness/HH_Third Photo.jpg";
 import CarouselAnimation from "../carouselAnimation";
 
+
 export default function HartnessSubPage() {
   return (
     <div>
@@ -40,6 +41,9 @@ export default function HartnessSubPage() {
             </p>
             <p className="font-napzer">
               <span className="font-span text-lg">63.60%</span> Interactions
+            </p>
+            <p className="font-napzer">
+              <span className="font-span text-lg">4.92%</span> Click Through Rate
             </p>
           </div>
         </div>
