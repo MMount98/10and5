@@ -143,7 +143,7 @@ export default function HartnessSubPage() {
           </h3>
         </div>
       </div>
-      <CarouselAnimation portraits={story1Images} backgroundImage={story1_bg} />
+      <CarouselAnimation portraits={story1Images} backgroundImage={story1_bg} backgroundHeight="100vh" />
       <div className="logos flex md:justify-center md:flex-row flex-col p-10 m-5">
         <img
           src={captLogo}
@@ -163,7 +163,7 @@ export default function HartnessSubPage() {
           seprate socail identities under one account.
         </p>
       </div>
-      <CarouselAnimation portraits={story2Images} backgroundImage={story2_bg} className="" />
+      <CarouselAnimation portraits={story2Images} backgroundImage={story2_bg} backgroundHeight="75vh"/>
     </div>
   );
 }

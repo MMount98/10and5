@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 
-const CarouselAnimation = ({ portraits, backgroundImage }) => {
+const CarouselAnimation = ({ portraits, backgroundImage, backgroundHeight = '100vh' }) => {
   const controls = useAnimation();
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -12,24 +12,30 @@ const CarouselAnimation = ({ portraits, backgroundImage }) => {
       await controls.start({ opacity: 1, transition: { duration: 0.5 } });
     };
 
-    const interval = setInterval(cyclePortraits, 3000);
-    return () => clearInterval(interval);
-  }, [controls, portraits.length]);
+    if (portraits.length > 0) {
+      const interval = setInterval(cyclePortraits, 3000);
+      return () => clearInterval(interval);
+    }
+  }, [controls, portraits]);
 
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative w-full overflow-hidden" style={{ height: backgroundHeight }}>
       {/* Background Image */}
-      <img src={backgroundImage} alt="Background" className="absolute h-full w-full object-cover z-0" />
+      {backgroundImage && (
+        <img src={backgroundImage} alt="Background" className="absolute h-full w-full object-cover z-0" />
+      )}
      
       {/* Mobile Portrait Animation */}
       <div className="md:hidden absolute inset-0 flex justify-center items-center">
-        <motion.img
-          src={portraits[currentIndex]}
-          alt="Portrait"
-          animate={controls}
-          className="w-80 md:w-1/6 h-auto" 
-          initial={{ opacity: 1 }}
-        />
+        {portraits.length > 0 && (
+          <motion.img
+            src={portraits[currentIndex]}
+            alt="Portrait"
+            animate={controls}
+            className="w-80 md:w-1/6 h-auto" 
+            initial={{ opacity: 1 }}
+          />
+        )}
       </div>
       {/* Static Images for Desktop */}
       <div className="hidden md:flex absolute inset-0 justify-center items-center space-x-4">
@@ -40,7 +46,7 @@ const CarouselAnimation = ({ portraits, backgroundImage }) => {
             alt={`Portrait ${index + 1}`}
             className="w-1/6" 
             initial={{ scale: 1 }}
-            whileHover={{ scale: 1.05 }} // Scale effect on hover
+            whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5 }}
           />
         ))}
