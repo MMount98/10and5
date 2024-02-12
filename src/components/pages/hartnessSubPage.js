@@ -87,6 +87,21 @@ export default function HartnessSubPage() {
         </div>
       </div>
       <CarouselAnimation />
+      <div className="flex flex-col items-center mx-4 md:m-12">
+        <div>
+          <h3 className="text-3xl md:text-7xl md:absolute md:left-80 md:ml-2 md:mt-6 2xl:ml-72 mr-44 mt-6 font-span">
+            THE WARMTH
+          </h3>
+        </div>
+        <div>
+          <h3 className="text-4xl md:text-9xl font-spanlight italic ml-28 md:mt-12 md:ml-96 -mt-8">
+            OF TRUE
+          </h3>
+        </div>
+        <div>
+          <h3 className="text-4xl md:text-9xl font-span">SOUTHERN HOSPITALITY.</h3>
+        </div>
+      </div>
     </div>
   );
 }
