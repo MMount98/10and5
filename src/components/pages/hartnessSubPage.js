@@ -20,6 +20,14 @@ import story2_4 from "../images/hotelhartness/2ndStories/HH_Story 4.png";
 import story2_5 from "../images/hotelhartness/2ndStories/HH_Story 5.png";
 import story2_6 from "../images/hotelhartness/2ndStories/HH_Story 6.png";
 import story2_bg from "../images/hotelhartness/HH_Sixth Photo.jpg";
+//Story 3 images
+import story3_1 from "../images/hotelhartness/3rdStories/HH_Story 1.png";
+import story3_2 from "../images/hotelhartness/3rdStories/HH_Story 2.png";
+import story3_3 from "../images/hotelhartness/3rdStories/HH_Story 3.png";
+import story3_4 from "../images/hotelhartness/3rdStories/HH_Story 4.png";
+import story3_5 from "../images/hotelhartness/3rdStories/HH_Story 5.png";
+import story3_6 from "../images/hotelhartness/3rdStories/HH_Story 6.png";
+import story3_bg from "../images/hotelhartness/HH_Seventh Photo.jpg";
 
 //Compontents
 import CarouselAnimation from "../carouselAnimation";
@@ -40,6 +48,15 @@ const story2Images = [
   story2_4,
   story2_5,
   story2_6,
+];
+
+const story3Images = [
+  story3_1,
+  story3_2,
+  story3_3,
+  story3_4,
+  story3_5,
+  story3_6,
 ];
 
 export default function HartnessSubPage() {
@@ -125,7 +142,11 @@ export default function HartnessSubPage() {
           </ul>
         </div>
       </div>
-    
+      <CarouselAnimation
+        portraits={story1Images}
+        backgroundImage={story1_bg}
+        backgroundHeight="100vh"
+      />
       <div className="flex flex-col items-center mx-4 md:m-12">
         <div>
           <h3 className="text-3xl md:text-7xl md:absolute md:left-80 md:ml-2 md:mt-6 2xl:ml-72 mr-44 mt-6 font-span">
@@ -143,7 +164,11 @@ export default function HartnessSubPage() {
           </h3>
         </div>
       </div>
-      <CarouselAnimation portraits={story1Images} backgroundImage={story1_bg} backgroundHeight="100vh" />
+      <CarouselAnimation
+        portraits={story1Images}
+        backgroundImage={story1_bg}
+        backgroundHeight="100vh"
+      />
       <div className="logos flex md:justify-center md:flex-row flex-col p-10 m-5">
         <img
           src={captLogo}
@@ -157,13 +182,23 @@ export default function HartnessSubPage() {
         />
       </div>
       <div>
-        <p className="font-napzer text-center text-lg md:px-72 px-24 -mt-8 md:mb-20">
+        <p className="font-napzer text-center text-lg md:px-72 px-24 -mt-8 md:mb-20 mb-20">
           Using the established logo and branding created for Paterson Kitchen +
           Bar and The Captain Bar, we challednged ourselves to create two
           seprate socail identities under one account.
         </p>
       </div>
-      <CarouselAnimation portraits={story2Images} backgroundImage={story2_bg} backgroundHeight="75vh"/>
+      <CarouselAnimation
+        portraits={story2Images}
+        backgroundImage={story2_bg}
+        backgroundHeight="75vh"
+      />
+      <div className="customDivider p-5 "></div>
+      <CarouselAnimation
+        portraits={story3Images}
+        backgroundImage={story3_bg}
+        backgroundHeight="75vh"
+      />
     </div>
   );
 }
