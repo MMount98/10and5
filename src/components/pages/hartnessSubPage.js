@@ -2,7 +2,8 @@ import heroImage from "../images/hotelhartness/Hotel-Hartness.jpg";
 import secondImage from "../images/hotelhartness/HH_Second Photo.png";
 import thridImage from "../images/hotelhartness/HH_Third Photo.jpg";
 import CarouselAnimation from "../carouselAnimation";
-
+import captLogo from "../images/hotelhartness/Logo/Captain_Logo.png";
+import patLogo from "../images/hotelhartness/Logo/Patterson Logo.png";
 
 export default function HartnessSubPage() {
   return (
@@ -43,7 +44,8 @@ export default function HartnessSubPage() {
               <span className="font-span text-lg">63.60%</span> Interactions
             </p>
             <p className="font-napzer">
-              <span className="font-span text-lg">4.92%</span> Click Through Rate
+              <span className="font-span text-lg">4.92%</span> Click Through
+              Rate
             </p>
           </div>
         </div>
@@ -99,8 +101,30 @@ export default function HartnessSubPage() {
           </h3>
         </div>
         <div>
-          <h3 className="text-4xl md:text-9xl font-span">SOUTHERN HOSPITALITY.</h3>
+          <h3 className="text-4xl md:text-9xl font-span">
+            SOUTHERN HOSPITALITY.
+          </h3>
         </div>
+      </div>
+      <CarouselAnimation />
+      <div className="logos flex md:justify-center md:flex-row flex-col p-10 m-5">
+        <img
+          src={captLogo}
+          alt="Logo for the capatain bar"
+          className="md:h-20 md:px-16 md:mt-5 p-5 md:p-0"
+        />
+        <img
+          src={patLogo}
+          alt="Logo for Paterson resturant"
+          className="md:h-32 md:px-16 p-10 md:p-0"
+        />
+      </div>
+      <div>
+        <p className="font-napzer text-center text-lg md:px-72 px-24 -mt-8">
+          Using the established logo and branding created for Paterson Kitchen +
+          Bar and The Captain Bar, we challednged ourselves to create two
+          seprate socail identities under one account.
+        </p>
       </div>
     </div>
   );
