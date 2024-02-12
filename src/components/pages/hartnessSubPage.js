@@ -4,6 +4,7 @@ import secondImage from "../images/hotelhartness/HH_Second Photo.png";
 import thridImage from "../images/hotelhartness/HH_Third Photo.jpg";
 import captLogo from "../images/hotelhartness/Logo/Captain_Logo.png";
 import patLogo from "../images/hotelhartness/Logo/Patterson Logo.png";
+import videoBG from "../images/hotelhartness/HH_Fifth Photo.jpg";
 //story 1 images
 import story1_bg from "../images/hotelhartness/HH_Fourth Photo.jpg";
 import story1_1 from "../images/hotelhartness/1stStories/HH_Story1.png";
@@ -29,8 +30,12 @@ import story3_5 from "../images/hotelhartness/3rdStories/HH_Story 5.png";
 import story3_6 from "../images/hotelhartness/3rdStories/HH_Story 6.png";
 import story3_bg from "../images/hotelhartness/HH_Seventh Photo.jpg";
 
+//Video
+import webPageVideo from "../videos/hotel-hartness/Hotel-Hartness-Subpage.mp4";
+
 //Compontents
 import CarouselAnimation from "../carouselAnimation";
+import VideoOverlay from "../videoOverlay";
 
 const story1Images = [
   story1_1,
@@ -164,10 +169,10 @@ export default function HartnessSubPage() {
           </h3>
         </div>
       </div>
-      <CarouselAnimation
-        portraits={story1Images}
-        backgroundImage={story1_bg}
-        backgroundHeight="100vh"
+      <VideoOverlay
+        videoSrc={webPageVideo}
+        imageSrc={videoBG}
+        altText="Video walkthrough of the hotel hartness wbsite"
       />
       <div className="logos flex md:justify-center md:flex-row flex-col p-10 m-5">
         <img
@@ -199,6 +204,9 @@ export default function HartnessSubPage() {
         backgroundImage={story3_bg}
         backgroundHeight="75vh"
       />
+      <div className="m-24">
+        <h5 className="text-center font-span text-2xl">MORE WORK</h5>
+      </div>
     </div>
   );
 }
