@@ -1,15 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
-import backgroundImage from "../images/hotelhartness/HH_Fourth Photo.jpg";
-import image1 from "../images/hotelhartness/1stStories/HH_Story1.png";
-import image2 from "../images/hotelhartness/1stStories/HH_Story2.png";
-import image3 from "../images/hotelhartness/1stStories/HH_Story3.png";
-import image4 from "../images/hotelhartness/1stStories/HH_Story4.png";
-import image5 from "../images/hotelhartness/1stStories/HH_Story5.png";
 
-const portraits = [image1, image2, image3, image4, image5];
-
-const CarouselAnimation = () => {
+const CarouselAnimation = ({ portraits, backgroundImage }) => {
   const controls = useAnimation();
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -22,17 +14,18 @@ const CarouselAnimation = () => {
 
     const interval = setInterval(cyclePortraits, 3000);
     return () => clearInterval(interval);
-  }, [controls]);
+  }, [controls, portraits.length]);
 
   return (
     <div className="relative h-screen w-full overflow-hidden">
       {/* Background Image */}
       <img src={backgroundImage} alt="Background" className="absolute h-full w-full object-cover z-0" />
      
+      {/* Mobile Portrait Animation */}
       <div className="md:hidden absolute inset-0 flex justify-center items-center">
         <motion.img
           src={portraits[currentIndex]}
-          alt={`Portrait`}
+          alt="Portrait"
           animate={controls}
           className="w-80 md:w-1/6 h-auto" 
           initial={{ opacity: 1 }}

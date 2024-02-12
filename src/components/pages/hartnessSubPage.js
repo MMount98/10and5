@@ -1,9 +1,46 @@
+//Images
 import heroImage from "../images/hotelhartness/Hotel-Hartness.jpg";
 import secondImage from "../images/hotelhartness/HH_Second Photo.png";
 import thridImage from "../images/hotelhartness/HH_Third Photo.jpg";
-import CarouselAnimation from "../carouselAnimation";
 import captLogo from "../images/hotelhartness/Logo/Captain_Logo.png";
 import patLogo from "../images/hotelhartness/Logo/Patterson Logo.png";
+//story 1 images
+import story1_bg from "../images/hotelhartness/HH_Fourth Photo.jpg";
+import story1_1 from "../images/hotelhartness/1stStories/HH_Story1.png";
+import story1_2 from "../images/hotelhartness/1stStories/HH_Story2.png";
+import story1_3 from "../images/hotelhartness/1stStories/HH_Story3.png";
+import story1_4 from "../images/hotelhartness/1stStories/HH_Story4.png";
+import story1_5 from "../images/hotelhartness/1stStories/HH_Story5.png";
+import story1_6 from "../images/hotelhartness/1stStories/HH_Story6.png";
+//story 2 images
+import story2_1 from "../images/hotelhartness/2ndStories/HH_Story 1.png";
+import story2_2 from "../images/hotelhartness/2ndStories/HH_Story 2.png";
+import story2_3 from "../images/hotelhartness/2ndStories/HH_Story 3.png";
+import story2_4 from "../images/hotelhartness/2ndStories/HH_Story 4.png";
+import story2_5 from "../images/hotelhartness/2ndStories/HH_Story 5.png";
+import story2_6 from "../images/hotelhartness/2ndStories/HH_Story 6.png";
+import story2_bg from "../images/hotelhartness/HH_Sixth Photo.jpg";
+
+//Compontents
+import CarouselAnimation from "../carouselAnimation";
+
+const story1Images = [
+  story1_1,
+  story1_2,
+  story1_3,
+  story1_4,
+  story1_5,
+  story1_6,
+];
+
+const story2Images = [
+  story2_1,
+  story2_2,
+  story2_3,
+  story2_4,
+  story2_5,
+  story2_6,
+];
 
 export default function HartnessSubPage() {
   return (
@@ -88,7 +125,7 @@ export default function HartnessSubPage() {
           </ul>
         </div>
       </div>
-      <CarouselAnimation />
+    
       <div className="flex flex-col items-center mx-4 md:m-12">
         <div>
           <h3 className="text-3xl md:text-7xl md:absolute md:left-80 md:ml-2 md:mt-6 2xl:ml-72 mr-44 mt-6 font-span">
@@ -106,7 +143,7 @@ export default function HartnessSubPage() {
           </h3>
         </div>
       </div>
-      <CarouselAnimation />
+      <CarouselAnimation portraits={story1Images} backgroundImage={story1_bg} />
       <div className="logos flex md:justify-center md:flex-row flex-col p-10 m-5">
         <img
           src={captLogo}
@@ -120,12 +157,13 @@ export default function HartnessSubPage() {
         />
       </div>
       <div>
-        <p className="font-napzer text-center text-lg md:px-72 px-24 -mt-8">
+        <p className="font-napzer text-center text-lg md:px-72 px-24 -mt-8 md:mb-20">
           Using the established logo and branding created for Paterson Kitchen +
           Bar and The Captain Bar, we challednged ourselves to create two
           seprate socail identities under one account.
         </p>
       </div>
+      <CarouselAnimation portraits={story2Images} backgroundImage={story2_bg} className="" />
     </div>
   );
 }
