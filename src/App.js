@@ -5,6 +5,7 @@ import PreviousWork from "./components/pages/previousWork";
 import OurTeam from "./components/pages/ourTeam"
 import HartnessSubPage from "./components/pages/hartnessSubPage";
 import NobleSubPage from "./components/pages/nobleKitchenSubPage";
+import HaycreekSubPage from "./components/pages/haycreekSubPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/ourteam" element={<OurTeam/>} />
           <Route path="/hotel-hartness" element={<HartnessSubPage/>} />
           <Route path="/noble-kitchen" element={<NobleSubPage />} />
+          <Route path="/haycreek-hotels" element={<HartnessSubPage />} />
         </Routes>
       </Router>
     </>
