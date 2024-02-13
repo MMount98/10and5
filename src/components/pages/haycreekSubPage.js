@@ -20,8 +20,8 @@ const videos = [
 
 export default function HaycreekSubPage() {
   return (
-    <div>
-      <div>
+    <div className="overflow-x-hidden">
+      <div className="max-w-full overflow-hidden">
         <img src={heroImg} alt="Hero img" />
       </div>
       <div className="introText grid grid-cols-1 md:grid-cols-2 p-10">
@@ -59,15 +59,16 @@ export default function HaycreekSubPage() {
           </div>
         </div>
       </div>
-      <div className="bannerImg md:-mt-0 -mt-10">
+      <div className="bannerImg md:-mt-0 Md:-mt-10">
         <img
           src={bannerImg}
-          alt="a collage of images used in the black friday campagin for haycreek hotels"
+          alt="Collage for Haycreek hotels"
+          className="md:w-full md:object-cover"
         />
       </div>
       <div className="flex flex-col items-center mx-4 md:m-12">
         <div>
-          <h3 className="text-4xl md:text-8xl md:absolute md:left-36 md:ml-2 md:mt-6 md:mb-0 2xl:ml-72 mr-44 mt-12 mb-6 font-span">
+          <h3 className="text-3xl md:text-8xl md:absolute md:left-36 md:ml-2 md:mt-6 md:mb-0 2xl:ml-72 mr-44 mt-12 mb-6 font-span">
             THE BIGGEST
           </h3>
         </div>
@@ -87,6 +88,33 @@ export default function HaycreekSubPage() {
           altText="black and white collage from campain"
           headerText="IG STORY"
         />
+      </div>
+      <div className="p-12">
+        <h3 className="text-lg text-center font-span my-8 uppercase">
+          Deliverables
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 text-center text-xs md:text-sm p-5 gap-y-3 -mt-4">
+          <p className="font-napzer">
+            <span className="font-spanlight text-7xl italic">2,082,407</span>{" "}
+            <span>
+              <br></br>Total Emails Sent
+            </span>
+          </p>
+          <p className="font-napzer">
+            <span className="font-spanlight text-7xl italic">3</span>{" "}
+            <span>
+              <br></br>Hay Creek Hotels Designs <br></br>&<br></br>Custom Emails
+              Per Property
+            </span>
+          </p>
+          <p className="font-napzer">
+            <span className="font-spanlight text-7xl italic">36</span>{" "}
+            <span>
+              <br></br>Differnentiated Emails
+            </span>
+          </p>
+       
+        </div>
       </div>
     </div>
   );
