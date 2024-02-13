@@ -1,11 +1,22 @@
 //images
 import heroImg from "../images/hayCreek/Main Images/heroImg.jpg";
 import bannerImg from "../images/hayCreek/Main Images/Collage_WhoWeAre_2.jpg";
+import videoBg from "../images/hayCreek/Main Images/HC_Third Photo.png";
 
 //videos
-import video1 from "../videos/haycreek/IG_Story 1.mp4"
-import video2 from "../videos/haycreek/IG_Story 2 .mp4"
-import video3 from "../videos/haycreek/IG_Story 3.mp4"
+import video1 from "../videos/haycreek/IG_Story_1.mp4";
+import video2 from "../videos/haycreek/IG_Story_2.mp4";
+import video3 from "../videos/haycreek/IG_Story_3.mp4";
+
+//compoents
+import VideoOverlayCarousel from "../videoOverlayCarousel";
+
+//video array for video overlay carousel component
+const videos = [
+  { videoSrc: video1, title: "Phase 1:", subtitle: "Teaser Release" },
+  { videoSrc: video2, title: "Phase 2:", subtitle: "We are Live!" },
+  { videoSrc: video3, title: "Phase 3:", subtitle: "Last Chance" },
+];
 
 export default function HaycreekSubPage() {
   return (
@@ -68,6 +79,14 @@ export default function HaycreekSubPage() {
         <div>
           <h3 className="text-6xl md:text-13xl font-span">OF THE YEAR.</h3>
         </div>
+      </div>
+      <div className="videoCarousel">
+        <VideoOverlayCarousel
+          videos={videos}
+          imageSrc={videoBg}
+          altText="black and white collage from campain"
+          headerText="IG STORY"
+        />
       </div>
     </div>
   );
