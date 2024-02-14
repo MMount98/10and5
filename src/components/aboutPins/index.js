@@ -5,12 +5,11 @@ import map from "../images/mapWithoutDots.png"
 
 const pinpoints = [
   { id: 1, label: 'Roxanne Robasco', x: 40, y: 39.8, info: 'Castle Rock, CO' },
-  { id: 2, label: 'Michael Mount', x: 43, y: 40, info: 'Littleton, CO' },
-  { id: 3, label: 'Folabomni', x: 41.5, y: 36.5, info: 'Denver, CO' },
-  { id: 4, label: 'Folabomni', x: 44, y: 36.5, info: 'Denver, CO' },
-  { id: 5, label: 'Folabomni', x: 61.5, y: 38, info: 'Denver, CO' },
-  { id: 6, label: 'Folabomni', x: 68, y: 40, info: 'Denver, CO' },
-  { id: 7, label: 'Folabomni', x: 68, y: 51, info: 'Denver, CO' },
+  { id: 2, label: 'Michael Mount', x: 42.5, y: 40, info: 'Littleton, CO' },
+  { id: 3, label: 'Folabomni Oyewo', x: 41.5, y: 37.5, info: 'Denver, CO' },
+  { id: 4, label: 'Sarah Sutton', x: 42, y: 43, info: 'Colorado Springs, CO' },
+  { id: 5, label: 'Ashley Branstetter', x: 58, y: 39.5, info: 'Lee Summit, MO' },
+  { id: 6, label: 'Carly Koemptgen', x: 17, y: 5, info: 'Seattle, WA' },
   // Add more pinpoints as needed
 ];
 

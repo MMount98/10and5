@@ -1,19 +1,21 @@
 import React from "react";
 import { motion } from "framer-motion";
-import image1 from "../images/zulmaury-saavedra-kXC0dbqtRe4-unsplash.jpg";
-import image2 from "../images/zulmaury-saavedra-kXC0dbqtRe4-unsplash.jpg";
-import image3 from "../images/zulmaury-saavedra-kXC0dbqtRe4-unsplash.jpg";
-import image4 from "../images/zulmaury-saavedra-kXC0dbqtRe4-unsplash.jpg";
-import image5 from "../images/zulmaury-saavedra-kXC0dbqtRe4-unsplash.jpg";
-import image6 from "../images/zulmaury-saavedra-kXC0dbqtRe4-unsplash.jpg";
+import image1 from "../images/headShots/RR_Team Picture.png";
+import image2 from "../images/headShots/AB_Team Picture.png";
+import image3 from "../images/headShots/FO_TeamPicture.png";
+import image4 from "../images/headShots/SS_Team Picture.png";
+import image5 from "../images/headShots/CK_Team Picture.png";
+import image6 from "../images/headShots/MM_Team.png";
+import image7 from "../images/headShots/MA_Team Picture.png"
 
 const imageData = [
     { src: image1, topText: "Roxanne Rabasco", bottomText: "Founder" },
     { src: image2, topText: "Ashley Branstter", bottomText: "Creative Operations Director" },
     { src: image3, topText: "Folabomi Oyewo", bottomText: "Creative Director" },
     { src: image4, topText: "Sarah Sutton", bottomText: "Creative Strategist" },
-    { src: image5, topText: "Michael Mount", bottomText: "Web Developer" },
-    { src: image6, topText: "Mia Alvarez", bottomText: "Graphic Designer" },
+    { src: image5, topText: "Carly Koemptgen", bottomText: "Digital Marketing Manager" },
+    { src: image6, topText: "Michael Mount ", bottomText: "Head Web Developer" },
+    { src: image7, topText: "Mia Alvarez", bottomText: "Graphic Designer" },
     
   ];
 
@@ -29,7 +31,7 @@ const imageData = [
             <div key={index} className="text-center md:text-left">
               <motion.img
                 src={item.src}
-                alt={`Image ${index + 1}`}
+                alt={`Team photo ${index + 1}`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
