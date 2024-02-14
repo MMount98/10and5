@@ -155,7 +155,20 @@ export default function MVGSubPage() {
           Below are just some <br></br>of the programs we put in place.
         </p>
       </div>
-      
+      <div className="imageAndText flex flex-col md:grid md:grid-cols-2">
+        <img
+          src={seventhImage}
+          alt="The Mountain View Grand Llama and Farmer"
+          className="w-full md:w-auto p-8"
+        />
+        <div className="text-center md:text-left md:mt-72 mt-0">
+          <h5 className="font-spanlight text-lg md:text-4xl italic md:my-3">
+            WELLNESS ON THE LAWN <br></br>WALK WITH LLAMAS + GOATS <br></br>
+            SPILLING THE TEA IN THE MOUNTUANS<br></br>SUMMER + FALL POP UP
+            PICNICS
+          </h5>
+        </div>
+      </div>
     </div>
   );
 }
