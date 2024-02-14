@@ -37,6 +37,7 @@ import webPageVideo from "../videos/hotel-hartness/Hotel-Hartness-Subpage.mp4";
 import CarouselAnimation from "../carouselAnimation";
 import VideoOverlay from "../videoOverlay";
 
+//Consts
 const story1Images = [
   story1_1,
   story1_2,
@@ -74,7 +75,7 @@ export default function HartnessSubPage() {
       <div className="introText grid grid-cols-1 md:grid-cols-2 p-10">
         <div>
           <h2 className="font-span text-3xl md:text-5xl">HOTEL HARTNESS</h2>
-          <p className="text-xl md:text-3xl font-spanlight">
+          <p className="text-xl md:text-3xl font-spanlight italic">
             A symphony of artistry
           </p>
           <p className="text-sm md:text-1xl font-napzer mt-5">
