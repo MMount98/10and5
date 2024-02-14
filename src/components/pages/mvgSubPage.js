@@ -74,7 +74,7 @@ export default function MVGSubPage() {
           </div>
         </div>
       </div>
-      <div className="textdivder flex justify-center items-center p-10">
+      <div className="textdivder flex justify-center items-center md:p-10 p-6">
         <img
           src={secondImage}
           alt="guest in the lounge at mountain view grand"
@@ -101,7 +101,7 @@ export default function MVGSubPage() {
           className="w-full md:w-auto"
           alt="chairs in the mountain view grand lobby"
         />
-        <div className="text-center md:text-left md:pl-6 md:mt-64">
+        <div className="text-center md:text-left md:pl-6 md:mt-64 my-8">
           <h4 className="font-span text-4xl md:text-6xl md:mb-5">
             Brand Pillars
           </h4>
