@@ -6,6 +6,9 @@ import fourthImage from "../images/Mountain View Grand - Selected Work/MVG_4th P
 import seventhImage from "../images/Mountain View Grand - Selected Work/MVG_7th Photo.jpg";
 import storyBg from "../images/Mountain View Grand - Selected Work/MVG_5th Photo.jpg";
 import videoBg from "../images/Mountain View Grand - Selected Work/MVG_6th Photo.jpg";
+import llamaLogo from "../images/Mountain View Grand - Selected Work/Yellow llama_Logo.png";
+import llamaProm1 from "../images/Mountain View Grand - Selected Work/MVG_Yellow llama 1.jpg";
+import llamaProm2 from "../images/Mountain View Grand - Selected Work/MVG_Yellow llama 2.jpg";
 
 //Story 1
 import story1_1 from "../images/Mountain View Grand - Selected Work/IG Stories/MVG_Story 1.png";
@@ -99,7 +102,9 @@ export default function MVGSubPage() {
           alt="chairs in the mountain view grand lobby"
         />
         <div className="text-center md:text-left md:pl-6 md:mt-64">
-          <h4 className="font-span text-4xl md:text-6xl md:mb-5">Brand Pillars</h4>
+          <h4 className="font-span text-4xl md:text-6xl md:mb-5">
+            Brand Pillars
+          </h4>
           <ul className="font-spanlight text-xl md:text-3xl md:mb-1">
             <li className="py-2">Nostalgic Narrator</li>
             <li className="py-2">Family Centered</li>
@@ -168,6 +173,36 @@ export default function MVGSubPage() {
             PICNICS
           </h5>
         </div>
+      </div>
+      <div className="text-center px-8 md:mt-5">
+        <h5 className="font-span ml:text-4xl text-2xl mt-5">
+          YELLOW LLAMA LAGER
+        </h5>
+        <p className="font-napzer md:px-96 md:my-4 p-10">
+          Mountain View Grand Resort and Spa is home to llamas, goats and
+          various farm animals but not to worry no llamas were harmed in the
+          making of this lager. We were tasked to brand a well loved lager
+          already on tap at the Resort with it expanding to the golf course, the
+          mini bar, and the pool clubhouse.
+        </p>
+      </div>
+      <div className="flex justify-center">
+        <img src={llamaLogo} alt="Llama Yellow Logo" className="w-96 h-80 p-5" />
+      </div>
+      <div className="flex justify-between flex-col md:grid md:grid-cols-2">
+        <img
+          src={llamaProm1}
+          alt="A can of yellow llama being poured out"
+          className="md:p-24 p-12"
+        />
+        <img
+          src={llamaProm2}
+          alt="A can of yellow llama next to a full glass of lager"
+          className="md:p-24 p-12"
+        />
+      </div>
+      <div className="m-16">
+        <h5 className="text-center font-span text-2xl">MORE WORK</h5>
       </div>
     </div>
   );
