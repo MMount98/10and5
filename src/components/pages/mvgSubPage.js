@@ -92,22 +92,22 @@ export default function MVGSubPage() {
           <h3 className="text-6xl md:text-13xl font-span">COULD TALK.</h3>
         </div>
       </div>
-      <div className="imageAndText flex flex-col md:grid md:grid-cols-2">
+      <div className="imageAndText flex flex-col md:grid md:grid-cols-2 p-8">
         <img
           src={thirdImage}
-          className="w-full md:w-auto p-8"
+          className="w-full md:w-auto"
           alt="chairs in the mountain view grand lobby"
         />
-        <div className="text-center md:text-left md:pl-6">
-          <h4 className="font-span text-4xl md:text-6xl">Brand Pillars</h4>
-          <ul className="font-spanlight text-xl md:text-3xl">
-            <li className="py-1">Nostalgic Narrator</li>
-            <li className="py-1">Family Centered</li>
-            <li className="py-1">Luxe Leisure</li>
+        <div className="text-center md:text-left md:pl-6 md:mt-64">
+          <h4 className="font-span text-4xl md:text-6xl md:mb-5">Brand Pillars</h4>
+          <ul className="font-spanlight text-xl md:text-3xl md:mb-1">
+            <li className="py-2">Nostalgic Narrator</li>
+            <li className="py-2">Family Centered</li>
+            <li className="py-2">Luxe Leisure</li>
           </ul>
           <img
             src={fourthImage}
-            className="w-full md:w-auto p-8"
+            className="w-full md:w-auto"
             alt="chairs around an outdoor campfire"
           />
         </div>
