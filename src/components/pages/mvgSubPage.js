@@ -3,6 +3,7 @@ import heroImage from "../images/Mountain View Grand - Selected Work/MVG_Hero Im
 import secondImage from "../images/Mountain View Grand - Selected Work/MVG_2nd Photo.jpg";
 import thirdImage from "../images/Mountain View Grand - Selected Work/MVG_3rd Photo.jpg";
 import fourthImage from "../images/Mountain View Grand - Selected Work/MVG_4th Photo.jpg";
+import seventhImage from "../images/Mountain View Grand - Selected Work/MVG_7th Photo.jpg";
 import storyBg from "../images/Mountain View Grand - Selected Work/MVG_5th Photo.jpg";
 import videoBg from "../images/Mountain View Grand - Selected Work/MVG_6th Photo.jpg";
 
@@ -149,11 +150,12 @@ export default function MVGSubPage() {
         <h5 className="font-span ml:text-4xl text-2xl mt-5">
           PROGRAMMING + EVENTS
         </h5>
-        <p className="font-napzer ml:px-96 px-14 my-4">
+        <p className="font-napzer px-14 my-4">
           A resort like no other with ample of activites for everyone to enjoy.
-          Below are just some of the programs we put in place.
+          Below are just some <br></br>of the programs we put in place.
         </p>
       </div>
+      
     </div>
   );
 }
