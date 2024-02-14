@@ -28,7 +28,7 @@ export default function MVGSubPage() {
     <div>
       <img
         src={heroImage}
-        alt="landscape photo of the front of hotel hartness"
+        alt="landscape of the front of mountain view grand"
       />
       <div className="introText grid grid-cols-1 md:grid-cols-2 p-10">
         <div>
@@ -70,15 +70,15 @@ export default function MVGSubPage() {
           </div>
         </div>
       </div>
-      <div className="textdivder flex justify-center items-center">
+      <div className="textdivder flex justify-center items-center p-10">
         <img
           src={secondImage}
-          alt="wide photo of a guest lounge at hotel hartness"
+          alt="guest in the lounge at mountain view grand"
         />
       </div>
-      <div className="flex flex-col items-center mx-4 md:m-12">
+      <div className="flex flex-col items-center mx-4 md:m-12 mb-5">
         <div>
-          <h3 className="text-4xl md:text-8xl md:absolute md:left-80 md:ml-2 md:mt-6 2xl:ml-72 mr-44 mt-6 font-span">
+          <h3 className="text-4xl md:text-8xl md:absolute md:left-96 md:ml-2 md:mt-6 2xl:ml-72 mr-44 ml-14 mt-6 font-span">
             IF THESE
           </h3>
         </div>
@@ -91,18 +91,24 @@ export default function MVGSubPage() {
           <h3 className="text-6xl md:text-13xl font-span">COULD TALK.</h3>
         </div>
       </div>
-      <div className="grid grid-cols-2 my-5 p-5">
-        <div className="portraitPillars">
-          <img src={thirdImage} alt="Image of the lobby chairs" />
-        </div>
-        <div className="text-center md:text-left">
+      <div className="imageAndText flex flex-col md:grid md:grid-cols-2">
+        <img
+          src={thirdImage}
+          className="w-full md:w-auto p-8"
+          alt="chairs in the mountain view grand lobby"
+        />
+        <div className="text-center md:text-left md:pl-6">
           <h4 className="font-span text-4xl md:text-6xl">Brand Pillars</h4>
           <ul className="font-spanlight text-xl md:text-3xl">
             <li className="py-1">Nostalgic Narrator</li>
             <li className="py-1">Family Centered</li>
             <li className="py-1">Luxe Leisure</li>
           </ul>
-          <img src={fourthImage} alt="Chairs surrounding a campfire" />
+          <img
+            src={fourthImage}
+            className="w-full md:w-auto p-8"
+            alt="chairs around an outdoor campfire"
+          />
         </div>
       </div>
       <CarouselAnimation
@@ -110,32 +116,40 @@ export default function MVGSubPage() {
         backgroundImage={storyBg}
         backgroundHeight="100vh"
       />
-      <div className="textDivider">
-        <h5 className="font-span italic text-5xl text-center">
+
+      <div className="textDivider my-24">
+        <h5 className="font-span italic md:text-5xl text-3xl text-center">
           #MEETYOUATMOUNTAINVIEW
         </h5>
       </div>
+
       <VideoOverlay
         videoSrc={webPageVideo}
         imageSrc={videoBg}
         altText="Video Walkthrough of the Mountain View Grand Website"
       />
-      <div>
-        <h3 className="text-4xl md:text-8xl md:absolute md:left-80 md:ml-2 md:mt-6 2xl:ml-72 mr-44 mt-6 font-span">
-          SOMETHING
-        </h3>
+
+      <div className="flex flex-col items-center mx-4 md:m-12">
+        <div>
+          <h3 className="text-4xl md:text-8xl md:absolute md:left-80 md:ml-2 md:mt-6 2xl:ml-72 ml-14 mr-44 mt-6 font-span">
+            SOMETHING
+          </h3>
+        </div>
+        <div>
+          <h3 className="text-5xl md:text-9xl font-spanlight italic ml-36 md:mt-12 md:ml-96 -mt-8">
+            FOR
+          </h3>
+        </div>
+        <div>
+          <h3 className="text-6xl md:text-13xl font-span">EVERYONE.</h3>
+        </div>
       </div>
-      <div>
-        <h3 className="text-5xl md:text-9xl font-spanlight italic ml-36 md:mt-12 md:ml-96 -mt-8">
-          FOR
-        </h3>
-      </div>
-      <div>
-        <h3 className="text-6xl md:text-13xl font-span">EVERYONE.</h3>
-      </div>
+
       <div className="text-center">
-        <h5 className="font-span text-2xl">PROGRAMMING + EVENTS</h5>
-        <p className="font-napzer px-24">
+        <h5 className="font-span ml:text-4xl text-2xl mt-5">
+          PROGRAMMING + EVENTS
+        </h5>
+        <p className="font-napzer ml:px-96 px-14 my-4">
           A resort like no other with ample of activites for everyone to enjoy.
           Below are just some of the programs we put in place.
         </p>
