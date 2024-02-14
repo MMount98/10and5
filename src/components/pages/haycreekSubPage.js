@@ -1,17 +1,66 @@
+//compoents
+import VideoOverlayCarousel from "../videoOverlayCarousel";
+import HaycreekScrollAnimation from "../haycreekScrollAnimation";
+import Emailbanner from "../emailBanners";
+
 //images
 import heroImg from "../images/hayCreek/Main Images/heroImg.jpg";
 import bannerImg from "../images/hayCreek/Main Images/Collage_WhoWeAre_2.jpg";
 import videoBg from "../images/hayCreek/Main Images/HC_Third Photo.png";
+import bgImg from "../images/hayCreek/Main Images/HC_Fourth Photo.jpg";
+
+//emailBanner1
+import emailImg1_1 from "../images/hayCreek/Email Frames/Castle_Email 1.png";
+import emailImg1_2 from "../images/hayCreek/Email Frames/Castle_Email_2.png";
+import emailImg1_3 from "../images/hayCreek/Email Frames/Castle_Email 3.png";
+import emailBg1 from "../images/hayCreek/Main Images/HC_Fifth Photo.jpg";
+
+//emailBanner2
+import emailImg2_1 from "../images/hayCreek/Email Frames/LSL_Email_1.png";
+import emailImg2_2 from "../images/hayCreek/Email Frames/LSL_Email_2.png";
+import emailImg2_3 from "../images/hayCreek/Email Frames/LSL_Email_3.png";
+import emailBg2 from "../images/hayCreek/Main Images/HC_Sixth Photo.jpg";
+
+//emailBanner3
+import emailImg3_1 from "../images/hayCreek/Email Frames/MVG_Email 1.png";
+import emailImg3_2 from "../images/hayCreek/Email Frames/MVG_Email 2.png";
+import emailImg3_3 from "../images/hayCreek/Email Frames/MVG_Email 3.png";
+import emailBg3 from "../images/hayCreek/Main Images/HC_Seventh Photo.jpg";
+
+//emailBanner4
+import emailImg4_1 from "../images/hayCreek/Email Frames/HH_Email 1.png";
+import emailImg4_2 from "../images/hayCreek/Email Frames/HH_Email 2.png";
+import emailImg4_3 from "../images/hayCreek/Email Frames/HH_Email 3.png";
+import emailBg4 from "../images/hayCreek/Main Images/HC_Fifth Photo.jpg";
+
+//emailBanner5
+import emailImg5_1 from "../images/hayCreek/Email Frames/GS_Email 1.png";
+import emailImg5_2 from "../images/hayCreek/Email Frames/GS_Email 2.png";
+import emailImg5_3 from "../images/hayCreek/Email Frames/GS_Email 3.png";
+import emailBg5 from "../images/hayCreek/Main Images/HC_Sixth Photo.jpg";
+
+//emailBanner6
+import emailImg6_1 from "../images/hayCreek/Email Frames/BWI_Email 1.png";
+import emailImg6_2 from "../images/hayCreek/Email Frames/BWI_Email 2.png";
+import emailImg6_3 from "../images/hayCreek/Email Frames/BWI_Email 3.png";
+import emailBg6 from "../images/hayCreek/Main Images/HC_Seventh Photo.jpg";
 
 //videos
 import video1 from "../videos/haycreek/IG_Story_1.mp4";
 import video2 from "../videos/haycreek/IG_Story_2.mp4";
 import video3 from "../videos/haycreek/IG_Story_3.mp4";
 
-//compoents
-import VideoOverlayCarousel from "../videoOverlayCarousel";
+//Variables or Constants
 
-//video array for video overlay carousel component
+//emailbanners
+const emailBanner6 = [emailImg6_1, emailImg6_2, emailImg6_3];
+const emailBanner5 = [emailImg5_1, emailImg5_2, emailImg5_3];
+const emailBanner4 = [emailImg4_1, emailImg4_2, emailImg4_3];
+const emailBanner3 = [emailImg3_1, emailImg3_2, emailImg3_3];
+const emailBanner2 = [emailImg2_1, emailImg2_2, emailImg2_3];
+const emailBanner1 = [emailImg1_1, emailImg1_2, emailImg1_3];
+
+//video array 
 const videos = [
   { videoSrc: video1, title: "Phase 1:", subtitle: "Teaser Release" },
   { videoSrc: video2, title: "Phase 2:", subtitle: "We are Live!" },
@@ -113,9 +162,14 @@ export default function HaycreekSubPage() {
               <br></br>Differnentiated Emails
             </span>
           </p>
-       
         </div>
       </div>
+      <HaycreekScrollAnimation backgroundImage={bgImg} />
+      <Emailbanner
+        backgroundImage={emailBg1}
+        squareImages={emailBanner1}
+        headerText="CASTLE HOTEL & SPA"
+      />
     </div>
   );
 }
