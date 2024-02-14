@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
 
 const Emailbanner = ({
   backgroundImage,
@@ -10,25 +10,29 @@ const Emailbanner = ({
   topStat3,
   topStat4,
 }) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const controls = useAnimation();
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex(
-        (prevIndex) => (prevIndex + 1) % squareImages.length
-      );
-    }, 3000); // Change image every 3 seconds on mobile
+    const cycleCards = async () => {
+      await controls.start({ opacity: 0, transition: { duration: 0.5 } });
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % squareImages.length);
+      await controls.start({ opacity: 1, transition: { duration: 0.5 } });
+    };
 
-    return () => clearInterval(interval);
-  }, [squareImages.length]);
+    if (squareImages.length > 0) {
+      const interval = setInterval(cycleCards, 5000);
+      return () => clearInterval(interval);
+    }
+  }, [controls, squareImages]);
 
   return (
     <div>
       <div>
-        <h5 className="text-3xl md:text-5xl font-span bold italic text-center md:my-6">
+        <h5 className="text-3xl md:text-5xl font-span bold italic text-center md:my-6 mt-5">
           {headerText}
         </h5>
-        <h6 className="text-2xl md:text-3xl font-span bold italic text-center mb-">
+        <h6 className="text-2xl md:text-3xl font-span bold italic text-center">
           SUCCESS METRICS
         </h6>
         <div className="flex justify-around my-6 text-center">
@@ -70,19 +74,16 @@ const Emailbanner = ({
         </div>
 
         {/* Mobile View: Loop through images */}
-        <div className="md:hidden z-10">
-          <AnimatePresence>
+        <div className="md:hidden z-10  absolute inset-0 flex justify-center items-center">
+          {squareImages.length > 0 && (
             <motion.img
-              key={currentImageIndex}
-              src={squareImages[currentImageIndex]}
-              alt={`Overlay ${currentImageIndex}`}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1 }}
+              src={squareImages[currentIndex]}
+              alt="Photo of the email campiagns"
+              animate={controls}
+              initial={{ opacity: 1 }}
               className="w-44 h-44 md:w-full md:h-32 object-cover"
             />
-          </AnimatePresence>
+          )}
         </div>
       </div>
     </div>

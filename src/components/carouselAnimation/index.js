@@ -13,7 +13,7 @@ const CarouselAnimation = ({ portraits, backgroundImage, backgroundHeight = '100
     };
 
     if (portraits.length > 0) {
-      const interval = setInterval(cyclePortraits, 3000);
+      const interval = setInterval(cyclePortraits, 5000);
       return () => clearInterval(interval);
     }
   }, [controls, portraits]);
