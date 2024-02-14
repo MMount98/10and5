@@ -1,63 +1,69 @@
-import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
-//images
+// Images
 import img1 from "../images/hayCreek/Email Frames/HCH_Email_1.png";
 import img2 from "../images/hayCreek/Email Frames/HCH_Email_2.png";
 import img3 from "../images/hayCreek/Email Frames/HCH_Email_3.png";
 import bgImg from "../images/hayCreek/Main Images/HC_Fourth Photo.jpg";
 
-const HaycreekScrollAnimation = () => { // Removed the prop as it's not used
-  const controls = useAnimation();
+const HaycreekScrollAnimation = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.5, // Trigger when 50% of the component is in view
+    threshold: 0.5,
   });
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
-
+  const [currentImage, setCurrentImage] = useState(0);
   const squareImages = [img1, img2, img3];
 
-  const variants = {
-    visible: (i) => ({
-      y: i === 1 ? 100 : -100, // Move center image down and side images up
-      opacity: 1,
-      transition: { duration: 0.5 },
-    }),
-    hidden: { y: 0, opacity: 0 },
-  };
+  useEffect(() => {
+    // Only set up the interval if the component is in view
+    let interval;
+    if (inView) {
+      interval = setInterval(() => {
+        setCurrentImage((currentImage) => (currentImage + 1) % squareImages.length);
+      }, 5000); // Change image every 5 seconds
+    }
+    return () => clearInterval(interval);
+  }, [squareImages.length, inView]);
 
   return (
-    <div
-      ref={ref}
-      className="relative h-screen w-full flex items-center justify-center"
-      style={{
-        backgroundImage: `url(${bgImg})`,
-  backgroundSize: "cover",
-  backgroundPosition: "center center",
-  height: "100vh", // Ensure the div is visible
-  width: "100vw",
-      }}
-    >
-      <div className="flex justify-between w-2/3">
+    <div ref={ref} className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+      {/* Background image */}
+      <img src={bgImg} alt="Background" className="absolute z-0 min-w-full min-h-full object-cover" />
+
+      {/* Desktop Images */}
+      <div className="hidden md:flex justify-center items-center w-full z-10">
         {squareImages.map((image, index) => (
           <motion.img
             key={index}
             src={image}
             alt={`Square ${index}`}
-            className="w-80 h-80 object-cover p-5" // Adjust size as necessary
-            custom={index} // Pass the index as a custom prop for individual animation
-            variants={variants}
-            initial="hidden"
-            animate={controls}
+            className="w-128 h-112 object-cover p-24" // Your existing desktop styles
+            initial={{ y: 0, opacity: 1 }}
+            whileInView={{ y: index === 1 ? 50 : -50, opacity: 1 }}
+            transition={{ duration: 0.5 }}
           />
         ))}
       </div>
+
+      {/* Mobile Image */}
+      <AnimatePresence>
+        <motion.div
+          key={currentImage}
+          className="md:hidden flex justify-center items-center w-full z-10"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1, ease: "easeInOut" }} // Smoother transition
+        >
+          <img
+            src={squareImages[currentImage]}
+            alt={`Square ${currentImage}`}
+            className="h-auto w-full object-cover p-4" // Adjust for mobile as needed
+          />
+        </motion.div>
+      </AnimatePresence>
     </div>
   );
 };

@@ -16,6 +16,16 @@ module.exports = {
       fontSize: {
         "13xl": "13rem",
       },
+      width: {
+        128: "32rem",
+        144: "36rem",
+        112: "28rem",
+      },
+      height: {
+        128: "32rem",
+        144: "36rem",
+        1112: "28rem",
+      },
     },
   },
   plugins: [require("daisyui")],
