@@ -60,7 +60,7 @@ const emailBanner3 = [emailImg3_1, emailImg3_2, emailImg3_3];
 const emailBanner2 = [emailImg2_1, emailImg2_2, emailImg2_3];
 const emailBanner1 = [emailImg1_1, emailImg1_2, emailImg1_3];
 
-//video array 
+//video array
 const videos = [
   { videoSrc: video1, title: "Phase 1:", subtitle: "Teaser Release" },
   { videoSrc: video2, title: "Phase 2:", subtitle: "We are Live!" },
@@ -169,6 +169,55 @@ export default function HaycreekSubPage() {
         backgroundImage={emailBg1}
         squareImages={emailBanner1}
         headerText="CASTLE HOTEL & SPA"
+        topStat1="$144,973"
+        topStat2="9.4K"
+        topStat3="5.06%"
+        topStat4="36.47%"
+      />
+      <Emailbanner
+        backgroundImage={emailBg2}
+        squareImages={emailBanner2}
+        headerText="LODGE AR SCHROON LAKE"
+        topStat1="$91,347"
+        topStat2="4.8K"
+        topStat3="7.64%"
+        topStat4="41.7%"
+      />
+      <Emailbanner
+        backgroundImage={emailBg3}
+        squareImages={emailBanner3}
+        headerText="MOUNTAIN VIEW GRAND"
+        topStat1="$240,464"
+        topStat2="21K"
+        topStat3="1.6%"
+        topStat4="28.36%"
+      />
+      <Emailbanner
+        backgroundImage={emailBg4}
+        squareImages={emailBanner4}
+        headerText="HOTEL HARTNESS"
+        topStat1="$97,818"
+        topStat2="5.6K"
+        topStat3="4.46%"
+        topStat4="38.74%"
+      />
+      <Emailbanner
+        backgroundImage={emailBg5}
+        squareImages={emailBanner5}
+        headerText="GRAND SUMMIT HOTEl"
+        topStat1="$112,009"
+        topStat2="6.3K"
+        topStat3="4.93%"
+        topStat4="32.73%"
+      />
+      <Emailbanner
+        backgroundImage={emailBg6}
+        squareImages={emailBanner6}
+        headerText="BREAKWATER INN & SPA"
+        topStat1="$95,182"
+        topStat2="4.9K"
+        topStat3="1.83%"
+        topStat4="45.37%"
       />
     </div>
   );
