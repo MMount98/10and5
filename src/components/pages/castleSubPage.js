@@ -1,7 +1,7 @@
 //Images
 import heroImage from "../images/castleHotel/Hero Image.jpg";
 import secondImage from "../images/castleHotel/2nd Photo.png";
-import thridImage from "../images/castleHotel/3rd Photo.jpg"
+import thridImage from "../images/castleHotel/3rd Photo.jpg";
 
 //Components
 import TextScroll from "../textScroll";
@@ -69,10 +69,23 @@ export default function CastleSubPage() {
           </h3>
         </div>
         <div>
-          <h3 className="text-4xl md:text-13xl font-span md:mt-12">WESTCHESTER.</h3>
+          <h3 className="text-4xl md:text-13xl font-span md:mt-12 md:mb-12 mb-4">
+            WESTCHESTER.
+          </h3>
         </div>
       </div>
-      <TextScroll imageUrl={thridImage} text="THE ROYAL TREATMENT IS OUR GOLD STANDARD" />
+      <div className="textAnimation">
+      <p className="text-center font-napzer md:px-64 md:text-lg text-xs ">
+            Rediscover the enchated destination in the prestigious Westchester
+            County that offers the most intiamte, idyllic and luxurious
+            experience in accommodations, dining, entertainment, wellness, and
+            special events of every kind.
+          </p>
+      <TextScroll
+        imageUrl={thridImage}
+        text="THE ROYAL TREATMENT IS OUR GOLD STANDARD"
+      />
+      </div>
     </div>
   );
 }
