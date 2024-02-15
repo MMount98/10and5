@@ -1,6 +1,10 @@
 //Images
 import heroImage from "../images/castleHotel/Hero Image.jpg";
 import secondImage from "../images/castleHotel/2nd Photo.png";
+import thridImage from "../images/castleHotel/3rd Photo.jpg"
+
+//Components
+import TextScroll from "../textScroll";
 
 export default function CastleSubPage() {
   return (
@@ -50,23 +54,25 @@ export default function CastleSubPage() {
         <img
           src={secondImage}
           alt="The handpainted archways in the castle"
+          className="w-72 p-3 md:w-full"
         />
       </div>
       <div className="flex flex-col items-center mx-4 md:m-12">
         <div>
-          <h3 className="text-4xl md:text-8xl md:absolute md:left-80 md:ml-2 md:mt-6 2xl:ml-72 mr-44 mt-6 font-span">
+          <h3 className="text-2xl md:text-8xl md:absolute md:left-64 md:ml-2 md:mt-6 2xl:ml-72 mr-36 mt-6 font-span">
             THE GRAND
           </h3>
         </div>
         <div>
-          <h3 className="text-5xl md:text-9xl font-spanlight italic ml-36 md:mt-12 md:ml-96 -mt-8">
+          <h3 className="text-3xl md:text-9xl font-spanlight italic ml-24 md:mt-12 md:ml-96 -mt-8">
             DAME OF
           </h3>
         </div>
         <div>
-          <h3 className="text-6xl md:text-13xl font-span">WESTCHESTER.</h3>
+          <h3 className="text-4xl md:text-13xl font-span md:mt-12">WESTCHESTER.</h3>
         </div>
       </div>
+      <TextScroll imageUrl={thridImage} text="THE ROYAL TREATMENT IS OUR GOLD STANDARD" />
     </div>
   );
 }

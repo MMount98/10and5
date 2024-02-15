@@ -22,7 +22,7 @@ function App() {
           <Route path="/noble-kitchen" element={<NobleSubPage />} />
           <Route path="/haycreek-hotels" element={<HaycreekSubPage />} />
           <Route path="/MVG" element={<MVGSubPage />} />
-          <Route path="/castel-hotel" element={<CastleSubPage />} />
+          <Route path="/castle-hotel" element={<CastleSubPage />} />
         </Routes>
       </Router>
     </>
