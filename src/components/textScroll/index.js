@@ -39,7 +39,7 @@ const TextScroll = ({ imageUrl, text }) => {
 
       {/* Animated Text */}
       <motion.div
-        className="z-10 absolute md:text-6xl text-sm font-bold ml-4 md:ml-0"
+        className="z-10 absolute md:text-7xl text-sm font-span ml-4 md:ml-0 drop-shadow-xl "
         initial={{ x: initialXPosition }}
         animate={{ x: isMobile ? '0%' : -progress * imageSize + imageSize / 2 }}
         style={{
