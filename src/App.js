@@ -7,6 +7,7 @@ import HartnessSubPage from "./components/pages/hartnessSubPage";
 import NobleSubPage from "./components/pages/nobleKitchenSubPage";
 import HaycreekSubPage from "./components/pages/haycreekSubPage";
 import MVGSubPage from "./components/pages/mvgSubPage";
+import CastleSubPage from "./components/pages/castleSubPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/noble-kitchen" element={<NobleSubPage />} />
           <Route path="/haycreek-hotels" element={<HaycreekSubPage />} />
           <Route path="/MVG" element={<MVGSubPage />} />
+          <Route path="/castel-hotel" element={<CastleSubPage />} />
         </Routes>
       </Router>
     </>
