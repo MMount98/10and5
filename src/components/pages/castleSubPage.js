@@ -2,6 +2,8 @@
 import heroImage from "../images/castleHotel/Hero Image.jpg";
 import secondImage from "../images/castleHotel/2nd Photo.png";
 import thridImage from "../images/castleHotel/3rd Photo.jpg";
+import magazine1 from "../images/castleHotel/Magazine Photo 1.jpg";
+import magazine2 from "../images/castleHotel/Magazine Photo 2.jpg";
 
 //Components
 import TextScroll from "../textScroll";
@@ -54,12 +56,12 @@ export default function CastleSubPage() {
         <img
           src={secondImage}
           alt="The handpainted archways in the castle"
-          className="w-72 p-3 md:w-full"
+          className="w-72 p-1 md:p-3 md:w-full mb-6 md:mb-0"
         />
       </div>
-      <div className="flex flex-col items-center mx-4 md:m-12">
+      <div className="flex flex-col items-center mx-4 md:m-12 mt-4">
         <div>
-          <h3 className="text-2xl md:text-8xl md:absolute md:left-64 md:ml-2 md:mt-6 2xl:ml-72 mr-36 mt-6 font-span">
+          <h3 className="text-2xl md:text-8xl md:absolute md:left-64 md:ml-2 md:mt-6 2xl:ml-72 mr-36 -mt-9 font-span">
             THE GRAND
           </h3>
         </div>
@@ -75,16 +77,47 @@ export default function CastleSubPage() {
         </div>
       </div>
       <div className="textAnimation">
-      <p className="text-center font-napzer md:px-64 md:text-lg text-xs ">
-            Rediscover the enchated destination in the prestigious Westchester
-            County that offers the most intiamte, idyllic and luxurious
-            experience in accommodations, dining, entertainment, wellness, and
-            special events of every kind.
-          </p>
-      <TextScroll
-        imageUrl={thridImage}
-        text="THE ROYAL TREATMENT IS OUR GOLD STANDARD"
-      />
+        <p className="text-center font-napzer md:px-64 md:text-lg text-xs px-5 ">
+          Rediscover the enchated destination in the prestigious Westchester
+          County that offers the most intiamte, idyllic and luxurious experience
+          in accommodations, dining, entertainment, wellness, and special events
+          of every kind.
+        </p>
+        <TextScroll
+          imageUrl={thridImage}
+          text="THE ROYAL TREATMENT IS OUR GOLD STANDARD"
+        />
+      </div>
+      <div className="flex flex-col items-center mx-4 md:m-12 -m-12">
+        <div>
+          <h3 className="text-3xl md:text-8xl md:absolute md:left-64 md:ml-2 md:mt-6 2xl:ml-72 mr-36 mt-6 font-span">
+            TIME OFF
+          </h3>
+        </div>
+        <div>
+          <h3 className="text-3xl md:text-9xl font-spanlight italic ml-24 md:mt-12 md:ml-96 -mt-6">
+            IN TIMELESS
+          </h3>
+        </div>
+        <div>
+          <h3 className="text-4xl md:text-13xl font-span md:mt-12 md:mb-12 mb-4">
+            SURROUNDINGS.
+          </h3>
+        </div>
+      </div>
+      <div className="magzinePages flex flex-col md:grid md:grid-cols-2 md:my-36 my-14">
+        <div>
+          <h4 className="font-napzer text-center -mb-7 md:-mb-7">
+            WESTCHESTER & HUDSON VALLEY MAGAZINE
+          </h4>
+          <img src={magazine1} alt="Magazine page highlting the wedding venue at Castle Hotel and spa" className="p-10" />
+        </div>
+        <div>
+          <h4 className="font-napzer text-center -mb-7 md:-mb-7">
+            914 MAGAZINE AD
+          </h4>
+          <img src={magazine2} alt="Magazine page ad for Castle Hotel and spa" className="p-10" />
+        </div>
       </div>
     </div>
   );
