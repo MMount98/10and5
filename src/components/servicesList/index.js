@@ -1,7 +1,7 @@
 const ServicesList = ({ h3, h4, h5, descrpition }) => {
   return (
     <>
-      <div className="content">
+      <div className="content md:my-0 my-4">
         <div className="md:p-14 px-5 md:text-left text-center">
           <h3 className="font-span md:text-4xl text-3xl md:my-1">
             {h3}
