@@ -28,6 +28,9 @@ module.exports = {
         60: "57rem",
         40: "40rem",
       },
+      padding: {
+        148: "38rem",
+      },
     },
   },
   plugins: [require("daisyui")],
