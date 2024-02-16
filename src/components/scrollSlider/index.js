@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 
 const ScrollSlider = ({ topText, bottomText, link, image1, image2 }) => {
