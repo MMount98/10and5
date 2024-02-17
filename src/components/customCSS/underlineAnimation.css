@@ -1,0 +1,36 @@
+.underlineAnimation {
+  display: inline-block;
+  position: relative;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.underlineAnimation::before,
+.underlineAnimation::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  height: 2px;
+  background-color: currentColor;
+  transition: transform 0.3s cubic-bezier(0.4, 1, 0.8, 1);
+  transform: scaleX(0);
+}
+
+.underlineAnimation::before {
+  left: 0;
+  transform-origin: left;
+}
+
+.underlineAnimation::after {
+  right: 0;
+  transform-origin: right;
+}
+
+.underlineAnimation:hover::before,
+.underlineAnimation:hover::after {
+  transform: scaleX(1);
+}

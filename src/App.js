@@ -9,6 +9,7 @@ import HaycreekSubPage from "./components/pages/haycreekSubPage";
 import MVGSubPage from "./components/pages/mvgSubPage";
 import CastleSubPage from "./components/pages/castleSubPage";
 import ServicesPage from "./components/pages/servicesPage";
+import Homepage  from "./components/pages/homepage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/MVG" element={<MVGSubPage />} />
           <Route path="/castle-hotel" element={<CastleSubPage />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/homepage" element={<Homepage />} />
         </Routes>
       </Router>
     </>
