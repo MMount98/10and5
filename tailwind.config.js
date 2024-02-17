@@ -31,6 +31,10 @@ module.exports = {
       padding: {
         148: "38rem",
       },
+      colors: {
+        "custom-black": "#222121",
+        "custom-white": "#F5F5F5",
+      },
     },
   },
   plugins: [require("daisyui")],
