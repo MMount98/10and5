@@ -31,7 +31,7 @@ export default function ServicesPage() {
         <ServicesList
           h3="Social Media"
           h4="Not About Going Viral"
-          h5='STRATEGY / CAMPAIGN IDEATION / CONTENT CALENDARS / 
+          h5='STRATEGY / CAMPAIGN IDEATION / CONTENT CALENDARS /
           INFLUENCER PARTNERSHIPS / OPTIMIZATION AND REPORTING'
           descrpition="We don’t chase viral content; our use of social media is to strategically enhance your brand’s identity by fostering a community that genuinely connects with your message."
         />
