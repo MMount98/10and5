@@ -4,6 +4,7 @@ import secondImage from "../images/castleHotel/2nd Photo.png";
 import thridImage from "../images/castleHotel/3rd Photo.jpg";
 import fourthImage from "../images/castleHotel/4th Photo.jpg";
 import fifthImage from "../images/castleHotel/5th Photo.jpg";
+import waxSeal from "../images/castleHotel/Wax Seal.png";
 
 //Magazine Images
 import magazine1 from "../images/castleHotel/Magazine Photo 1.jpg";
@@ -92,7 +93,7 @@ export default function CastleSubPage() {
           of every kind.
         </p>
         <TextScroll
-          imageUrl={thridImage}
+          imageUrl={waxSeal}
           text="THE ROYAL TREATMENT IS OUR GOLD STANDARD"
         />
       </div>

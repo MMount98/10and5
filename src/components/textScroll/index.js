@@ -34,7 +34,7 @@ const TextScroll = ({ imageUrl, text }) => {
     <div id="textScrollComponent" className="relative w-full flex items-center justify-center overflow-hidden">
       {/* Square Background Image Container */}
       <div style={{ width: imageSize, height: imageSize, position: 'relative' }}>
-        <img src={imageUrl} alt="Background" className="absolute top-0 left-0 w-full h-full object-cover md:p-24 p-28" />
+        <img src={imageUrl} alt="Background" className="absolute top-0 left-0 w-full h-full object-cover md:p-64 p-28" />
       </div>
 
       {/* Animated Text */}
@@ -43,7 +43,7 @@ const TextScroll = ({ imageUrl, text }) => {
         initial={{ x: initialXPosition }}
         animate={{ x: isMobile ? '0%' : -progress * imageSize + imageSize / 2 }}
         style={{
-          top: '50%', // Vertically center
+          top: '46%', // Vertically center
           left: '3%', // Horizontally center
           transform: 'translate(-50%, -50%)', 
           color: "white",

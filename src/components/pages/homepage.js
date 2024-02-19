@@ -1,5 +1,17 @@
+//Logo images
+import castleLogo from "../images/Logos/Castle Logo.svg";
+import coveLogo from "../images/Logos/Cove Restaurant + Bar Logo.svg";
+import grandLogo from "../images/Logos/Grand Summit Hotel Logo.svg";
+import hayLogo from "../images/Logos/Hay Creek Logo.svg";
+
 //customCSS File
 import "../customCSS/underlineAnimation.css";
+
+//compoents
+import LogoCarousel from "../logoCarousel";
+
+//const
+const logoSet1 = [castleLogo, coveLogo, grandLogo, hayLogo];
 
 export default function Homepage() {
   return (
@@ -58,6 +70,7 @@ export default function Homepage() {
           </a>
         </div>
       </div>
+      
     </>
   );
 }

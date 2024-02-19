@@ -1,20 +1,55 @@
-.logo-carousel {
+/* Keyframe Animation */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%); /* Adjust based on the number of logos duplicated */
+  }
+}
+
+/* Logo Carousel Container */
+.logos {
   overflow: hidden;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  padding: 60px 0;
+  background: white;
   position: relative;
 }
 
-.logo-wrapper {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+/* Fading Edges */
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 100px; /* Adjust width based on design preference */
+  height: 100%;
+  content: "";
+  z-index: 2;
 }
 
-.carousel-logos {
-  min-width: 25%;
-  max-width: 25%;
-  object-fit: cover;
-  flex-shrink: 0;
-  opacity: 0.5;
+.logos:before {
+  left: 0;
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to left, white 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* Pausing the Animation on Hover */
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+/* Logo Slide Animation */
+.logos-slide {
+  display: flex;
+  animation: slide 35s infinite linear;
+}
+
+/* Individual Logos */
+.logos-slide img {
+  height: 50px; /* Adjust based on your logo size */
+  margin: 0 20px; /* Adjust spacing between logos */
 }
