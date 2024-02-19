@@ -1,54 +1,67 @@
 import { useEffect, useRef } from "react";
-import { gsap } from "gsap"; // Corrected import
+import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
-const PopUpTextAnimation = () => {
-  const titleRef = useRef(null); // Ref to the container for access to DOM
+const PopUpTextAnimation = ({ text }) => {
+  const containerRef = useRef(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    const title = titleRef.current;
-    const chars = title.querySelectorAll(".char");
+    if (containerRef.current) {
+      // Select all .char elements that are not within a .br-wrapper
+      const chars = Array.from(
+        containerRef.current.querySelectorAll(".char:not(.br-wrapper .char)")
+      );
 
-    // Set perspective to each char's parent
-    chars.forEach((char) => gsap.set(char.parentNode, { perspective: 1000 }));
-
-    // Animation from/to
-    gsap.fromTo(
-      chars,
-      {
-        "will-change": "opacity, transform",
-        opacity: 0,
-        rotateX: () => gsap.utils.random(-120, 120),
-        z: () => gsap.utils.random(-200, 200),
-      },
-      {
-        ease: "none",
-        opacity: 1,
-        rotateX: 0,
-        z: 0,
-        stagger: 0.02,
-        scrollTrigger: {
-          trigger: title,
-          start: "top bottom",
-          end: "bottom top",
-          scrub: true,
+      gsap.fromTo(
+        chars,
+        {
+          "will-change": "transform",
+          transformOrigin: "50% 100%",
+          scaleY: 0,
+          opacity: 0,
         },
+        {
+          ease: "power3.in",
+          opacity: 1,
+          scaleY: 1,
+          stagger: 0.05,
+          scrollTrigger: {
+            trigger: containerRef.current,
+            start: "top center+=20%", // Adjusted for better visibility on scroll
+            end: "bottom center",
+            scrub: true,
+          },
+        }
+      );
+    }
+  }, [text]);
+
+  const renderText = () => {
+    // Split the text by spaces to process words and potential <br> placeholders
+    return text.split(" ").map((word, index) => {
+      if (word === "br") {
+        // Handle 'br' as a placeholder for a line break
+        return <br key={index} className="br-wrapper" />;
+      } else {
+        // Split words into characters for animation
+        return (
+          <span key={index} className="word inline-block mr-2">
+            {word.split("").map((char, charIndex) => (
+              <span key={charIndex} className="char inline-block">
+                {char === " " ? "\u00A0" : char}
+              </span>
+            ))}
+          </span>
+        );
       }
-    );
-  }, []);
+    });
+  };
 
   return (
-    <div ref={titleRef} className="text-animation">
-      {/* Splitting text manually for demonstration. Consider automating for dynamic text */}
-      {"10 and 5".split("").map((char, index) => (
-        <span key={index} className="char inline-block">
-          {char}
-        </span>
-      ))}
+    <div ref={containerRef} className="popup-text-animation">
+      {renderText()}
     </div>
   );
 };
