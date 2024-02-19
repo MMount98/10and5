@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/navbar";
+import Footer from "./components/footer";
 import Splash from "./components/pages/splash";
 import PreviousWork from "./components/pages/previousWork";
 import OurTeam from "./components/pages/ourTeam";
@@ -9,7 +10,7 @@ import HaycreekSubPage from "./components/pages/haycreekSubPage";
 import MVGSubPage from "./components/pages/mvgSubPage";
 import CastleSubPage from "./components/pages/castleSubPage";
 import ServicesPage from "./components/pages/servicesPage";
-import Homepage  from "./components/pages/homepage";
+import Homepage from "./components/pages/homepage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/homepage" element={<Homepage />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );
