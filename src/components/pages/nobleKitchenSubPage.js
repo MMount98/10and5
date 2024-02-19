@@ -32,8 +32,16 @@ export default function NobleSubPage() {
           COMING SOON!
         </h2>
       </div>
-      <div className="m-24">
-        <h5 className="text-center font-span text-2xl">MORE WORK</h5>
+      <div className="m-16">
+        <h5 className="text-center font-span md:text-2xl text-lg">MORE WORK</h5>
+        <div className="md:grid md:grid-cols-2 md:gap-72 md:mt-12 flex flex-col items-center font-span md:text-8xl text-2xl mt-6 uppercase">
+          <a href="/haycreek-hotels" className="md:py-0 py-2">
+            Hay Creek Corporate
+          </a>
+          <a href="/hotel-hartness" className="md:py-0 py-2">
+            Hotel Hartness
+          </a>
+        </div>
       </div>
     </div>
   );

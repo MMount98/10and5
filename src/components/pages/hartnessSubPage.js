@@ -205,8 +205,16 @@ export default function HartnessSubPage() {
         backgroundImage={story3_bg}
         backgroundHeight="75vh"
       />
-      <div className="m-24">
-        <h5 className="text-center font-span text-2xl">MORE WORK</h5>
+       <div className="m-16">
+        <h5 className="text-center font-span md:text-2xl text-lg">MORE WORK</h5>
+        <div className="md:grid md:grid-cols-2 md:gap-72 md:mt-12 flex flex-col items-center font-span md:text-8xl text-2xl mt-6 uppercase">
+          <a href="/castle-hotel" className="md:py-0 py-2">
+            Castle hotel & Spa
+          </a>
+          <a href="/MVG" className="md:py-0 py-2">
+            Mountain View Grand
+          </a>
+        </div>
       </div>
     </div>
   );

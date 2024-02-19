@@ -172,7 +172,15 @@ export default function CastleSubPage() {
         </div>
       </div>
       <div className="m-16">
-        <h5 className="text-center font-span text-2xl">MORE WORK</h5>
+        <h5 className="text-center font-span md:text-2xl text-lg">MORE WORK</h5>
+        <div className="md:grid md:grid-cols-2 md:gap-72 md:mt-12 flex flex-col items-center font-span md:text-8xl text-2xl mt-6 uppercase">
+          <a href="/hotel-hartness" className="md:py-0 py-2">
+            Hay Creek Corporate
+          </a>
+          <a href="/noble-kitchen" className="md:py-0 py-2">
+            noble Kitchen + Bar
+          </a>
+        </div>
       </div>
     </div>
   );

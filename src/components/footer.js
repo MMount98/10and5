@@ -4,7 +4,7 @@ import lightLogo from "./images/10_5logo_white.png";
 export default function Footer() {
   return (
     <>
-      <footer className="footer p-10 bg-custom-black text-neutral-content">
+      <footer className="footer p-10 bg-custom-black  text-custom-white">
         <aside>
           <img
             src={lightLogo}
