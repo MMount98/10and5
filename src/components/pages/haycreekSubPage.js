@@ -87,11 +87,10 @@ export default function HaycreekSubPage() {
         </div>
         <div>
           <p className="font-napzer md:pl-24 text-xs md:text-sm mt-5 md:mt-0">
-            Hay Creek Corporate, a hotel management company that distinctly
-            understands the power of nostalgia in the world of travel and hast
-            the creativity and vision to see what most cannot, tasked us with
-            their Black Friday campaign that spread across their hotel
-            portfolio.
+            Hay Creek Hotels, a hospitality management company that distinctly
+            understands the power of nostalgia in the world of travel, with the
+            creativity and vision to see what most cannot, tasked us with their
+            Black Friday 2023 campaign that spread across their hotel portfolio.
           </p>
           <h3 className="text-xl text-center font-span mt-8">
             MEASURED SUCCESS
@@ -219,7 +218,6 @@ export default function HaycreekSubPage() {
         topStat3="1.83%"
         topStat4="45.37%"
       />
-      
     </div>
   );
 }

@@ -49,12 +49,12 @@ export default function MVGSubPage() {
         </div>
         <div>
           <p className="font-napzer md:pl-24 text-xs md:text-sm mt-5 md:mt-0">
-            Freamed by charming, gabled rooftops and the rolling peaks of New
-            Hampshire's White Mountains, Mountain View Gran Resort & Spa is an
+            Framed by charming, gabled rooftops and the rolling peaks of New
+            Hampshire's White Mountains, Mountain View Grand Resort & Spa is an
             enchanted retreat perfect for celebrating all of life's beautiful
             moments. Mountain View Grand partnered with 10and5 creative to
             revitalize their online presence, creating a structured and
-            refreshed brand identity without forgetting the rooted histoy, they
+            refreshed brand identity without forgetting the rooted history they
             emerged from.
           </p>
           <h3 className="text-xl text-center font-span mt-8">
@@ -69,7 +69,7 @@ export default function MVGSubPage() {
               +<span className="font-span text-lg">163k</span> Website Traffic
             </p>
             <p className="font-napzer">
-              <span className="font-span text-lg">48%</span> Profile Visits
+              +<span className="font-span text-lg">48%</span> Profile Visits
             </p>
           </div>
         </div>
@@ -156,7 +156,7 @@ export default function MVGSubPage() {
           PROGRAMMING + EVENTS
         </h5>
         <p className="font-napzer px-14 my-4">
-          A resort like no other with ample of activites for everyone to enjoy.
+          A resort like no other with ample of activities for everyone to enjoy.
           Below are just some <br></br>of the programs we put in place.
         </p>
       </div>
@@ -169,7 +169,7 @@ export default function MVGSubPage() {
         <div className="text-center md:text-left md:mt-72 mt-0">
           <h5 className="font-spanlight text-lg md:text-4xl italic md:my-3">
             WELLNESS ON THE LAWN <br></br>WALK WITH LLAMAS + GOATS <br></br>
-            SPILLING THE TEA IN THE MOUNTUANS<br></br>SUMMER + FALL POP UP
+            SPILLING THE TEA IN THE MOUNTAINS<br></br>SUMMER + FALL POP UP
             PICNICS
           </h5>
         </div>
@@ -187,7 +187,11 @@ export default function MVGSubPage() {
         </p>
       </div>
       <div className="flex justify-center">
-        <img src={llamaLogo} alt="Llama Yellow Logo" className="w-96 h-80 p-5" />
+        <img
+          src={llamaLogo}
+          alt="Llama Yellow Logo"
+          className="w-96 h-80 p-5"
+        />
       </div>
       <div className="flex justify-between flex-col md:grid md:grid-cols-2">
         <img

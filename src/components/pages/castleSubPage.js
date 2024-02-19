@@ -38,10 +38,10 @@ export default function CastleSubPage() {
             Castle Hotel & Spa is a one-of-a-kind renovated castle oasis perched
             majestically atop one of the highest points in the region
             overlooking the historic Hudson River in lower Hudson Valley of
-            Westchester County, New York. We are partneted with Castle Hotel &
-            Spa as their in-house creative agency, with that task of
-            establishing social presense, increasing brand awareness, social
-            engagement and growth.
+            Westchester County, New York. We were partnered with Castle Hotel &
+            Spa as their in-house creative agency, with the task of establishing
+            social presence, increasing brand awareness, social engagement and
+            growth.
           </p>
           <h3 className="text-xl text-center font-span mt-8">
             MEASURED SUCCESS
@@ -55,7 +55,7 @@ export default function CastleSubPage() {
               +<span className="font-span text-lg">44,344</span> Website Traffic
             </p>
             <p className="font-napzer">
-              <span className="font-span text-lg">63.60%</span> Interactions
+              +<span className="font-span text-lg">63.60%</span> Interactions
             </p>
           </div>
         </div>
@@ -86,8 +86,8 @@ export default function CastleSubPage() {
       </div>
       <div className="textAnimation">
         <p className="text-center font-napzer md:px-64 md:text-lg text-xs px-5 ">
-          Rediscover the enchated destination in the prestigious Westchester
-          County that offers the most intiamte, idyllic and luxurious experience
+          Rediscover the enchanted destination in the prestigious Westchester
+          County that offers the most intimate, idyllic and luxurious experience
           in accommodations, dining, entertainment, wellness, and special events
           of every kind.
         </p>

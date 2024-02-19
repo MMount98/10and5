@@ -84,10 +84,10 @@ export default function HartnessSubPage() {
         </div>
         <div>
           <p className="font-napzer md:pl-24 text-xs md:text-sm mt-5 md:mt-0">
-            Hotel Hartness is a symphony of southern grace and modern allure
-            Nestled in Greenville NC. A home to Patterson Kitchen & Bar and The
-            Captain's Bar, we were tasked to amplify the brands digital voice
-            through Each of its touchpoint.
+            Hotel Hartness is a symphony of Southern grace and modern allure
+            Nestled in Greenville NC. A home to Patterson Kitchen + Bar and The
+            Captain's Bar, we were tasked to amplify the brands' digital voice
+            through each touchpoint.
           </p>
           <h3 className="text-xl text-center font-span mt-8">
             MEASURED SUCCESS
@@ -101,7 +101,7 @@ export default function HartnessSubPage() {
               +<span className="font-span text-lg">44,344</span> Website Traffic
             </p>
             <p className="font-napzer">
-              <span className="font-span text-lg">63.60%</span> Interactions
+              +<span className="font-span text-lg">63.60%</span> Interactions
             </p>
             <p className="font-napzer">
               <span className="font-span text-lg">4.92%</span> Click Through
@@ -190,8 +190,8 @@ export default function HartnessSubPage() {
       <div>
         <p className="font-napzer text-center text-lg md:px-72 px-24 -mt-8 md:mb-20 mb-20">
           Using the established logo and branding created for Paterson Kitchen +
-          Bar and The Captain Bar, we challednged ourselves to create two
-          seprate socail identities under one account.
+          Bar and The Captain Bar, we challenged ourselves to create two
+          separate social identities under one account.
         </p>
       </div>
       <CarouselAnimation

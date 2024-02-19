@@ -18,17 +18,19 @@ export default function NobleSubPage() {
         <div>
           <p className="font-napzer md:pl-24 text-xs md:text-sm mt-5 md:mt-0">
             Located in the heart of Brunswick, Maine, Noble Kitchen + Bar is
-            built on the simple idea that superior, local ingredients Will
-            speack for themselves. In that spirit they craft innovative American
+            built on the simple idea that superior, local ingredients will speak
+            for themselves. In that spirit, they craft innovative American
             dishes and cocktails in the heart of Coastal Maine, sourcing the
-            freshest sustainable foods in support of the Region's families. We
+            freshest sustainable foods in support of the region's families. We
             are tasked to amplify the brands's digital footprint and give their
-            website dome TLC so that i accurately reflects their offergs.
+            website some TLC so that it accurately reflects their offers.
           </p>
         </div>
       </div>
       <div>
-        <h2 className="text-center md:text-13xl text-9xl font-span">COMING SOON!</h2>
+        <h2 className="text-center md:text-13xl text-9xl font-span">
+          COMING SOON!
+        </h2>
       </div>
       <div className="m-24">
         <h5 className="text-center font-span text-2xl">MORE WORK</h5>
