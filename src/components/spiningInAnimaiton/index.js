@@ -34,7 +34,7 @@ const SpiningInAnimation = ({ text }) => {
           scrollTrigger: {
             trigger: word,
             start: "top bottom",
-            end: "top top+=15%",
+            end: "center center",
             scrub: true,
           },
         }

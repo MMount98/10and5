@@ -14,7 +14,7 @@ export default function Homepage() {
           <FlipInAnimation text="10and5" time={1} />
         </div>
         <div className="h1 text-center font-napzer md:text-10xl md:-mt-44 md:">
-          <FlipInAnimation text="CREATIVE" time={2} />
+          <FlipInAnimation text="C R E A T I V E" time={2} />
         </div>
         <div className="p1 text-center font-napzer md:text-2xl">
           <FadeInAnimation text="A non-verbal  cue, we’ve made our mantra." />
@@ -30,7 +30,7 @@ export default function Homepage() {
       </div>
       <div className="forwardAnimation-2 md:my-12 text-custom-white md:mb-56 xl:mb-64">
         <div className="h3 text-center font-span md:text-9xl md:mt-24 md:mb-16 md:px-96">
-          <ForwardTextAnimation text="CONNECTED BY CURIOUS CREATIVITY" />
+          <ForwardTextAnimation text="CONNECTED BY CURIOUS   CREATIVITY" />
         </div>
         <div className="p3 text-center font-napzer md:text-3xl md:px-96">
           <FadeInAnimation text="We take ADHD to another level.  The content we create is fool-proofed by our team of restless creatives. We  create content that will capture  our own hard- to- command attention.  " />
@@ -52,9 +52,9 @@ export default function Homepage() {
           <FadeInAnimation text=" We know all too well that every brand does not begin their travel journey with us at the same place.  Allow our concierge to curate the perfect blend of services that promise to stimulate engagement,  elevate your presence, and inject new life into your brand.   " />
         </div>
       </div>
-      <div className="outToInAnimation md:my-12 text-custom-white md:mb-56 xl:mb-64">
+      <div className="outToInAnimation md:my-12 text-custom-white md:mb-56 xl:mb-24">
         <div className="h6 text-center font-span md:text-9xl md:px-48">
-          <OutToInAnimation text="WHAT’S br IN  A br NAME?" />
+          <OutToInAnimation text="WHAT’S    IN   A    NAME?" />
         </div>
         <div className="p6 text-center font-napzer md:text-3xl md:px-96">
           <FadeInAnimation text="That which we call a creative agency / By any other name would smell as sweet." />
@@ -70,7 +70,7 @@ export default function Homepage() {
         </div>
       </div>
       <div className="popUpAnimation md:my-24 text-custom-white md:mb-56 xl:pb-72">
-        <div className="h7 text-center font-span md:text-8xl md:px-48">
+        <div className="h7 text-center font-span md:text-5xl md:px-48">
           <PopUpTextAnimation
             text="“People will forget what you said, people will forget what you did, but people will never forget how you made them feel.”
 - Maya Angelou"
