@@ -13,7 +13,7 @@ export default function Homepage() {
         <div className="h1 text-center font-span md:text-20xl text-10xl md:mt-24 ">
           <FlipInAnimation text="10and5" time={1} />
         </div>
-        <div className="h1 text-center font-napzer md:text-10xl text-6xl md:-mt-44 -mt-12 mb-16 md:mb-0">
+        <div className="h1 text-center font-napzer md:text-10xl text-6xl md:-mt-36 -mt-12 mb-16 md:mb-0">
           <FlipInAnimation text="C R E A T I V E" time={2} />
         </div>
         <div className="p1 text-center font-napzer md:text-2xl">
@@ -29,7 +29,7 @@ export default function Homepage() {
         </div>
       </div>
       <div className="forwardAnimation-2 md:my-12 text-custom-white md:mb-56 xl:mb-64">
-        <div className="h3 text-center font-span md:text-8xl text-4xl md:mt-24 mt-72 md:mb-16 xl:px-64">
+        <div className="h3 text-center font-span md:text-8xl text-4xl md:mt-24 mt-56 md:mb-16 xl:px-64">
           <ForwardTextAnimation text="CONNECTED BY CURIOUS   CREATIVITY" />
         </div>
         <div className="p3 text-center font-napzer md:text-3xl md:px-96 px-6 mt-8 md:mt-0">
@@ -37,7 +37,7 @@ export default function Homepage() {
         </div>
       </div>
       <div className="forwardAnimation-3 md:my-12 text-custom-white md:mb-56 xl:mb-64">
-        <div className="h4 text-center font-span md:text-8xl text-4xl md:mt-24 mt-72 md:mb-16 xl:px-64">
+        <div className="h4 text-center font-span md:text-8xl text-4xl md:mt-24 mt-56 md:mb-16 xl:px-64">
           <ForwardTextAnimation text="IMPASSIONED TO DELIVER LASTING RESULTS" />
         </div>
         <div className="p4 text-center font-napzer md:text-3xl md:px-96 px-6 mt-8 md:mt-0">
@@ -45,7 +45,7 @@ export default function Homepage() {
         </div>
       </div>
       <div className="spingingAnimation md:my-12 text-custom-white md:mb-56 xl:mb-64">
-        <div className="h5 text-center font-span md:text-8xl text-2xl md:mt-24 mt-72 md:mb-16 xl:px-64">
+        <div className="h5 text-center font-span md:text-8xl text-2xl md:mt-24 mt-44 md:mb-16 xl:px-36">
           <SpiningInAnimation text="OUR ACCOMMODATIONS" />
         </div>
         <div className="p5 text-center font-napzer md:text-3xl md:px-96 px-6 mt-8 md:mt-0">
@@ -70,7 +70,7 @@ export default function Homepage() {
         </div>
       </div>
       <div className="popUpAnimation md:my-24 text-custom-white">
-        <div className="h7 text-center font-span md:text-5xl text-xl md:pb-36 pb-44 md:mt-5 mt-36">
+        <div className="h7 text-center font-span md:text-5xl text-xl md:pb-36 pb-44 md:mt-1 mt-44">
           <PopUpTextAnimation
             text="“People will forget what you said, people will forget what you did, but people will never forget how you made them feel.”
 - Maya Angelou"
