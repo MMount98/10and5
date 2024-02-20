@@ -24,8 +24,8 @@ const PopUpTextAnimation = ({ text }) => {
         stagger: 0.05,
         scrollTrigger: {
           trigger: containerRef.current,
-          start: 'top center+=20%', // Adjusted for better visibility on scroll
-          end: 'center center',
+          start: 'top bottom', // Adjusted for better visibility on scroll
+          end: 'bottom center',
           scrub: true,
         },
       });
