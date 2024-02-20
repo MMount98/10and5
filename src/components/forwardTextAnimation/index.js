@@ -1,27 +1,16 @@
-import { useRef, useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// Utility to disable scrolling
-const disableScroll = () => {
-  document.body.style.overflow = "hidden";
-};
-
-// Utility to enable scrolling
-const enableScroll = () => {
-  document.body.style.overflow = "";
-};
+gsap.registerPlugin(ScrollTrigger);
 
 const ForwardTextAnimation = ({ text }) => {
   const ref = useRef(null);
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
     const element = ref.current;
-    const chars = element.querySelectorAll(".char");
+    const chars = element.querySelectorAll(".char:not(.br)");
 
-    // Ensure perspective for 3D effect
     chars.forEach((char) => gsap.set(char.parentNode, { perspective: 1000 }));
 
     // Define the animation
@@ -39,28 +28,33 @@ const ForwardTextAnimation = ({ text }) => {
         stagger: 0.04,
         scrollTrigger: {
           trigger: element,
-          start: "top bottom", // Adjust these values as needed
-          end: "bottom top",
-          scrub: true, // Consider how the scrub setting affects the animation
-          // Remove onEnter, onLeave callbacks if they're not managing scroll properly
+          start: "top bottom", 
+          end: "center center",
+          scrub: true, 
         },
       }
     );
   }, [text]);
 
+  // Function to process text and handle <br> tags
+  const renderText = () => {
+    return text.split(" ").map((word, index) => (
+      word === 'br' ? <br key={index} /> : <span key={index} className="word inline-block mr-2">
+        {word.split("").map((char, charIndex) => (
+          <span key={charIndex} className="char inline-block">
+            {char === " " ? "\u00A0" : char}
+          </span>
+        ))}
+      </span>
+    ));
+  };
+
   return (
     <div ref={ref} className="text-animation">
-      {text.split("").map((char, index) => (
-        <span
-          key={index}
-          className="char inline-block"
-          style={{ display: "inline-block", transformStyle: "preserve-3d" }}
-        >
-          {char === " " ? "\u00A0" : char}
-        </span>
-      ))}
+      {renderText()}
     </div>
   );
 };
 
 export default ForwardTextAnimation;
+

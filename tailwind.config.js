@@ -31,6 +31,7 @@ module.exports = {
         40: "40rem",
       },
       padding: {
+        112: "28rem",
         148: "38rem",
       },
       colors: {
