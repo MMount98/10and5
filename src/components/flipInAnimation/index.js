@@ -1,10 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(ScrollTrigger);
 
-const FlipInAnimation = ({ text }) => { // Accept text as a prop
+const FlipInAnimation = ({ text, time }) => { // Accept text as a prop
   const titleRef = useRef(null);
 
   useEffect(() => {
@@ -14,7 +12,7 @@ const FlipInAnimation = ({ text }) => { // Accept text as a prop
     // Set perspective to each char's parent
     chars.forEach(char => gsap.set(char.parentNode, { perspective: 1000 }));
 
-    // Animation from/to
+    // Animation from/to with a delay of 3 seconds after page load
     gsap.fromTo(
       chars,
       {
@@ -24,25 +22,21 @@ const FlipInAnimation = ({ text }) => { // Accept text as a prop
         z: () => gsap.utils.random(-200, 200),
       },
       {
-        ease: 'none',
+        ease: 'power3.inOut', // Changed for a smoother easing
         opacity: 1,
         rotateX: 0,
         z: 0,
         stagger: 0.02,
-        scrollTrigger: {
-          trigger: title,
-          start: 'top bottom',
-          end: 'bottom top',
-          scrub: true,
-        },
+        delay: time, // Delay the animation start by 3 seconds
+        duration: 2.5,
       }
     );
-  }, [text]); 
+  }, [text]);
 
   return (
     <div ref={titleRef} className="text-animation">
       {text.split('').map((char, index) => (
-        <span key={index} className="char inline-block">{char}</span>
+        <span key={index} className="char inline-block">{char === " " ? "\u00A0" : char}</span>
       ))}
     </div>
   );

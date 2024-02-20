@@ -24,6 +24,7 @@ const FadeInAnimation = ({ text, wrapperClassName = " " }) => {
           end: "bottom 20%",
           toggleActions: "play none none reverse",
           once: true,
+          
         },
       }
     );

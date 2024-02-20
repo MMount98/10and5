@@ -14,7 +14,9 @@ module.exports = {
         napzer: ['"Napzer"', ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
+        "10xl": "10rem",
         "13xl": "13rem",
+        "20xl": "20rem",
       },
       width: {
         128: "32rem",

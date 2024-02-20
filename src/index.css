@@ -51,14 +51,6 @@
   font-style: normal;
 }
 
-.content__title {
-  font-size: 12vw;
-  line-height: 0.8;
-  counter-increment: section;
-  text-align: center;
-  display: grid;
-  gap: 2rem;
-}
-.content__title--left {
-  text-align: left;
+body, html {
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
