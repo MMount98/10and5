@@ -70,7 +70,7 @@ export default function Homepage() {
         </div>
       </div>
       <div className="popUpAnimation md:my-24 text-custom-white">
-        <div className="h7 text-center font-span md:text-5xl text-xl md:pb-36 pb-44 md:mt-1 mt-44">
+        <div className="h7 text-center font-span md:text-5xl text-xl md:pb-36 pb-44 md:mt-1 md:mb-2 mb-0 mt-44">
           <PopUpTextAnimation
             text="“People will forget what you said, people will forget what you did, but people will never forget how you made them feel.”
 - Maya Angelou"
