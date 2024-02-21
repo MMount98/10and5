@@ -3,10 +3,13 @@ import AboutPins from "../aboutPins";
 import PortraitGallery from "../portraitGallery";
 import FlapClock from "../flapClock";
 import CustomBulletList from "../customBulletpointList";
+import NavBar from "../navbar";
 
 export default function OurTeam() {
   return (
-    <div>
+    <>
+    <NavBar isTransparent={true} showLogo={true} colorTheme="black" />
+    <div className="md:mt-72 mt-44">
       <h1 className="text-center text-2xl md:text-4xl font-span">
         4 Different States, Creatively Connected
       </h1>
@@ -65,5 +68,6 @@ export default function OurTeam() {
         <FlapClock timezone={18} location="MISSOURI" />
       </div>
     </div>
+    </>
   );
 }

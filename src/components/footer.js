@@ -1,5 +1,5 @@
 //logo
-import lightLogo from "./images/10_5logo_white.png";
+import lightLogo from "./images/Logos/Final_LogoWhite.png";
 
 export default function Footer() {
   return (

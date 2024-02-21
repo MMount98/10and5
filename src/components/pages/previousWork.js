@@ -18,10 +18,12 @@ import CasImg2 from "../images/selectedWorks/Castle Hotel & Spa 2.jpg";
 
 //Components
 import ScrollSlider from "../scrollSlider";
+import NavBar from "../navbar";
 
 export default function previousWork() {
   return (
     <div>
+      <NavBar isTransparent={true} showLogo={true} colorTheme="black" />
       <div>
         <h1 className="text-6xl md:text-9xl font-span ml-4 md:ml-10 mt-40 md:mt-80">
           Selected Work

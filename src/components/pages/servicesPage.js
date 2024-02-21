@@ -1,9 +1,11 @@
 //Components
 import ServicesList from "../servicesList";
+import NavBar from "../navbar";
 
 export default function ServicesPage() {
   return (
     <>
+    <NavBar isTransparent={true} showLogo={true} colorTheme="black" />
       <div className="header">
         <h1 className="text-4xl md:text-9xl font-span ml-4 md:ml-10 mt-40 md:mt-80">
           It Takes a Village to
