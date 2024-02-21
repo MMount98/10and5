@@ -5,12 +5,16 @@ import ForwardTextAnimation from "../forwardTextAnimation";
 import SpiningInAnimation from "../spiningInAnimaiton";
 import OutToInAnimation from "../outToInAnimation";
 import PopUpTextAnimation from "../popUpTextAnimation";
+import NavBar from "../navbar";
 
 export default function Homepage() {
   return (
-    < div className=" bg-custom-black -mb-24">
+    <>
+     <NavBar/>
+    < div className=" bg-custom-black -mb-24 -my-">
+      
       <div className="flippingInAnimation md:my-12 text-custom-white md:mb-56 xl:mb-64 pt-44 md:pt-0">
-        <div className="h1 text-center font-span md:text-20xl text-10xl md:mt-24 ">
+        <div className="h1 text-center font-span md:text-20xl text-10xl md:mt-24 md:mb-5 ">
           <FlipInAnimation text="10and5" time={1} />
         </div>
         <div className="h1 text-center font-napzer md:text-10xl text-6xl md:-mt-36 -mt-12 mb-16 md:mb-0">
@@ -30,15 +34,15 @@ export default function Homepage() {
       </div>
       <div className="forwardAnimation-2 md:my-12 text-custom-white md:mb-56 xl:mb-64">
         <div className="h3 text-center font-span md:text-8xl text-4xl md:mt-24 mt-56 md:mb-16 xl:px-64">
-          <ForwardTextAnimation text="CONNECTED BY CURIOUS   CREATIVITY" />
+          <ForwardTextAnimation text="CONNECTED  BY br CURIOUS   CREATIVITY" />
         </div>
-        <div className="p3 text-center font-napzer md:text-3xl md:px-96 px-6 mt-8 md:mt-0">
-          <FadeInAnimation text="We take ADHD to another level.  The content we create is fool-proofed by our team of restless creatives. We  create content that will capture  our own hard- to- command attention.  " />
+        <div className="p3 text-center font-napzer md:text-3xl md:px-72 px-6 mt-8 md:mt-0">
+          <FadeInAnimation text="We take ADHD to another level.  The content we create is fool-proofed by our team of restless creatives. We  create content that will capture  our own hard-to-command attention.  " />
         </div>
       </div>
       <div className="forwardAnimation-3 md:my-12 text-custom-white md:mb-56 xl:mb-64">
         <div className="h4 text-center font-span md:text-8xl text-4xl md:mt-24 mt-56 md:mb-16 xl:px-64">
-          <ForwardTextAnimation text="IMPASSIONED TO DELIVER LASTING RESULTS" />
+          <ForwardTextAnimation text="IMPASSIONED  TO  DELIVER br LASTING  RESULTS" />
         </div>
         <div className="p4 text-center font-napzer md:text-3xl md:px-96 px-6 mt-8 md:mt-0">
           <FadeInAnimation text="Like goldilocks, we don’t rest until we get it right." />
@@ -57,9 +61,9 @@ export default function Homepage() {
           <OutToInAnimation text="WHAT’S    IN   A    NAME?" />
         </div>
         <div className="p6 text-center font-napzer md:text-3xl md:px-96 px-6 mt-8 md:mt-0">
-          <FadeInAnimation text="That which we call a creative agency / By any other name would smell as sweet." />
+          <FadeInAnimation text="That which we call a creative agency By any other name would smell as sweet." />
         </div>
-        <div className="p6 text-center font-napzer md:text-3xl md:px-96 px-6 mt-8 md:mt-0 font-extrabold">
+        <div className="p6 text-center font-napzer md:text-3xl md:px-96 px-6 md:py-5 mt-8 md:mt-0 font-extrabold">
           <FadeInAnimation text="But would it, Dear Shakespeare?" />
         </div>
         <div className="p6 text-center font-napzer md:text-3xl md:px-96 px-6 mt-8 md:mt-0">
@@ -68,9 +72,10 @@ export default function Homepage() {
             It’s on these fundamental principles that we’ve built our agency. "
           />
         </div>
+        
       </div>
       <div className="popUpAnimation md:my-24 text-custom-white">
-        <div className="h7 text-center font-span md:text-5xl text-xl md:pb-36 pb-44 md:mt-1 md:mb-2 mb-0 mt-44">
+        <div className="h7 text-center font-span md:text-6xl text-xl md:pb-36 pb-44 md:mt-1 md:mb-2 mb-0 mt-44 px-96">
           <PopUpTextAnimation
             text="“People will forget what you said, people will forget what you did, but people will never forget how you made them feel.”
 - Maya Angelou"
@@ -78,5 +83,6 @@ export default function Homepage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

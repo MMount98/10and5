@@ -1,8 +1,10 @@
 import heroImg from "../images/nobleKitchen/NobleKitchenHero.jpg";
+import NavBar from "../navbar";
 
 export default function NobleSubPage() {
   return (
     <div>
+      <NavBar isTransparent={true} />
       <div className="heroImage">
         <img src={heroImg} alt="Front Door of the Noble Kitchen" />
       </div>

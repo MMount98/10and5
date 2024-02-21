@@ -1,43 +1,40 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import lightLogo from "./images/10_5logo_white.png";
-import darkLogo from "./images/10_5logo_black.png";
 
-export default function NavBar() {
-  const [logo, setLogo] = useState(
-    document.documentElement.getAttribute("data-theme") === "mydefault"
-      ? lightLogo
-      : darkLogo
-  );
+const NavBar = ({ isTransparent }) => {
+  const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      const currentTheme = document.documentElement.getAttribute("data-theme");
-      if (currentTheme === "mydefault" && logo !== lightLogo) {
-        setLogo(lightLogo);
-      } else if (currentTheme !== "mydefault" && logo !== darkLogo) {
-        setLogo(darkLogo);
-      }
-    }, 1000);
-
-    return () => clearInterval(intervalId);
-  }, [logo]);
+  // Conditional class for background transparency
+  const navbarBgClass = isTransparent ? 'bg-transparent' : 'bg-custom-black';
 
   return (
-    <nav className="py-10 px-4 sm:px-6 md:mx-20 md:my-16 flex justify-between items-center">
-      {/* Logo and home link */}
-      <a href="/" className="flex items-center">
-        <img src={logo} alt="Logo" className="h-12 sm:h-16 w-auto" />
-      </a>
-
-      {/* Responsive menu */}
-      <div className="text-right">
-        <a
-          href="mailto:admin@10and5creative.com"
-          className="contact font-oswald text-lg md:text-xl"
-        >
-          CONTACT US
-        </a>
+    <div className={`navbar ${navbarBgClass} fixed top-0 left-0 w-full z-50`}>
+      <div className="flex-1">
+        <img src={lightLogo} alt="10 and 5 logo" className="w-24" />
       </div>
-    </nav>
+
+      <div className="flex-none">
+        <button onClick={() => setIsOpen(!isOpen)} className="btn btn-square btn-ghost">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            style={{ color: isTransparent ? "#F5F5F5" : "#F5F5F5" }} // Adjust SVG color based on transparency
+            className="inline-block w-12 h-12 stroke-current"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        {isOpen && (
+          <ul className="menu bg-custom-white font-napzer text-2xl w-56 rounded-box absolute mt-2 right-1 top-12 shadow-lg">
+            <li><a href="/previousWork">Selected Works</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/ourteam">Our Team</a></li>
+          </ul>
+        )}
+      </div>
+    </div>
   );
-}
+};
+
+export default NavBar;
