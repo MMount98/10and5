@@ -36,6 +36,7 @@ import webPageVideo from "../videos/hotel-hartness/Hotel-Hartness-Subpage.mp4";
 //Compontents
 import CarouselAnimation from "../carouselAnimation";
 import VideoOverlay from "../videoOverlay";
+import NavBar from "../navbar";
 
 //Consts
 const story1Images = [
@@ -68,6 +69,7 @@ const story3Images = [
 export default function HartnessSubPage() {
   return (
     <div>
+      <NavBar isTransparent={true} colorTheme="white" showLogo={true} />
       <img
         src={heroImage}
         alt="landscape photo of the front of hotel hartness"
@@ -208,8 +210,8 @@ export default function HartnessSubPage() {
        <div className="m-16">
         <h5 className="text-center font-span md:text-2xl text-lg">MORE WORK</h5>
         <div className="md:grid md:grid-cols-2 md:gap-72 md:mt-12 flex flex-col items-center font-span md:text-8xl text-2xl mt-6 uppercase">
-          <a href="/castle-hotel" className="md:py-0 py-2">
-            Castle hotel & Spa
+          <a href="/castle-hotel" className="md:py-0 py-2 text-right">
+            Castle <br></br> hotel & Spa
           </a>
           <a href="/MVG" className="md:py-0 py-2">
             Mountain View Grand

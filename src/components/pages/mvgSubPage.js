@@ -23,6 +23,7 @@ import webPageVideo from "../videos/mvg/MVG_Screen Recording.mp4";
 //Compontents
 import CarouselAnimation from "../carouselAnimation";
 import VideoOverlay from "../videoOverlay";
+import NavBar from "../navbar";
 
 //Consts
 const storyImages = [story1_1, story1_2, story1_3, story1_4, story1_5];
@@ -30,6 +31,7 @@ const storyImages = [story1_1, story1_2, story1_3, story1_4, story1_5];
 export default function MVGSubPage() {
   return (
     <div>
+      <NavBar isTransparent={true} colorTheme="white" showLogo={true} />
       <img
         src={heroImage}
         alt="landscape of the front of mountain view grand"
@@ -207,6 +209,14 @@ export default function MVGSubPage() {
       </div>
       <div className="m-16">
         <h5 className="text-center font-span text-2xl">MORE WORK</h5>
+      </div>
+      <div className="md:grid md:grid-cols-2 md:gap-72 md:mt-12 flex flex-col items-center font-span md:text-8xl text-2xl my-6 uppercase">
+        <a href="/noble-kitchen" className="md:py-0 py-2 text-right">
+          Noble Kitchen <br></br>+ Bar
+        </a>
+        <a href="/castle-hotel" className="md:py-0 py-2">
+          Castle <br></br> Hotel & Spa
+        </a>
       </div>
     </div>
   );

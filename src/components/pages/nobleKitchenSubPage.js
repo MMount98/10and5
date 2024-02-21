@@ -4,7 +4,7 @@ import NavBar from "../navbar";
 export default function NobleSubPage() {
   return (
     <div>
-      <NavBar isTransparent={true} />
+      <NavBar isTransparent={true} colorTheme="black" />
       <div className="heroImage">
         <img src={heroImg} alt="Front Door of the Noble Kitchen" />
       </div>

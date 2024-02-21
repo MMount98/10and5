@@ -2,6 +2,7 @@
 import VideoOverlayCarousel from "../videoOverlayCarousel";
 import HaycreekScrollAnimation from "../haycreekScrollAnimation";
 import Emailbanner from "../emailBanners";
+import NavBar from "../navbar";
 
 //images
 import heroImg from "../images/hayCreek/Main Images/heroImg.jpg";
@@ -69,8 +70,9 @@ const videos = [
 
 export default function HaycreekSubPage() {
   return (
-    <div className="overflow-x-hidden">
-      <div className="max-w-full overflow-hidden">
+    <div className="relative z-0">
+      <NavBar colorTheme="white" isTransparent={true} />
+      <div className="relative mt-[-4rem] md:mt-[-6rem] lg:mt-[-8rem] z-0">
         <img src={heroImg} alt="Hero img" />
       </div>
       <div className="introText grid grid-cols-1 md:grid-cols-2 p-10">
@@ -218,6 +220,17 @@ export default function HaycreekSubPage() {
         topStat3="1.83%"
         topStat4="45.37%"
       />
+      <div className="m-16">
+        <h5 className="text-center font-span md:text-2xl text-lg">MORE WORK</h5>
+        <div className="md:grid md:grid-cols-2 md:gap-72 md:mt-12 flex flex-col items-center font-span md:text-8xl text-2xl mt-6 uppercase">
+          <a href="/MVG" className="md:py-0 py-2 text-right">
+            Mountain <br></br>View Grand
+          </a>
+          <a href="/hotel-hartness" className="md:py-0 py-2">
+            Hotel Hartness
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

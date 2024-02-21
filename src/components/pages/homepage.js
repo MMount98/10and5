@@ -10,8 +10,8 @@ import NavBar from "../navbar";
 export default function Homepage() {
   return (
     <>
-     <NavBar/>
-    < div className=" bg-custom-black -mb-24 -my-">
+     <NavBar colorTheme="white" isTransparent={false} showLogo={false}/>
+    < div className=" bg-custom-black -mb-24 mt-36">
       
       <div className="flippingInAnimation md:my-12 text-custom-white md:mb-56 xl:mb-64 pt-44 md:pt-0">
         <div className="h1 text-center font-span md:text-20xl text-10xl md:mt-24 md:mb-5 ">

@@ -16,10 +16,12 @@ import webPageWalkThrough from "../videos/castle/Castle Hotel and Spa- Website S
 //Components
 import TextScroll from "../textScroll";
 import VideoOverlay from "../videoOverlay";
+import NavBar from "../navbar";
 
 export default function CastleSubPage() {
   return (
     <div>
+      <NavBar isTransparent={true} colorTheme="white" showLogo={true} />
       <img
         src={heroImage}
         alt="landscape photo of the front of hotel hartness"
@@ -174,7 +176,7 @@ export default function CastleSubPage() {
       <div className="m-16">
         <h5 className="text-center font-span md:text-2xl text-lg">MORE WORK</h5>
         <div className="md:grid md:grid-cols-2 md:gap-72 md:mt-12 flex flex-col items-center font-span md:text-8xl text-2xl mt-6 uppercase">
-          <a href="/hotel-hartness" className="md:py-0 py-2">
+          <a href="/haycreek-hotels" className="md:py-0 py-2 text-right">
             Hay Creek Corporate
           </a>
           <a href="/noble-kitchen" className="md:py-0 py-2">
