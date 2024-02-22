@@ -28,7 +28,7 @@ export default function previousWork() {
         <h1 className="text-6xl md:text-9xl font-span ml-4 md:ml-10 mt-40 md:mt-80">
           Selected Work
         </h1>
-        <h2 className="ml-4 md:ml-10 text-sm md:text-3xl font-oswald md:mb-14">
+        <h2 className="ml-4 md:ml-10 text-2xl md:text-left text-center md:text-3xl font-oswald md:mb-14">
           Using our Hospitality Expertise + Our Mantra to approach each project
           creatively
         </h2>
@@ -36,38 +36,71 @@ export default function previousWork() {
       <ScrollSlider
         topText="HOTEL"
         bottomText="HARTNESS"
-        link="Hotel Hartness - A symphony of artistry"
+        tagline="Hotel Hartness - A symphony of artistry"
+        link="/hotel-hartness"
         image1={HHImg1}
         image2={HHImg2}
       />
       <ScrollSlider
         topText="MOUNTAIN"
         bottomText="VIEW GRAND"
-        link="Mountain View Grand - A place"
+        tagline="Mountain View Grand - Steeped in History, Resored in Luxury"
+        link="/MVG"
         image1={MVGImg1}
         image2={MVGImg2}
       />
-         <ScrollSlider
-        topText="HAYCREEK"
+      <ScrollSlider
+        topText="HAY CREEK"
         bottomText="HOTELS"
-        link="Haycreek Hotels - A place"
+        tagline="Haycreek Hotels - Boutique to the Bone"
+        link="/haycreek-hotels"
         image1={HKImg1}
         image2={HKImg2}
       />
-         <ScrollSlider
+      <ScrollSlider
         topText="CASTLE"
         bottomText=" HOTEL & SPA"
-        link="Castle Hotel & Spa - A place"
+        tagline="Castle Hotel & Spa - A World Away from Home"
+        link="/castle-hotel"
         image1={CasImg1}
         image2={CasImg2}
       />
       <ScrollSlider
         topText="NOBLE"
-        bottomText="KITCHEN"
-        link="Noble Kitchen- A place"
+        bottomText="KITCHEN + BAR"
+        tagline="Noble Kitchen + Bar - Coming Soon"
+        link="/noble-kitchen"
         image1={NKImg1}
         image2={NKImg2}
       />
+      <div className="text-center text-5xl font-span my-12 uppercase md:hidden lg:hidden xl:hidden">
+        {/*mobile build*/}
+        <ul>
+          <li className="p-2 underlineAnimation">
+            <a href="/hotel-hartness">Hotel Hartness</a>
+          </li>
+          <li className="p-2 underlineAnimation">
+            <a href="/MVG">
+              Mountain <br></br> View Grand
+            </a>
+          </li>
+          <li className="p-2 underlineAnimation">
+            <a href="/haycreek-hotels">
+              Hay creek <br></br> Hotels
+            </a>
+          </li>
+          <li className="p-2 underlineAnimation">
+            <a href="/castle-hotel">
+              Castle <br></br> Hotel & Spa
+            </a>
+          </li>
+          <li className="p-2 underlineAnimation">
+            <a href="/noble-kitchen">
+              Noble <br></br> Kitchen + Bar
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

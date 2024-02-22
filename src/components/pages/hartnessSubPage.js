@@ -94,25 +94,22 @@ export default function HartnessSubPage() {
           <h3 className="text-xl text-center font-span mt-8">
             MEASURED SUCCESS
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 text-center text-xs md:text-sm p-5 gap-y-3 -mt-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 text-center text-xs md:text-sm p-5 gap-y-3 -mt-4">
             <p className="font-napzer">
-              +<span className="font-span text-lg">60%</span> Social Audience
+              +<span className="font-span text-lg">60%</span> <br></br> Social 
               growth
             </p>
             <p className="font-napzer">
-              +<span className="font-span text-lg">44,344</span> Website Traffic
+              +<span className="font-span text-lg">44,344</span> <br></br> Website Traffic
             </p>
             <p className="font-napzer">
-              +<span className="font-span text-lg">63.60%</span> Interactions
+              +<span className="font-span text-lg">2.6k</span> <br></br> Interactions
             </p>
-            <p className="font-napzer">
-              <span className="font-span text-lg">4.92%</span> Click Through
-              Rate
-            </p>
+            
           </div>
         </div>
       </div>
-      <div className="textdivder flex justify-center items-center">
+      <div className="textdivder flex justify-center items-center md:-mt-16">
         <img
           src={secondImage}
           alt="wide photo of a guest lounge at hotel hartness"

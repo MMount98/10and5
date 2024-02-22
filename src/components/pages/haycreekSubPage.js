@@ -97,15 +97,14 @@ export default function HaycreekSubPage() {
           <h3 className="text-xl text-center font-span mt-8">
             MEASURED SUCCESS
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 text-center text-xs md:text-sm p-5 gap-y-3 -mt-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 text-center items-center text-xs md:text-sm p-5 gap-y-3 -mt-4">
             <p className="font-napzer">
-              <span className="font-span text-lg">$1,059,233</span> Total
-              Revenue Booked
+              <span className="font-span text-lg">$1,059,233</span> <br></br> Total Revenue Booked
             </p>
             <p className="font-napzer">
-              +<span className="font-span text-lg">78.8%</span> YoY Total
-              Revenue
+              +<span className="font-span text-lg">78.8K</span> <br></br> YoY Total Revenue 
             </p>
+            
           </div>
         </div>
       </div>
