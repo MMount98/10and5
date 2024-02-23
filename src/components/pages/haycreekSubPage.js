@@ -117,7 +117,7 @@ export default function HaycreekSubPage() {
       </div>
       <div className="flex flex-col items-center mx-4 md:m-12">
         <div>
-          <h3 className="text-3xl md:text-8xl md:absolute md:left-36 md:ml-2 md:mt-6 md:mb-0 2xl:ml-72 mr-44 mt-12 mb-6 font-span">
+          <h3 className="text-3xl md:text-8xl md:absolute md:left-36 md:ml-2 md:mt-6 md:mb-0 2xl:ml-56 mr-44 mt-12 mb-6 font-span">
             THE BIGGEST
           </h3>
         </div>
@@ -177,7 +177,7 @@ export default function HaycreekSubPage() {
       <Emailbanner
         backgroundImage={emailBg2}
         squareImages={emailBanner2}
-        headerText="LODGE AR SCHROON LAKE"
+        headerText="LODGE   AT   SCHROON LAKE"
         topStat1="$91,347"
         topStat2="4.8K"
         topStat3="7.64%"
@@ -204,7 +204,7 @@ export default function HaycreekSubPage() {
       <Emailbanner
         backgroundImage={emailBg5}
         squareImages={emailBanner5}
-        headerText="GRAND SUMMIT HOTEl"
+        headerText="GRAND SUMMIT HOTEL"
         topStat1="$112,009"
         topStat2="6.3K"
         topStat3="4.93%"

@@ -85,7 +85,7 @@ export default function MVGSubPage() {
       </div>
       <div className="flex flex-col items-center mx-4 md:m-12 mb-5">
         <div>
-          <h3 className="text-4xl md:text-8xl md:absolute md:left-96 md:ml-2 md:mt-6 2xl:ml-72 mr-44 ml-14 mt-6 font-span">
+          <h3 className="text-4xl md:text-8xl md:absolute md:left-96 md:ml-2 md:mt-6 2xl:ml-64 mr-44 ml-14 mt-6 font-span">
             IF THESE
           </h3>
         </div>
@@ -140,7 +140,7 @@ export default function MVGSubPage() {
 
       <div className="flex flex-col items-center mx-4 md:m-12">
         <div>
-          <h3 className="text-4xl md:text-8xl md:absolute md:left-80 md:ml-2 md:mt-6 2xl:ml-72 ml-14 mr-44 mt-6 font-span">
+          <h3 className="text-4xl md:text-8xl md:absolute md:left-80 md:ml-2 md:mt-6 2xl:ml-64 ml-14 mr-44 mt-6 font-span">
             SOMETHING
           </h3>
         </div>
@@ -169,7 +169,7 @@ export default function MVGSubPage() {
           alt="The Mountain View Grand Llama and Farmer"
           className="w-full md:w-auto p-8"
         />
-        <div className="text-center md:text-left md:mt-72 mt-0">
+        <div className="text-center md:text-left md:mt-72 2xl:mt-96 2xl:pt-16 mt-0">
           <h5 className="font-spanlight text-lg md:text-4xl italic md:my-3">
             WELLNESS ON THE LAWN <br></br>WALK WITH LLAMAS + GOATS <br></br>
             SPILLING THE TEA IN THE MOUNTAINS<br></br>SUMMER + FALL POP UP

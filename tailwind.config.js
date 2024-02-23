@@ -22,9 +22,11 @@ module.exports = {
         128: "32rem",
         144: "36rem",
         112: "28rem",
+        124: "33rem",
       },
       height: {
         128: "32rem",
+        128.25: "32.25rem",
         144: "36rem",
         112: "28rem",
         60: "57rem",
@@ -37,6 +39,9 @@ module.exports = {
       colors: {
         "custom-black": "#222121",
         "custom-white": "#F5F5F5",
+      },
+      margin: {
+        114: "30rem",
       },
     },
   },

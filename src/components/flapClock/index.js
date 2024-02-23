@@ -23,6 +23,7 @@ const FlapClock = ({ timezone, location }) => {
 
   const hour = formatHour(time.getHours());
   const minute = formatTime(time.getMinutes());
+  const isAM = time.getHours() < 12;
 
   const flipAnimation = {
     initial: { rotateX: -90 },
@@ -31,10 +32,10 @@ const FlapClock = ({ timezone, location }) => {
     transition: { duration: 0.5 },
   };
 
-  const renderDigits = (timeString) => {
+  const renderDigits = (timeString, isHour = false) => {
     return timeString.split("").map((digit, i) => (
-      <div key={i} className="relative w-14 h-20">
-        <div className="absolute inset-0 bg-zinc-800 rounded-md overflow-hidden">
+      <div key={i} className="relative w-20 h-24">
+        <div className="absolute inset-0 bg-custom-black rounded-lg overflow-hidden">
           <div className="flex justify-center items-center h-full">
             <AnimatePresence mode="wait">
               <motion.span
@@ -51,6 +52,12 @@ const FlapClock = ({ timezone, location }) => {
           </div>
           <div className="absolute left-0 right-0 h-px bg-black" style={{ top: '50%', transform: 'translateY(-50%)' }}></div>
         </div>
+        {/* Add AM/PM indicator for the first (hour) part */}
+        {isHour && i === 0 && (
+          <div className="absolute bottom-0 left-0 text-xs m-1 font-napzer text-zinc-200">
+            {isAM ? "AM" : "PM"}
+          </div>
+        )}
       </div>
     ));
   };
@@ -59,7 +66,7 @@ const FlapClock = ({ timezone, location }) => {
     <div>
       <p className="text-center m-2 text-2xl font-span">{location}</p>
       <div className="flex space-x-2 justify-center items-center">
-        <div className="flex">{renderDigits(hour)}</div>
+        <div className="flex">{renderDigits(hour, true)}</div>
         <div className="flex">{renderDigits(minute)}</div>
       </div>
     </div>

@@ -21,11 +21,16 @@ import NavBar from "../navbar";
 export default function CastleSubPage() {
   return (
     <div>
-      <NavBar isTransparent={true} colorTheme="white" showLogo={true} />
-      <img
-        src={heroImage}
-        alt="landscape photo of the front of hotel hartness"
-      />
+      
+      <div className="relative">
+      <NavBar isTransparent={true} colorTheme="black" showLogo={true} />
+
+        <img
+          src={heroImage}
+          alt="Landscape photo of the front of Hotel Hartness"
+          className="w-full h-auto overflow-hidden"
+        />
+      </div>
       <div className="introText grid grid-cols-1 md:grid-cols-2 p-10">
         <div>
           <h2 className="font-span text-3xl md:text-5xl">CASTLE HOTEL & SPA</h2>
@@ -51,16 +56,17 @@ export default function CastleSubPage() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 text-center text-xs md:text-sm p-5 gap-y-3 -mt-4">
             <p className="font-napzer">
-              +<span className="font-span text-lg">17.8k</span> <br></br> Social 
+              +<span className="font-span text-lg">17.8k</span> <br></br> Social
               growth
             </p>
             <p className="font-napzer">
-              +<span className="font-span text-lg">63K</span> <br></br> Website Traffic
+              +<span className="font-span text-lg">63K</span> <br></br> Website
+              Traffic
             </p>
             <p className="font-napzer">
-              +<span className="font-span text-lg">13.8k</span> <br></br> Interactions
+              +<span className="font-span text-lg">13.8k</span> <br></br>{" "}
+              Interactions
             </p>
-            
           </div>
         </div>
       </div>
@@ -73,7 +79,7 @@ export default function CastleSubPage() {
       </div>
       <div className="flex flex-col items-center mx-4 md:m-12 mt-4">
         <div>
-          <h3 className="text-2xl md:text-8xl md:absolute md:left-64 md:ml-2 md:mt-6 2xl:ml-72 mr-36 -mt-9 font-span">
+          <h3 className="text-2xl md:text-8xl md:absolute md:left-64 md:ml-2 md:mt-6 2xl:ml-56 mr-36 -mt-9 font-span">
             THE GRAND
           </h3>
         </div>
@@ -102,7 +108,7 @@ export default function CastleSubPage() {
       </div>
       <div className="flex flex-col items-center mx-4 md:m-12 -m-12">
         <div>
-          <h3 className="text-3xl md:text-8xl md:absolute md:left-64 md:ml-2 md:mt-6 2xl:ml-72 mr-36 mt-6 font-span">
+          <h3 className="text-3xl md:text-8xl md:absolute md:left-64 md:ml-2 md:mt-6 2xl:ml-56 mr-36 mt-6 font-span">
             TIME OFF
           </h3>
         </div>
@@ -167,7 +173,7 @@ export default function CastleSubPage() {
           alt="The Mountain View Grand Llama and Farmer"
           className="w-full md:w-auto p-8"
         />
-        <div className="text-center md:text-left md:mt-80 mt-0">
+        <div className="text-center md:text-left md:mt-80 mt-0 2xl:mt-114 2xl:pt-6 md:pt-6 pt-0">
           <h5 className="font-spanlight text-lg md:text-4xl italic md:my-3">
             DRAG QUEEN BRUNCH<br></br>AS YOU WISH HAPPY HOUR<br></br>
             SUMMER FRIDAYS AT THE GROTTO

@@ -30,7 +30,7 @@ const HaycreekScrollAnimation = () => {
   return (
     <div ref={ref} className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background image */}
-      <img src={bgImg} alt="Background" className="absolute z-0 min-w-full min-h-full object-cover" />
+      <img src={bgImg} alt="Background" className="absolute z-0 min-w-full min-h-full object-cov" />
 
       {/* Desktop Images */}
       <div className="hidden md:flex justify-center items-center w-full z-10">
@@ -39,7 +39,7 @@ const HaycreekScrollAnimation = () => {
             key={index}
             src={image}
             alt={`Square ${index}`}
-            className="w-128 h-112 object-cover p-24" // Your existing desktop styles
+            className="w-124 h-128.25 object-cover p-24" // Your existing desktop styles
             initial={{ y: 0, opacity: 1 }}
             whileInView={{ y: index === 1 ? 50 : -50, opacity: 1 }}
             transition={{ duration: 0.5 }}

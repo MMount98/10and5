@@ -96,16 +96,17 @@ export default function HartnessSubPage() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 text-center text-xs md:text-sm p-5 gap-y-3 -mt-4">
             <p className="font-napzer">
-              +<span className="font-span text-lg">60%</span> <br></br> Social 
+              +<span className="font-span text-lg">60%</span> <br></br> Social
               growth
             </p>
             <p className="font-napzer">
-              +<span className="font-span text-lg">44,344</span> <br></br> Website Traffic
+              +<span className="font-span text-lg">44,344</span> <br></br>{" "}
+              Website Traffic
             </p>
             <p className="font-napzer">
-              +<span className="font-span text-lg">2.6k</span> <br></br> Interactions
+              +<span className="font-span text-lg">2.6k</span> <br></br>{" "}
+              Interactions
             </p>
-            
           </div>
         </div>
       </div>
@@ -117,7 +118,7 @@ export default function HartnessSubPage() {
       </div>
       <div className="flex flex-col items-center mx-4 md:m-12">
         <div>
-          <h3 className="text-4xl md:text-8xl md:absolute md:left-80 md:ml-2 md:mt-6 2xl:ml-72 mr-44 mt-6 font-span">
+          <h3 className="text-4xl md:text-8xl md:absolute md:left-80 md:ml-2 md:mt-6 2xl:ml-56 mr-44 mt-6 font-span">
             UPGRADE
           </h3>
         </div>
@@ -136,7 +137,7 @@ export default function HartnessSubPage() {
           className="w-full md:w-auto p-8"
           alt="photo of lounge at Hotel Hartness"
         />
-        <div className="text-center md:text-left md:pl-6 md:mt-72 mt-0">
+        <div className="text-center md:text-left md:pl-6 my-5 md:my-0 md:mt-24 lg:mt-72 2xl:mt-114">
           <h4 className="font-span text-4xl md:text-6xl">Brand Pillars</h4>
           <ul className="font-spanlight text-xl md:text-3xl">
             <li className="py-1">Quiet Luxury</li>
@@ -154,7 +155,7 @@ export default function HartnessSubPage() {
       />
       <div className="flex flex-col items-center mx-4 md:m-12">
         <div>
-          <h3 className="text-3xl md:text-7xl md:absolute md:left-80 md:ml-2 md:mt-6 2xl:ml-72 mr-44 mt-6 font-span">
+          <h3 className="text-3xl md:text-7xl md:absolute md:left-80 md:ml-2 md:mt-6 2xl:ml-56  mr-44 mt-6 font-span">
             THE WARMTH
           </h3>
         </div>
@@ -164,7 +165,7 @@ export default function HartnessSubPage() {
           </h3>
         </div>
         <div>
-          <h3 className="text-4xl md:text-9xl font-span">
+          <h3 className="text-4xl  md:text-9xl font-span">
             SOUTHERN HOSPITALITY.
           </h3>
         </div>
@@ -204,7 +205,7 @@ export default function HartnessSubPage() {
         backgroundImage={story3_bg}
         backgroundHeight="75vh"
       />
-       <div className="m-16">
+      <div className="m-16">
         <h5 className="text-center font-span md:text-2xl text-lg">MORE WORK</h5>
         <div className="md:grid md:grid-cols-2 md:gap-72 md:mt-12 flex flex-col items-center font-span md:text-8xl text-2xl mt-6 uppercase">
           <a href="/castle-hotel" className="md:py-0 py-2 text-right">
