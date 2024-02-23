@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Footer from "./components/footer";
-import Splash from "./components/pages/splash";
 import PreviousWork from "./components/pages/previousWork";
 import OurTeam from "./components/pages/ourTeam";
 import HartnessSubPage from "./components/pages/hartnessSubPage";
@@ -18,7 +17,7 @@ function App() {
       <Router>
        
         <Routes>
-          <Route path="/" element={<Splash />} />
+     
           <Route path="/previousWork" element={<PreviousWork />} />
           <Route path="/ourteam" element={<OurTeam />} />
           <Route path="/hotel-hartness" element={<HartnessSubPage />} />
@@ -27,7 +26,7 @@ function App() {
           <Route path="/MVG" element={<MVGSubPage />} />
           <Route path="/castle-hotel" element={<CastleSubPage />} />
           <Route path="/services" element={<ServicesPage />} />
-          <Route path="/homepage" element={<Homepage />} />
+          <Route path="/" element={<Homepage />} />
         </Routes>
         <Footer />
       </Router>

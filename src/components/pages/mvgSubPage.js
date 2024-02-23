@@ -155,7 +155,7 @@ export default function MVGSubPage() {
       </div>
 
       <div className="text-center">
-        <h5 className="font-span ml:text-4xl text-2xl mt-5">
+        <h5 className="font-span 2xl:text-5xl lg:text-5xl md:text-4xl text-2xl mt-5">
           PROGRAMMING + EVENTS
         </h5>
         <p className="font-napzer px-14 my-4">

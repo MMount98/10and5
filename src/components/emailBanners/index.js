@@ -42,7 +42,7 @@ const Emailbanner = ({
           </p>
           <p className="font-napzer">
             <span className="font-span text-2xl">{topStat2}</span>
-            <br></br> Website Traffic Durring<br></br>Course of Campaign
+            <br></br> Website Traffic During<br></br>Course of Campaign
           </p>
           <p className="font-napzer">
             <span className="font-span text-2xl">{topStat3}</span>
