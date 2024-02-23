@@ -35,7 +35,7 @@ const Emailbanner = ({
         <h6 className="text-2xl md:text-3xl font-span bold italic text-center">
           SUCCESS METRICS
         </h6>
-        <div className="flex justify-around my-6 text-center">
+        <div className="flex justify-around my-6 text-center px-8">
           <p className="font-napzer">
             <span className="font-span text-2xl">{topStat1}</span>
             <br></br> Total Revenue
