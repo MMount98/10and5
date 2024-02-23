@@ -1,7 +1,7 @@
 const ServicesList = ({ h3, h4, descrpition }) => {
   return (
     <>
-      <div className="content md:my-0 my-4 px-24">
+      <div className="content md:my-0 my-4 md:px-24 px-0">
         <div className="collapse collapse-arrow ">
           <input type="radio" name="my-accordion-2" defaultChecked />
           <div className="collapse-title md:text-4xl font-span uppercase ">

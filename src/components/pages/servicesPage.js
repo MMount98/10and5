@@ -20,7 +20,7 @@ export default function ServicesPage() {
         </h2>
         <p className="md:text-xl text-sm md:px-64 md:mt-5 mt-3 font-napzer ">There’s something to be said for an agency that doesn’t claim to do it all. Identifying strengths and curating our offerings based on those specialities is important to us and should be important to you. </p>
       </div>
-      <div className="servivesList">
+      <div className="servivesList md:p-5 ">
         <ServicesList
           h3="Branding"
           h4="Brand Positioning | Messaging | Identity Development | Brand Guidelines "
