@@ -74,8 +74,6 @@ const ScrollSlider = ({ topText, bottomText, tagline, link, image1, image2 }) =>
           </motion.p>
         )}
       </div>
-    
-
     </div>
   );
 };

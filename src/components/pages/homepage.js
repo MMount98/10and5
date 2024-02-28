@@ -10,9 +10,9 @@ import NavBar from "../navbar";
 export default function Homepage() {
   return (
     <>
-      <NavBar colorTheme="white" isTransparent={false} showLogo={false} />
-      <div className=" bg-custom-black -mb-24 mt-36">
-        <div className="flippingInAnimation md:my-12 text-custom-white md:mb-56 xl:mb-64 pt-44 md:pt-0">
+      <NavBar colorTheme="black" isTransparent={false} showLogo={false} />
+      <div className=" bg-custom-white -mb-24 mt-36">
+        <div className="flippingInAnimation md:my-12 text-custom-black md:mb-56 xl:mb-64 pt-44 md:pt-0">
           <div className="h1 text-center font-span md:text-20xl text-10xl md:mt-24 md:mb-5 ">
             <FlipInAnimation text="10and5" time={1} />
           </div>
@@ -23,7 +23,7 @@ export default function Homepage() {
             <FadeInAnimation text="A non-verbal  cue, we’ve made our mantra." />
           </div>
         </div>
-        <div className="forwardAnimation-1 md:my-12 text-custom-white md:mb-56 xl:mb-64">
+        <div className="forwardAnimation-1 md:my-12 text-custom-black md:mb-56 xl:mb-64">
           <div className="h2 text-center font-span md:text-9xl text-4xl md:mt-24 md:mb-16 mt-72 ">
             <ForwardTextAnimation text="AN AGENCY br ROOTED  IN  HOSPITALITY" />
           </div>
@@ -31,7 +31,7 @@ export default function Homepage() {
             <FadeInAnimation text="A talented team of individuals with a heart and soul for the service industry.  Experts in emotional connections, we take immense pride in our  understanding of what it takes to make someone feel." />
           </div>
         </div>
-        <div className="forwardAnimation-2 md:my-12 text-custom-white md:mb-56 xl:mb-64">
+        <div className="forwardAnimation-2 md:my-12 text-custom-black md:mb-56 xl:mb-64">
           <div className="h3 text-center font-span md:text-8xl text-4xl md:mt-24 mt-56 md:mb-16 xl:px-64">
             <ForwardTextAnimation text="CONNECTED  BY br CURIOUS   CREATIVITY" />
           </div>
@@ -39,7 +39,7 @@ export default function Homepage() {
             <FadeInAnimation text="The content we create is fool-proofed by our team of restless creatives. We  create content that will capture  our own hard-to-command attention.  " />
           </div>
         </div>
-        <div className="forwardAnimation-3 md:my-12 text-custom-white md:mb-56 xl:mb-64">
+        <div className="forwardAnimation-3 md:my-12 text-custom-black md:mb-56 xl:mb-64">
           <div className="h4 text-center font-span md:text-8xl text-4xl md:mt-24 mt-56 md:mb-16 xl:px-64">
             <ForwardTextAnimation text="IMPASSIONED  TO  DELIVER br LASTING  RESULTS" />
           </div>
@@ -47,7 +47,7 @@ export default function Homepage() {
             <FadeInAnimation text="Like goldilocks, we don’t rest until we get it right." />
           </div>
         </div>
-        <div className="spingingAnimation md:my-12 text-custom-white md:mb-56 xl:mb-64">
+        <div className="spingingAnimation md:my-12 text-custom-black md:mb-56 xl:mb-64">
           <div className="h5 text-center font-span md:text-8xl text-2xl md:mt-24 mt-44 md:mb-16 xl:px-36">
             <SpiningInAnimation text="OUR ACCOMMODATIONS" />
           </div>
@@ -55,7 +55,7 @@ export default function Homepage() {
             <FadeInAnimation text=" We know all too well that every brand does not begin their travel journey with us at the same place.  Allow our concierge to curate the perfect blend of services that promise to stimulate engagement,  elevate your presence, and inject new life into your brand.   " />
           </div>
         </div>
-        <div className="outToInAnimation md:my-12 text-custom-white md:mb-56 xl:mb-24">
+        <div className="outToInAnimation md:my-12 text-custom-black md:mb-56 xl:mb-24">
           <div className="h6 text-center font-span md:text-8xl text-4xl md:mt-24 mt-72 md:mb-16 xl:px-64">
             <OutToInAnimation text="WHAT’S    IN   A    NAME?" />
           </div>
@@ -93,8 +93,8 @@ export default function Homepage() {
           </div>
         </div>
 
-        <div className="popUpAnimation md:my-24 md:py-8 text-custom-white">
-          <div className="h7 text-center font-span md:text-6xl text-xl md:pb-36 pb-44 md:mt-1 md:mb-2 mb-0 mt-44 2xl:px-96 lg:px-44">
+        <div className="popUpAnimation md:my-24 md:py-8 text-custom-black">
+          <div className="h7 text-center font-span md:text-6xl text-xl md:pb-36 pb-44 md:mt-1 2xl:mb-14 xl:mb-10 lg:mb-8 md:mb-2 mb-0 mt-44 2xl:px-96 lg:px-44 ">
             <PopUpTextAnimation
               text="“People will forget what you said, people will forget what you did, but people will never forget how you made them feel.”
 - Maya Angelou"

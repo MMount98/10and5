@@ -44,7 +44,7 @@ export default function previousWork() {
       <ScrollSlider
         topText="MOUNTAIN"
         bottomText="VIEW GRAND"
-        tagline="Mountain View Grand - Steeped in History, Resored in Luxury"
+        tagline='Mountain View Grand - Steeped in History, <br> Resored in Luxury'
         link="/MVG"
         image1={MVGImg1}
         image2={MVGImg2}

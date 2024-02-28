@@ -14,30 +14,28 @@ export default function OurTeam() {
           4 Different States, Creatively Connected
         </h1>
         <AboutPins />
-        <h2 className="text-center text-2xl md:text-4xl font-span">
-          WHO ARE WE
-        </h2>
-        <div className="flex flex-col items-center mx-4 md:m-12">
-          <div>
-            <h3 className="text-5xl md:text-8xl md:absolute md:left-80 md:ml-8 2xl:ml-72 font-span">
-              SMALL
-            </h3>
-          </div>
-          <div>
-            <h3 className="text-6xl md:text-9xl font-spanlight italic mt-6 md:mt-12">
-              BUT
-            </h3>
-          </div>
-          <div>
-            <h3 className="text-6xl md:text-9xl font-span">POWERFUL</h3>
+        <div className="flex h-72 md:h-screen justify-center items-center overflow-hidden">
+          <div className="inline-block">
+            <div className="flex flex-col items-start">
+              <div className="text-4xl sm:text-7xl md:text-9xl lg:text-9xl xl:text-9xl 2xl:text-9xl font-span relative ml-0 sm:ml-6 md:ml-10">
+                SMALL
+              </div>
+              <div className="text-6xl sm:text-10xl md:text-13xl lg:text-13xl xl:text-13xl 2xl:text-13xl font-spanlight italic ml-24 sm:ml-48 md:ml-96 -mt-7 sm:-mt-20 md:-mt-24">
+                BUT
+              </div>
+              <div className="text-6xl sm:text-10xl md:text-13xl lg:text-13xl xl:text-13xl 2xl:text-13xl font-span relative">
+                POWERFUL
+              </div>
+            </div>
           </div>
         </div>
+
         <div className="divider my-8 md:my-4 md:px-96 divide-custom-black"></div>
         <div className="text-center">
           <h4 className="text-2xl md:text-3xl font-span md:mb-4 mb-4 md:px-0 px-10">
             It takes a village to deliver a particular standard of excellence
           </h4>
-          <p className="font-Napzer md:text-lg text-sm md:px-80 2xl:px-112 px-2">
+          <p className="font-Napzer md:text-lg text-sm md:px-64 2xl:px-112 px-2">
             The agency got its start in 2020, during a time when a vast majority
             of corporate America was having an existential crisis. Our founder,
             originally from NYC - with a 20-year corporate background in
@@ -49,13 +47,13 @@ export default function OurTeam() {
           <h4 className="text-2xl md:text-3xl font-span md:my-10 my-8">
             Thus our agency was born.
           </h4>
-          <p className="font-Napzer md:text-lg text-sm md:px-80 2xl:px-148 md:my-5 my-4 px-4 text-center">
+          <p className="font-Napzer md:text-lg text-sm md:px-64 2xl:px-148 md:my-5 my-4 px-4 text-center">
             {" "}
             Our village is small but mighty, currently spanning three time zones
             and offering a collection of diverse perspectives, backgrounds, and
             expertise.
           </p>
-          <p className="font-Napzer md:text-lg text-sm md:px-80 2xl:px-148 md:my-5 my-4  px-4 text-center">
+          <p className="font-Napzer md:text-lg text-sm md:px-64 2xl:px-148 md:my-5 my-4  px-4 text-center">
             {" "}
             Having a team that works remotely doesn't mean we're out of touch or
             live on our own islands. Living in diffrent parts of the country
@@ -63,7 +61,7 @@ export default function OurTeam() {
             cultures while offering the necessary expertise to initiate a fresh
             approach to the creative process.
           </p>
-          <p className="font-Napzer md:text-lg text-sm md:px-80 2xl:px-148 md:my-5 my-4 px-4 text-center">
+          <p className="font-Napzer md:text-lg text-sm md:px-64 2xl:px-148 md:my-5 my-4 px-4 text-center">
             {" "}
             Being a boutique agency, our specialty is working with emerging
             companies and brands who are seeking true partnes to help shape

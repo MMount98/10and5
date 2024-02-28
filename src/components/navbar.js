@@ -28,7 +28,7 @@ const NavBar = ({ isTransparent, colorTheme = "white", showLogo = true }) => {
   const svgColor = colorTheme === "white" ? "#F5F5F5" : "#000000";
 
   // Conditional class for background transparency, flex justification, and visibility on scroll
-  const navbarClasses = `${isTransparent ? "bg-transparent" : "bg-custom-black"} ${
+  const navbarClasses = `${isTransparent ? "bg-transparent" : "bg-custom-white"} ${
     hideOnScroll ? "hidden" : "fixed"
   } z-50 inset-x-0 top-0 flex items-center ${showLogo ? "" : "justify-end"} md:p-24 p-6 transition-all duration-300`;
   return (
