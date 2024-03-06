@@ -2,10 +2,18 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import "../customCSS/intro.css";
 
-const textWithSpacing = "Let life begin I've cleansed all my sins".split(" ").join("\u00A0");
-const textWithSpacing2 = "Burn all the money absolve all the lies".split(" ").join("\u00A0");
-const textWithSpacing3 = "We are caged in simulations".split(" ").join("\u00A0");
-const textWithSpacing4 = "But something has changed in us".split(" ").join("\u00A0");
+const textWithSpacing = "Let life begin I've cleansed all my sins"
+  .split(" ")
+  .join("\u00A0");
+const textWithSpacing2 = "Burn all the money absolve all the lies"
+  .split(" ")
+  .join("\u00A0");
+const textWithSpacing3 = "We are caged in simulations"
+  .split(" ")
+  .join("\u00A0");
+const textWithSpacing4 = "But something has changed in us"
+  .split(" ")
+  .join("\u00A0");
 
 const IntroAnimation = ({ onAnimationComplete }) => {
   const enterCtrlRef = useRef(null);
@@ -34,15 +42,15 @@ const IntroAnimation = ({ onAnimationComplete }) => {
       gsap.to(enterBackgroundRef.current, {
         duration: 1.3,
         ease: "expo",
-        scale:1.4,
+        scale: 1.4,
       });
       gsap.to(circleTextRefs.current, {
         duration: 0.5,
         ease: "expo",
-        rotation: "+=120", 
-        scale: 0.5, 
+        rotation: "+=120",
+        scale: 0.5,
         opacity: 0.2,
-        stagger: {amount: -0.15},
+        stagger: { amount: -0.15 },
       });
     };
 
@@ -54,42 +62,66 @@ const IntroAnimation = ({ onAnimationComplete }) => {
         scale: 1,
       });
       gsap.to(circleTextRefs.current, {
-       duration: 2,
-       ease: "elastic.out(1, 0.4)",
-       scale: 1,
-       rotation: "-=120",
-       opacity: 1,
-       stagger: {amount: 0.15}
+        duration: 2,
+        ease: "elastic.out(1, 0.4)",
+        scale: 1,
+        rotation: "-=120",
+        opacity: 1,
+        stagger: { amount: 0.15 },
       });
     };
 
     enterCtrlRef.current.addEventListener("mouseenter", enterMouseEnterEv);
     enterCtrlRef.current.addEventListener("mouseleave", enterMouseLeaveEv);
 
-       // Initial animation sequence
-       gsap.to(circleTextRefs, {
-        duration: 3,
-        ease: "expo.inOut",
-        rotation: 90,
-        opacity: 1,
-        scale: 1,
-        stagger: { amount: 0.4 },
-        onStart: () => gsap.set(enterCtrlRef.current, { pointerEvents: "auto" }),
-      });
+    // Initial animation sequence
+    gsap.to(circleTextRefs, {
+      duration: 3,
+      ease: "expo.inOut",
+      rotation: 90,
+      opacity: 1,
+      scale: 1,
+      stagger: { amount: 0.4 },
+      onStart: () => gsap.set(enterCtrlRef.current, { pointerEvents: "auto" }),
+    });
 
     const handleClick = () => {
-      gsap.to(
-        [
-          enterCtrlRef.current,
-          ...circleTextRefs.current,
+      // First, reverse the hover animation with a quicker transition
+      const reverseHover = gsap.timeline();
+      reverseHover
+        .to(circleTextRefs.current, {
+          duration: 0.5, // Quicker reverse
+          rotation: "-=120", // Reversing the rotation
+          scale: 1, // Go back to original scale
+          opacity: 1, // Restore full opacity
+          ease: "expo",
+          stagger: { amount: -0.15 },
+        })
+        .to(
           enterBackgroundRef.current,
-        ],
-        {
-          duration: 1,
-          opacity: 0,
-          onComplete: onAnimationComplete,
-        }
-      );
+          {
+            scale: 1, // Reset scale of the enter button background
+            duration: 0.5, // Matching the speed for consistency
+            ease: "expo",
+          },
+          "-=0.5"
+        ); // Start at the same time as the text animation
+
+      // After reversing the hover effect, fade out the entire component
+      reverseHover.add(() => {
+        gsap.to(
+          [
+            enterCtrlRef.current,
+            ...circleTextRefs.current,
+            enterBackgroundRef.current,
+          ],
+          {
+            duration: 1,
+            opacity: 0,
+            onComplete: onAnimationComplete,
+          }
+        );
+      });
     };
 
     enterCtrlRef.current.addEventListener("click", handleClick);
@@ -150,7 +182,9 @@ const IntroAnimation = ({ onAnimationComplete }) => {
             aria-label=""
             textLength="2830"
           >
-            {"Let life begin I've cleansed all my sins".split(" ").join(`${' '}`)}
+            {"Let life begin I've cleansed all my sins"
+              .split(" ")
+              .join(`${" "}`)}
           </textPath>
         </text>
         <text className="circles__text circles__text--2" ref={addToRefs}>
