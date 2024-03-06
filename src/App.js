@@ -10,14 +10,13 @@ import MVGSubPage from "./components/pages/mvgSubPage";
 import CastleSubPage from "./components/pages/castleSubPage";
 import ServicesPage from "./components/pages/servicesPage";
 import Homepage from "./components/pages/homepage";
+import Test from "./components/pages/test";
 
 function App() {
   return (
     <>
       <Router>
-       
         <Routes>
-     
           <Route path="/previousWork" element={<PreviousWork />} />
           <Route path="/ourteam" element={<OurTeam />} />
           <Route path="/hotel-hartness" element={<HartnessSubPage />} />
@@ -27,6 +26,7 @@ function App() {
           <Route path="/castle-hotel" element={<CastleSubPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/" element={<Homepage />} />
+          <Route path="/test" element={<Test />} />
         </Routes>
         <Footer />
       </Router>

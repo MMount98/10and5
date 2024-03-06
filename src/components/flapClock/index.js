@@ -52,9 +52,9 @@ const FlapClock = ({ timezone, location }) => {
           </div>
           <div className="absolute left-0 right-0 h-px bg-black" style={{ top: '50%', transform: 'translateY(-50%)' }}></div>
         </div>
-        {/* Add AM/PM indicator for the first (hour) part */}
+        
         {isHour && i === 0 && (
-          <div className="absolute bottom-0 left-0 text-xs m-1 font-napzer text-zinc-200">
+          <div className="absolute bottom-0 left-12 text-xs m-1 font-napzer text-zinc-200">
             {isAM ? "AM" : "PM"}
           </div>
         )}
