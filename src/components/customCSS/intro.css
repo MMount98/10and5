@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 :root {
   --font-circle-1: modesto-condensed, serif;
   --font-weight-circle-1: 400;
@@ -33,7 +34,7 @@
 
 .circles__text--1 {
   font-size: 25vmin;
-  font-size: clamp(170px, 25vmin, 180px);
+  font-size: clamp(130px, 20vmin, 150px);
   font-family: var(--font-circle-1);
   font-weight: var(--font-weight-circle-1);
   fill: var(--color-text-circle-1);
@@ -41,7 +42,7 @@
 
 .circles__text--2 {
   font-size: 14vmin;
-  font-size: clamp(136px, 17vmin, 153px);
+  font-size: clamp(106px, 15vmin, 113px);
   font-family: var(--font-circle-2);
   font-weight: var(--font-weight-circle-2);
   fill: var(--color-text-circle-2);
@@ -49,7 +50,7 @@
 
 .circles__text--3 {
   font-size: 8vmin;
-  font-size: clamp(110px, 13.5vmin, 120px);
+  font-size: clamp(100px, 10.5vmin, 120px);
   font-family: var(--font-circle-3);
   font-weight: var(--font-weight-circle-3);
   fill: var(--color-text-circle-3);
@@ -57,7 +58,7 @@
 
 .circles__text--4 {
   font-size: 9.5vmin;
-  font-size: clamp(85px, 9.5vmin, 94px);
+  font-size: clamp(55px, 3vmin, 75px);
   font-family: var(--font-circle-4);
   font-weight: var(--font-weight-circle-4);
   fill: var(--color-text-circle-4);

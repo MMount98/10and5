@@ -3,8 +3,8 @@ import lightLogo from "./images/Logos/Final_LogoWhite.png";
 
 export default function Footer() {
   return (
-    <>
-      <footer className="footer p-10 bg-custom-black  text-custom-white">
+    < div className='hidden'>
+      <footer className="footer p-10 bg-custom-black  text-custom-white ">
         <aside>
           <img
             src={lightLogo}
@@ -28,6 +28,6 @@ export default function Footer() {
           <a href="mailto:hello@10and5creative.com" className="underline">hello@10and5creative.com</a>
         </nav>
       </footer>
-    </>
+    </div>
   );
 }
