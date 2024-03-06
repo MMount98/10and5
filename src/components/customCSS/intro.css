@@ -6,13 +6,13 @@
 
 
 :root {
-  --font-circle-1: modesto-condensed, serif;
+  --font-circle-1: Span, serif;
   --font-weight-circle-1: 400;
-  --font-circle-2: ambroise-firmin-std, serif;
+  --font-circle-2: Span, serif;
   --font-weight-circle-2: 200;
-  --font-circle-3: modesto-condensed, serif;
+  --font-circle-3: Span, serif;
   --font-weight-circle-3: 400;
-  --font-circle-4: niagara, sans-serif;
+  --font-circle-4: Span, sans-serif;
   --font-weight-circle-4: 300;
 }
 
