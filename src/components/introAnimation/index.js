@@ -2,18 +2,18 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import "../customCSS/intro.css";
 
-const textWithSpacing = "Let life begin I've cleansed all my sins"
-  .split(" ")
-  .join("\u00A0");
-const textWithSpacing2 = "Burn all the money absolve all the lies"
-  .split(" ")
-  .join("\u00A0");
-const textWithSpacing3 = "We are caged in simulations"
-  .split(" ")
-  .join("\u00A0");
-const textWithSpacing4 = "But something has changed in us"
-  .split(" ")
-  .join("\u00A0");
+const textWithSpacing2 =
+  "-------------------------------------------------------------------------------------------------------"
+    .split(" ")
+    .join("\u00A0");
+const textWithSpacing3 =
+  "-------------------------------------------------------------------------------------------------------"
+    .split(" ")
+    .join("\u00A0");
+const textWithSpacing4 =
+  "----------------------------10 and 5----------------------------------------"
+    .split(" ")
+    .join("\u00A0");
 
 const IntroAnimation = ({ onAnimationComplete }) => {
   const enterCtrlRef = useRef(null);
@@ -182,7 +182,7 @@ const IntroAnimation = ({ onAnimationComplete }) => {
             aria-label=""
             textLength="2830"
           >
-            {"Let life begin I've cleansed all my sins"
+            {"------------------------10 and 5--------------------------------------------"
               .split(" ")
               .join(`${" "}`)}
           </textPath>
