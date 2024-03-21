@@ -19,6 +19,7 @@ import CasImg2 from "../images/selectedWorks/Castle Hotel & Spa 2.jpg";
 //Components
 import ScrollSlider from "../scrollSlider";
 import NavBar from "../navbar";
+import Footer from "../footer";
 
 export default function previousWork() {
   return (
@@ -36,7 +37,7 @@ export default function previousWork() {
       <ScrollSlider
         topText="HOTEL"
         bottomText="HARTNESS"
-        tagline="Hotel Hartness - A symphony of artistry"
+        tagline="Hotel Hartness - A Symphony of Artistry"
         link="/hotel-hartness"
         image1={HHImg1}
         image2={HHImg2}
@@ -44,7 +45,7 @@ export default function previousWork() {
       <ScrollSlider
         topText="MOUNTAIN"
         bottomText="VIEW GRAND"
-        tagline='Mountain View Grand - Steeped in History, <br> Resored in Luxury'
+        tagline='Mountain View Grand - Steeped in History, Restored in Luxury'
         link="/MVG"
         image1={MVGImg1}
         image2={MVGImg2}
@@ -101,6 +102,7 @@ export default function previousWork() {
           </li>
         </ul>
       </div>
+     
     </div>
   );
 }

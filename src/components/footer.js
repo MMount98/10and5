@@ -3,7 +3,7 @@ import lightLogo from "./images/Logos/Final_LogoWhite.png";
 
 export default function Footer() {
   return (
-    < div className='hidden'>
+    < div className='hi'>
       <footer className="footer p-10 bg-custom-black  text-custom-white ">
         <aside>
           <img

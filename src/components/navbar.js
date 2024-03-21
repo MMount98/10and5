@@ -85,6 +85,9 @@ const NavBar = ({ isTransparent, colorTheme = "white", showLogo = true }) => {
           <a href="/ourteam" className="hover:text-gray-800">
             Our Team
           </a>
+          <a href="#" className="hover:text-gray-800">
+            Request Proposal
+          </a>
         </div>
         <div className="text-right mt-36 pr-4 font-napzer text-md">
           <p className="font-bold text-xl">Denver</p>
@@ -93,14 +96,7 @@ const NavBar = ({ isTransparent, colorTheme = "white", showLogo = true }) => {
             383 Corona Street #581<br></br>
             Denver, CO 80218
           </p>
-          <div className="mt-8">
-            <p className="font-bold text-xl">Denver</p>
-            <p>
-              720.470.2577 <br></br>
-              383 Corona Street #581<br></br>
-              Denver, CO 80218
-            </p>
-          </div>
+         
         </div>
       </div>
     </div>
