@@ -15,7 +15,7 @@ const FadeInAnimation = ({ text, wrapperClassName = " " }) => {
         autoAlpha: 0,
       },
       {
-        duration: 1,
+        duration: 1.5,
         autoAlpha: 1,
         ease: "none",
         scrollTrigger: {
