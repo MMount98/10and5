@@ -3,15 +3,15 @@ import gsap from "gsap";
 import "../customCSS/intro.css";
 
 const textWithSpacing2 =
-"-----------------et--------------------And--------------と---------------------y--------------------------und--------------"
+"For fostering positive interactions "
     .split(" ")
     .join("\u00A0");
 const textWithSpacing3 =
-"-----------------cinq--------------------Five-------------------五--------------------Cinco---------------------fünf-------------------"
+"zone of hospitality zone of hospitality"
     .split(" ")
     .join("\u00A0");
 const textWithSpacing4 =
-"----------------Take a Closer Look------------------------------------------------------------"
+"ten and five ten and five ten and five"
     .split(" ")
     .join("\u00A0");
 
@@ -182,7 +182,7 @@ const IntroAnimation = ({ onAnimationComplete }) => {
             aria-label=""
             textLength="2830"
           >
-            {"---------------dix----------------------Ten-----------------十--------------------Diez------------------------zehn---------------"
+            {"Iconic training technique Iconic training  "
               .split(" ")
               .join(`${" "}`)}
           </textPath>
