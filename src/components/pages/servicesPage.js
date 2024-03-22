@@ -1,6 +1,7 @@
 //Components
 import ServicesList from "../servicesList";
 import NavBar from "../navbar";
+import Footer from "../footer";
 
 export default function ServicesPage() {
   return (
@@ -70,6 +71,7 @@ export default function ServicesPage() {
           descrpition="A great man (Matthew McConaughey) once said , “Create structure to have freedom.”  We are the ultimate puzzle masters, linking every piece together to create a powerhouse of productivity, where every move aligns efforts and maximizes efficiency across all touchpoints."
         />
       </div>
+      <Footer />
     </>
   );
 }

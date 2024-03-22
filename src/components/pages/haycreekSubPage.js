@@ -3,6 +3,7 @@ import VideoOverlayCarousel from "../videoOverlayCarousel";
 import HaycreekScrollAnimation from "../haycreekScrollAnimation";
 import Emailbanner from "../emailBanners";
 import NavBar from "../navbar";
+import Footer from "../footer";
 
 //images
 import heroImg from "../images/hayCreek/Main Images/heroImg.jpg";
@@ -230,6 +231,7 @@ export default function HaycreekSubPage() {
           </a>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

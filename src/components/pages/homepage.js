@@ -18,7 +18,7 @@ export default function Homepage() {
             <h1 className="text-left mt-80 mx-5 mb-72 text-6xl font-span">
               We enhance brand images through crafted solutions.
             </h1>
-          
+          <Footer />
           </>
         )}
       </div>

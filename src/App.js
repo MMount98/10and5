@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Footer from "./components/footer";
+
 import PreviousWork from "./components/pages/previousWork";
 import OurTeam from "./components/pages/ourTeam";
 import HartnessSubPage from "./components/pages/hartnessSubPage";
@@ -28,7 +28,7 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/test" element={<Test />} />
         </Routes>
-      <Footer />
+      
       </Router>
     </>
   );

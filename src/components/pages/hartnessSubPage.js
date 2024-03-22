@@ -37,6 +37,7 @@ import webPageVideo from "../videos/hotel-hartness/Hotel-Hartness-Subpage.mp4";
 import CarouselAnimation from "../carouselAnimation";
 import VideoOverlay from "../videoOverlay";
 import NavBar from "../navbar";
+import Footer from "../footer";
 
 //Consts
 const story1Images = [
@@ -216,6 +217,7 @@ export default function HartnessSubPage() {
           </a>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

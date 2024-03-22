@@ -4,6 +4,7 @@ import PortraitGallery from "../portraitGallery";
 import FlapClock from "../flapClock";
 import CustomBulletList from "../customBulletpointList";
 import NavBar from "../navbar";
+import Footer from "../footer";
 
 export default function OurTeam() {
   return (
@@ -86,6 +87,7 @@ export default function OurTeam() {
           <FlapClock timezone={18} location="MISSOURI" />
         </div>
       </div>
+      <Footer />
     </>
   );
 }

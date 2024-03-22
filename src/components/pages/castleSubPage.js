@@ -17,6 +17,7 @@ import webPageWalkThrough from "../videos/castle/Castle Hotel and Spa- Website S
 import TextScroll from "../textScroll";
 import VideoOverlay from "../videoOverlay";
 import NavBar from "../navbar";
+import Footer from "../footer"
 
 export default function CastleSubPage() {
   return (
@@ -191,6 +192,7 @@ export default function CastleSubPage() {
           </a>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

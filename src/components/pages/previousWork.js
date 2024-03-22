@@ -102,7 +102,7 @@ export default function previousWork() {
           </li>
         </ul>
       </div>
-     
+     <Footer />
     </div>
   );
 }

@@ -24,6 +24,7 @@ import webPageVideo from "../videos/mvg/MVG_Screen Recording.mp4";
 import CarouselAnimation from "../carouselAnimation";
 import VideoOverlay from "../videoOverlay";
 import NavBar from "../navbar";
+import Footer from "../footer";
 
 //Consts
 const storyImages = [story1_1, story1_2, story1_3, story1_4, story1_5];
@@ -219,6 +220,7 @@ export default function MVGSubPage() {
           Castle <br></br> Hotel & Spa
         </a>
       </div>
+      <Footer />
     </div>
   );
 }
