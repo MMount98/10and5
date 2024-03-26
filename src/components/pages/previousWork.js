@@ -29,9 +29,9 @@ export default function previousWork() {
         <h1 className="text-6xl md:text-9xl font-span ml-4 md:ml-10 mt-40 md:mt-80">
           Selected Work
         </h1>
-        <h2 className="ml-4 md:ml-10 text-2xl md:text-left text-center md:text-3xl font-oswald md:mb-14">
-          Using our Hospitality Expertise + Our Mantra to approach each project
-          creatively
+        <h2 className="ml-4 md:ml-10 text-2xl md:text-left text-center md:text-3xl font-napzer md:mb-14">
+          Utilizing our Hospitality Expertise and Our Mantra to creatively
+          approach each project.
         </h2>
       </div>
       <ScrollSlider
@@ -45,7 +45,7 @@ export default function previousWork() {
       <ScrollSlider
         topText="MOUNTAIN"
         bottomText="VIEW GRAND"
-        tagline='Mountain View Grand - Steeped in History, Restored in Luxury'
+        tagline="Mountain View Grand - Steeped in History, Restored in Luxury"
         link="/MVG"
         image1={MVGImg1}
         image2={MVGImg2}
@@ -66,14 +66,7 @@ export default function previousWork() {
         image1={CasImg1}
         image2={CasImg2}
       />
-      <ScrollSlider
-        topText="NOBLE"
-        bottomText="KITCHEN + BAR"
-        tagline="Noble Kitchen + Bar - Coming Soon"
-        link="/noble-kitchen"
-        image1={NKImg1}
-        image2={NKImg2}
-      />
+      
       <div className="text-center text-5xl font-span my-12 uppercase md:hidden lg:hidden xl:hidden">
         {/*mobile build*/}
         <ul>
@@ -95,14 +88,44 @@ export default function previousWork() {
               Castle <br></br> Hotel & Spa
             </a>
           </li>
-          <li className="p-2 underlineAnimation">
-            <a href="/noble-kitchen">
-              Noble <br></br> Kitchen + Bar
-            </a>
-          </li>
         </ul>
       </div>
-     <Footer />
+      <div className="clientsList">
+        <div className="text-center text-3xl font-span uppercase">
+          Our clients
+        </div>
+        <div className="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-4 text-lg px-10 py-5 mb-16 font-napzer uppercase text-center">
+          <ul>
+            <li>Belvada Hotel</li>
+            <li>exeter inn</li>
+            <li>Lodge at schroon lake</li>
+            <li>The Wolfboro inn</li>
+            <li>The Centennial Hotel</li>
+          </ul>
+          <ul>
+            <li>Castle Hotel & Spa</li>
+            <li>Stonebreaker hotel</li>
+            <li>Tonopah Brewerey</li>
+            <li>The Brunswick hotel</li>
+            <li>Gran Summit Attitash</li>
+          </ul>
+          <ul>
+            <li>Mizpah Hotel</li>
+            <li>Hotel Canandaigua</li>
+            <li>Cove restaurant + bar</li>
+            <li>The Belvada hotel</li>
+            <li>Olive Juice Beauty bar</li>
+          </ul>
+          <ul>
+            <li>Breakwater hotel & Spa</li>
+            <li>20 south battery</li>
+            <li>Noble Kitch + bar</li>
+            <li>Shelter harbor Inn</li>
+            <li>Mountain view grand</li>
+          </ul>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
