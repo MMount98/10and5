@@ -14,6 +14,7 @@
   --font-weight-circle-3: 400;
   --font-circle-4: Spanlight, sans-serif;
   --font-weight-circle-4: 300;
+  --circle-color: #222122;
 }
 
 .circles {
@@ -30,6 +31,7 @@
   text-transform: uppercase;
   transform-origin: 700px 700px;
   will-change: transform, opacity;
+  
 }
 
 .circles__text--1 {
@@ -38,6 +40,8 @@
   font-family: var(--font-circle-1);
   font-weight: var(--font-weight-circle-1);
   fill: var(--color-text-circle-1);
+  
+ 
 }
 
 .circles__text--2 {
