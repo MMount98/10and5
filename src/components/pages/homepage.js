@@ -44,7 +44,7 @@ export default function Homepage() {
                   <div className="text-3xl sm:text-5xl md:text-6xl  xl:text-8xl   2xl:text-9xl font-spanlight italic pl-44 sm:pl-24 md:pl-28 lg:pl-44 xl:pl-64 2xl:pl-96 sm:ml-48 sm:-mt-20 md:-mt-24">
                     BRANDS THROUGH{" "}
                   </div>
-                  <div className="text-5xl sm:text-7xl md:text-7xl xl:text-9xl   2xl:text-9xl font-span relative">
+                  <div className="text-5xl sm:text-7xl md:text-8xl xl:text-9xl   2xl:text-13xl font-span relative">
                     CREATIVE SOLUTIONS
                   </div>
                 </div>

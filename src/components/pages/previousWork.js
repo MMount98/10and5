@@ -3,18 +3,18 @@ import HHImg1 from "../images/selectedWorks/Hotel Hartness 1.jpg";
 import HHImg2 from "../images/selectedWorks/Hotel Hartness 2.jpg";
 import MVGImg1 from "../images/selectedWorks/Mountain View Grand 1.jpg";
 import MVGImg2 from "../images/selectedWorks/Mountain View Grand 2.jpg";
-import NKImg1 from "../images/selectedWorks/Noble Kitchen 1.jpg";
-import NKImg2 from "../images/selectedWorks/Noble Kitchen 2.jpg";
 import HKImg1 from "../images/selectedWorks/HayCreek Hotels 1.jpg";
 import HKImg2 from "../images/selectedWorks/HayCreek Hotels 2.jpg";
 import CasImg1 from "../images/selectedWorks/Castle Hotel & Spa 1.jpg";
 import CasImg2 from "../images/selectedWorks/Castle Hotel & Spa 2.jpg";
+import CCImg1 from "../images/selectedWorks/Cline Family 1.jpg";
+import CCImg2 from "../images/selectedWorks/Cline Family 2.jpg";
 
 //Will use once we get wireframes for sub pages
-// import CCImg1 from "../images/selectedWorks/Cline Family 1.jpg";
-// import CCImg2 from "../images/selectedWorks/Cline Family 2.jpg";
 // import GSImg1 from "../images/selectedWorks/Grand Summit 1.jpg";
 // import GSImg2 from "../images/selectedWorks/Grand Summit 2.jpg";
+//import NKImg1 from "../images/selectedWorks/Noble Kitchen 1.jpg";
+//import NKImg2 from "../images/selectedWorks/Noble Kitchen 2.jpg";
 
 //Components
 import ScrollSlider from "../scrollSlider";
@@ -51,12 +51,12 @@ export default function previousWork() {
         image2={MVGImg2}
       />
       <ScrollSlider
-        topText="HAY CREEK"
+        topText="CLINE FAMILY"
         bottomText="HOTELS"
         tagline="Haycreek Hotels - Boutique to the Bone"
         link="/haycreek-hotels"
-        image1={HKImg1}
-        image2={HKImg2}
+        image1={CCImg1}
+        image2={CCImg2}
       />
       <ScrollSlider
         topText="CASTLE"
@@ -65,6 +65,22 @@ export default function previousWork() {
         link="/castle-hotel"
         image1={CasImg1}
         image2={CasImg2}
+      />
+      <ScrollSlider
+        topText="OLIVE JUICE"
+        bottomText="BEAUTY BAR"
+        tagline="Haycreek Hotels - Boutique to the Bone"
+        link="/haycreek-hotels"
+        image1={HKImg1}
+        image2={HKImg2}
+      />
+       <ScrollSlider
+        topText="HAY CREEK"
+        bottomText="HOTELS"
+        tagline="Haycreek Hotels - Boutique to the Bone"
+        link="/haycreek-hotels"
+        image1={HKImg1}
+        image2={HKImg2}
       />
       
       <div className="text-center text-5xl font-span my-12 uppercase md:hidden lg:hidden xl:hidden">
