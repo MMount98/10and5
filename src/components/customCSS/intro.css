@@ -76,7 +76,7 @@
   font-weight: 500;
   cursor: pointer;
   background: none;
-  color: Black;
+  color: #222121;
   padding: 0;
 }
 
@@ -93,7 +93,7 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: white;
+  background: #F5F5F5;
 }
 
 .enter__text {
