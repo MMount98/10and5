@@ -1,6 +1,6 @@
 //compoents
 import VideoOverlayCarousel from "../videoOverlayCarousel";
-import HaycreekScrollAnimation from "../haycreekScrollAnimation";
+
 import Emailbanner from "../emailBanners";
 import NavBar from "../navbar";
 import Footer from "../footer";
@@ -9,7 +9,6 @@ import Footer from "../footer";
 import heroImg from "../images/hayCreek/Main Images/heroImg.jpg";
 import bannerImg from "../images/hayCreek/Main Images/Collage_WhoWeAre_2.jpg";
 import videoBg from "../images/hayCreek/Main Images/HC_Third Photo.png";
-import bgImg from "../images/hayCreek/Main Images/HC_Fourth Photo.jpg";
 
 //emailBanner1
 import emailImg1_1 from "../images/hayCreek/Email Frames/Castle_Email 1.png";
@@ -17,35 +16,17 @@ import emailImg1_2 from "../images/hayCreek/Email Frames/Castle_Email_2.png";
 import emailImg1_3 from "../images/hayCreek/Email Frames/Castle_Email 3.png";
 import emailBg1 from "../images/hayCreek/Main Images/HC_Fifth Photo.jpg";
 
-//emailBanner2
-import emailImg2_1 from "../images/hayCreek/Email Frames/LSL_Email_1.png";
-import emailImg2_2 from "../images/hayCreek/Email Frames/LSL_Email_2.png";
-import emailImg2_3 from "../images/hayCreek/Email Frames/LSL_Email_3.png";
-import emailBg2 from "../images/hayCreek/Main Images/HC_Sixth Photo.jpg";
-
 //emailBanner3
 import emailImg3_1 from "../images/hayCreek/Email Frames/MVG_Email 1.png";
 import emailImg3_2 from "../images/hayCreek/Email Frames/MVG_Email 2.png";
 import emailImg3_3 from "../images/hayCreek/Email Frames/MVG_Email 3.png";
 import emailBg3 from "../images/hayCreek/Main Images/HC_Seventh Photo.jpg";
 
-//emailBanner4
-import emailImg4_1 from "../images/hayCreek/Email Frames/HH_Email 1.png";
-import emailImg4_2 from "../images/hayCreek/Email Frames/HH_Email 2.png";
-import emailImg4_3 from "../images/hayCreek/Email Frames/HH_Email 3.png";
-import emailBg4 from "../images/hayCreek/Main Images/HC_Fifth Photo.jpg";
-
 //emailBanner5
 import emailImg5_1 from "../images/hayCreek/Email Frames/GS_Email 1.png";
 import emailImg5_2 from "../images/hayCreek/Email Frames/GS_Email 2.png";
 import emailImg5_3 from "../images/hayCreek/Email Frames/GS_Email 3.png";
 import emailBg5 from "../images/hayCreek/Main Images/HC_Sixth Photo.jpg";
-
-//emailBanner6
-import emailImg6_1 from "../images/hayCreek/Email Frames/BWI_Email 1.png";
-import emailImg6_2 from "../images/hayCreek/Email Frames/BWI_Email 2.png";
-import emailImg6_3 from "../images/hayCreek/Email Frames/BWI_Email 3.png";
-import emailBg6 from "../images/hayCreek/Main Images/HC_Seventh Photo.jpg";
 
 //videos
 import video1 from "../videos/haycreek/IG_Story_1.mp4";
@@ -55,11 +36,11 @@ import video3 from "../videos/haycreek/IG_Story_3.mp4";
 //Variables or Constants
 
 //emailbanners
-const emailBanner6 = [emailImg6_1, emailImg6_2, emailImg6_3];
+
 const emailBanner5 = [emailImg5_1, emailImg5_2, emailImg5_3];
-const emailBanner4 = [emailImg4_1, emailImg4_2, emailImg4_3];
+
 const emailBanner3 = [emailImg3_1, emailImg3_2, emailImg3_3];
-const emailBanner2 = [emailImg2_1, emailImg2_2, emailImg2_3];
+
 const emailBanner1 = [emailImg1_1, emailImg1_2, emailImg1_3];
 
 //video array
@@ -78,9 +59,7 @@ export default function HaycreekSubPage() {
       </div>
       <div className="introText grid grid-cols-1 md:grid-cols-2 p-10">
         <div>
-          <h2 className="font-span text-3xl md:text-5xl">
-            HAY CREEK CORPORATE
-          </h2>
+          <h2 className="font-span text-3xl md:text-5xl">HAYCREEK CORPORATE</h2>
           <p className="text-xl md:text-3xl font-spanlight italic">
             Boutique to the bone
           </p>
@@ -95,18 +74,6 @@ export default function HaycreekSubPage() {
             creativity and vision to see what most cannot, tasked us with their
             Black Friday 2023 campaign that spread across their hotel portfolio.
           </p>
-          <h3 className="text-xl text-center font-span mt-8">
-            MEASURED SUCCESS
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 text-center text-xs md:text-sm p-5 gap-y-3 -mt-4 md:ml-36 2xl:ml-56">
-            <p className="font-napzer">
-              <span className="font-span text-lg">$1,059,233</span> <br></br> Total Revenue Booked
-            </p>
-            <p className="font-napzer">
-              +<span className="font-span text-lg">78.8K</span> <br></br> YoY Total Revenue 
-            </p>
-            
-          </div>
         </div>
       </div>
       <div className="bannerImg md:-mt-0 Md:-mt-10">
@@ -165,7 +132,7 @@ export default function HaycreekSubPage() {
           </p>
         </div>
       </div>
-      <HaycreekScrollAnimation backgroundImage={bgImg} />
+
       <Emailbanner
         backgroundImage={emailBg1}
         squareImages={emailBanner1}
@@ -175,15 +142,7 @@ export default function HaycreekSubPage() {
         topStat3="5.06%"
         topStat4="36.47%"
       />
-      <Emailbanner
-        backgroundImage={emailBg2}
-        squareImages={emailBanner2}
-        headerText="LODGE   AT   SCHROON LAKE"
-        topStat1="$91,347"
-        topStat2="4.8K"
-        topStat3="7.64%"
-        topStat4="41.7%"
-      />
+
       <Emailbanner
         backgroundImage={emailBg3}
         squareImages={emailBanner3}
@@ -193,15 +152,7 @@ export default function HaycreekSubPage() {
         topStat3="1.6%"
         topStat4="28.36%"
       />
-      <Emailbanner
-        backgroundImage={emailBg4}
-        squareImages={emailBanner4}
-        headerText="HOTEL HARTNESS"
-        topStat1="$97,818"
-        topStat2="5.6K"
-        topStat3="4.46%"
-        topStat4="38.74%"
-      />
+
       <Emailbanner
         backgroundImage={emailBg5}
         squareImages={emailBanner5}
@@ -211,15 +162,18 @@ export default function HaycreekSubPage() {
         topStat3="4.93%"
         topStat4="32.73%"
       />
-      <Emailbanner
-        backgroundImage={emailBg6}
-        squareImages={emailBanner6}
-        headerText="BREAKWATER INN & SPA"
-        topStat1="$95,182"
-        topStat2="4.9K"
-        topStat3="1.83%"
-        topStat4="45.37%"
-      />
+
+      <h3 className="text-xl text-center font-span mt-8">MEASURED SUCCESS</h3>
+      <div className="flex flex-col md:flex-row justify-center items-center text-center text-xs md:text-2xl p-5 -mt-4 gap-4 md:gap-10">
+        <p className="font-napzer m-0">
+          <span className="font-span text-lg">$1,059,233</span> <br /> Total
+          Revenue Booked
+        </p>
+        <p className="font-napzer m-0">
+          +<span className="font-span text-lg">78.8K</span> <br /> YoY Total
+          Revenue
+        </p>
+      </div>
       <div className="m-16">
         <h5 className="text-center font-span md:text-2xl text-lg">MORE WORK</h5>
         <div className="md:grid md:grid-cols-2 md:gap-72 md:mt-12 flex flex-col items-center font-span md:text-8xl text-2xl mt-6 uppercase">

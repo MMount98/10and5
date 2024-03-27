@@ -217,16 +217,16 @@ export default function MVGSubPage() {
         </p>
       </div>
       <SideScrollSection />
-      <div className="flex justify-between flex-col  md:grid md:grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-0 align-middle">
         <img
           src={llamaProm1}
           alt="A can of yellow llama being poured out"
-          className=""
+          className="w-full"
         />
         <img
           src={llamaProm2}
           alt="A can of yellow llama next to a full glass of lager"
-          className=""
+          className="w-full"
         />
       </div>
       <h3 className="text-xl text-center font-span mt-8">MEASURED SUCCESS</h3>
