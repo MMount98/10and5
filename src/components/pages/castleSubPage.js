@@ -17,7 +17,7 @@ import Footer from "../footer";
 
 export default function CastleSubPage() {
   return (
-    <div>
+    <div className="bg-custom-white">
       <div className="relative">
         <NavBar isTransparent={true} colorTheme="black" showLogo={true} />
 

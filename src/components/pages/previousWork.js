@@ -25,7 +25,7 @@ import Footer from "../footer";
 
 export default function previousWork() {
   return (
-    <div>
+    <div className="bg-custom-white">
       <NavBar isTransparent={true} showLogo={true} colorTheme="black" />
       <div>
         <h1 className="text-6xl md:text-9xl font-span ml-4 md:ml-10 mt-40 md:mt-80">

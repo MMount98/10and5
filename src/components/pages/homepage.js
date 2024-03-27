@@ -22,7 +22,7 @@ export default function Homepage() {
 
   return (
     <>
-      <div>
+      <div className="bg-custom-white">
         {!animationCompleted && (
           <IntroAnimation
             onAnimationComplete={() => setAnimationCompleted(true)}

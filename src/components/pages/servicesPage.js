@@ -5,7 +5,7 @@ import Footer from "../footer";
 
 export default function ServicesPage() {
   return (
-    <>
+    <div className="bg-custom-white">
       <NavBar isTransparent={true} showLogo={true} colorTheme="black" />
       <div className="header">
         <div className="flex flex-col items-center mx-4 md:m-12 2xl:pt-56 xl:pt-36 lg:pt-44 md:pt-44 pt-24">
@@ -72,6 +72,6 @@ export default function ServicesPage() {
         />
       </div>
       <Footer />
-    </>
+    </div>
   );
 }

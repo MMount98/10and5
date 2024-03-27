@@ -34,7 +34,7 @@ const storyImages = [story1_1, story1_2, story1_3, story1_4, story1_5];
 
 export default function MVGSubPage() {
   return (
-    <div>
+    <div className="bg-custom-white">
       <NavBar isTransparent={true} colorTheme="black" showLogo={true} />
       <img
         src={heroImage}

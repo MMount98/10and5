@@ -8,7 +8,7 @@ import Footer from "../footer";
 
 export default function OurTeam() {
   return (
-    <>
+    <div className="bg-custom-white">
       <NavBar isTransparent={true} showLogo={true} colorTheme="black" />
       <div className="md:mt-72 mt-44">
         <h1 className="text-center text-2xl md:text-4xl font-span">
@@ -88,6 +88,6 @@ export default function OurTeam() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
