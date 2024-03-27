@@ -56,7 +56,7 @@ export default function previousWork() {
         topText="CLINE FAMILY"
         bottomText="HOTELS"
         tagline="Haycreek Hotels - Boutique to the Bone"
-        link="/haycreek-hotels"
+        link="/cline-family"
         image1={CCImg1}
         image2={CCImg2}
       />
@@ -72,7 +72,7 @@ export default function previousWork() {
         topText="OLIVE JUICE"
         bottomText="BEAUTY BAR"
         tagline="Olive Juice Beauty Bar - We Love You Too!"
-        link="/haycreek-hotels"
+        link="/olive-juice"
         image1={OBImg1}
         image2={OBImg2}
       />

@@ -69,7 +69,7 @@ const story3Images = [
 
 export default function HartnessSubPage() {
   return (
-    <div>
+    <div className="bg-custom-white">
       <NavBar isTransparent={true} colorTheme="white" showLogo={true} />
       <img
         src={heroImage}
