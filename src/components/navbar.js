@@ -55,16 +55,14 @@ const NavBar = ({ isTransparent, colorTheme = "white", showLogo = true }) => {
           style={{ color: svgColor }}
           className="inline-block w-8 h-8 md:w-12 md:h-12 stroke-current"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 6h16M4 12h16m-7 6h7"
-          ></path>
+          {/* Adjusted paths for sharp edges and equal length */}
+          <path strokeLinecap="butt" strokeWidth="2" d="M3 6h18"></path>
+          <path strokeLinecap="butt" strokeWidth="2" d="M3 12h18"></path>
+          <path strokeLinecap="butt" strokeWidth="2" d="M3 18h18"></path>
         </svg>
       </button>
 
-      <div className={drawerClasses} style={{backgroundColor: "#F5F5F5"}}>
+      <div className={drawerClasses} style={{ backgroundColor: "#F5F5F5" }}>
         <div className="flex justify-end p-4 mt-10">
           <button
             onClick={() => setIsOpen(false)}
@@ -73,7 +71,10 @@ const NavBar = ({ isTransparent, colorTheme = "white", showLogo = true }) => {
             Close
           </button>
         </div>
-        <div className="menu  text-5xl font-span leading-12 text-right" style={{color: "#222122"}}>
+        <div
+          className="menu  text-5xl font-span leading-12 text-right"
+          style={{ color: "#222122" }}
+        >
           <a href="/previousWork" className="hover:text-gray-800">
             Selected Works
           </a>
