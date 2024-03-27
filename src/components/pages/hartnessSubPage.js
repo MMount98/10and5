@@ -92,23 +92,6 @@ export default function HartnessSubPage() {
             Captain's Bar, we were tasked to amplify the brands' digital voice
             through each touchpoint.
           </p>
-          <h3 className="text-xl text-center font-span mt-8">
-            MEASURED SUCCESS
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 text-center text-xs md:text-sm p-5 gap-y-3 -mt-4">
-            <p className="font-napzer">
-              +<span className="font-span text-lg">60%</span> <br></br> Social
-              growth
-            </p>
-            <p className="font-napzer">
-              +<span className="font-span text-lg">44,344</span> <br></br>{" "}
-              Website Traffic
-            </p>
-            <p className="font-napzer">
-              +<span className="font-span text-lg">2.6k</span> <br></br>{" "}
-              Interactions
-            </p>
-          </div>
         </div>
       </div>
       <div className="textdivder flex justify-center items-center md:-mt-16">
@@ -206,6 +189,20 @@ export default function HartnessSubPage() {
         backgroundImage={story3_bg}
         backgroundHeight="75vh"
       />
+      <h3 className="text-xl text-center font-span mt-8">MEASURED SUCCESS</h3>
+      <div className="flex flex-col md:flex-row justify-center items-center text-center text-xs md:text-2xl p-5 gap-4 md:gap-24 -mt-4">
+        <p className="font-napzer m-0">
+          +<span className="font-span text-lg">60%</span> <br /> Social growth
+        </p>
+        <p className="font-napzer m-0">
+          +<span className="font-span text-lg">44,344</span> <br /> Website
+          Traffic
+        </p>
+        <p className="font-napzer m-0">
+          +<span className="font-span text-lg">2.6k</span> <br /> Interactions
+        </p>
+      </div>
+
       <div className="m-16">
         <h5 className="text-center font-span md:text-2xl text-lg">MORE WORK</h5>
         <div className="md:grid md:grid-cols-2 md:gap-72 md:mt-12 flex flex-col items-center font-span md:text-8xl text-2xl mt-6 uppercase">
