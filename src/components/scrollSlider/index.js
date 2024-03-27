@@ -51,7 +51,7 @@ const ScrollSlider = ({ topText, bottomText, tagline, link, image1, image2 }) =>
           animate={controlsImage1}
           transition={{ type: "spring", stiffness: 35 }}
         >
-          <img src={image1} alt="Image 1" className="w-96 h-auto" />
+          <a href={link}><img src={image1} alt="Image 1" className="w-96 h-auto" /></a>
         </motion.div>
         <motion.div
           className="absolute top-0 left-0 right-0"
@@ -59,7 +59,7 @@ const ScrollSlider = ({ topText, bottomText, tagline, link, image1, image2 }) =>
           animate={controlsImage2}
           transition={{ type: "spring", stiffness: 35 }}
         >
-          <img src={image2} alt="Image 2" className="mb-4 w-96 h-auto" />
+          <a href={link}><img src={image2} alt="Image 2" className="mb-4 w-96 h-auto" /></a>
         </motion.div>
         <p className="z-10 text-13xl font-span">{topText}</p>
         <p className="z-10 -mt-32 text-13xl font-span text-right">{bottomText}</p>
@@ -68,7 +68,7 @@ const ScrollSlider = ({ topText, bottomText, tagline, link, image1, image2 }) =>
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
-            className="underlineAnimation font-span text-2xl absolute bottom-96 right-16"
+            className="underlineAnimation font-span text-2xl absolute top-16 right-16"
           >
             <a href={link}>{tagline}</a>
           </motion.p>

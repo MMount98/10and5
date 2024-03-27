@@ -2,13 +2,15 @@
 import HHImg1 from "../images/selectedWorks/Hotel Hartness 1.jpg";
 import HHImg2 from "../images/selectedWorks/Hotel Hartness 2.jpg";
 import MVGImg1 from "../images/selectedWorks/Mountain View Grand 1.jpg";
-import MVGImg2 from "../images/selectedWorks/Mountain View Grand 2.jpg";
+import MVGImg2 from "../images/selectedWorks/MVG Building.png";
 import HKImg1 from "../images/selectedWorks/HayCreek Hotels 1.jpg";
 import HKImg2 from "../images/selectedWorks/HayCreek Hotels 2.jpg";
 import CasImg1 from "../images/selectedWorks/Castle Hotel & Spa 1.jpg";
 import CasImg2 from "../images/selectedWorks/Castle Hotel & Spa 2.jpg";
 import CCImg1 from "../images/selectedWorks/Cline Family 1.jpg";
 import CCImg2 from "../images/selectedWorks/Cline Family 2.jpg";
+import OBImg1 from "../images/selectedWorks/Olive Juice 1.png"
+import OBImg2 from "../images/selectedWorks/Olive Juice 2.png"
 
 //Will use once we get wireframes for sub pages
 // import GSImg1 from "../images/selectedWorks/Grand Summit 1.jpg";
@@ -69,10 +71,10 @@ export default function previousWork() {
       <ScrollSlider
         topText="OLIVE JUICE"
         bottomText="BEAUTY BAR"
-        tagline="Haycreek Hotels - Boutique to the Bone"
+        tagline="Olive Juice Beauty Bar - We Love You Too!"
         link="/haycreek-hotels"
-        image1={HKImg1}
-        image2={HKImg2}
+        image1={OBImg1}
+        image2={OBImg2}
       />
        <ScrollSlider
         topText="HAY CREEK"
@@ -86,20 +88,20 @@ export default function previousWork() {
       <div className="text-center text-5xl font-span my-12 uppercase md:hidden lg:hidden xl:hidden">
         {/*mobile build*/}
         <ul>
-          <li className="p-2 underlineAnimation">
+          <li className="p-2 ">
             <a href="/hotel-hartness">Hotel Hartness</a>
           </li>
-          <li className="p-2 underlineAnimation">
+          <li className="p-2 ">
             <a href="/MVG">
               Mountain <br></br> View Grand
             </a>
           </li>
-          <li className="p-2 underlineAnimation">
+          <li className="p-2 ">
             <a href="/haycreek-hotels">
               Hay creek <br></br> Hotels
             </a>
           </li>
-          <li className="p-2 underlineAnimation">
+          <li className="p-2">
             <a href="/castle-hotel">
               Castle <br></br> Hotel & Spa
             </a>

@@ -16,6 +16,7 @@ module.exports = {
       fontSize: {
         "10xl": "10rem",
         "13xl": "13rem",
+        "16xl": "16rem",
         "20xl": "20rem",
       },
       width: {
@@ -35,6 +36,7 @@ module.exports = {
       },
       padding: {
         112: "28rem",
+        124: "36rem",
         148: "38rem",
       },
       colors: {
@@ -43,6 +45,9 @@ module.exports = {
       },
       margin: {
         114: "30rem",
+      },
+      spacing: {
+        "custom-value": "43rem",
       },
     },
   },

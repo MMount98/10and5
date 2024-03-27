@@ -64,7 +64,7 @@ const NavBar = ({ isTransparent, colorTheme = "white", showLogo = true }) => {
         </svg>
       </button>
 
-      <div className={drawerClasses}>
+      <div className={drawerClasses} style={{backgroundColor: "#F5F5F5"}}>
         <div className="flex justify-end p-4 mt-10">
           <button
             onClick={() => setIsOpen(false)}
@@ -73,7 +73,7 @@ const NavBar = ({ isTransparent, colorTheme = "white", showLogo = true }) => {
             Close
           </button>
         </div>
-        <div className="menu  text-5xl font-span leading-12 text-right">
+        <div className="menu  text-5xl font-span leading-12 text-right" style={{color: "#222122"}}>
           <a href="/previousWork" className="hover:text-gray-800">
             Selected Works
           </a>
@@ -96,7 +96,6 @@ const NavBar = ({ isTransparent, colorTheme = "white", showLogo = true }) => {
             383 Corona Street #581<br></br>
             Denver, CO 80218
           </p>
-         
         </div>
       </div>
     </div>

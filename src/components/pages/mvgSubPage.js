@@ -1,7 +1,7 @@
 //Images
-import heroImage from "../images/Mountain View Grand - Selected Work/MVG_Hero Image.jpg";
-import secondImage from "../images/Mountain View Grand - Selected Work/MVG_2nd Photo.jpg";
-import thirdImage from "../images/Mountain View Grand - Selected Work/MVG_3rd Photo.jpg";
+import heroImage from "../images/Mountain View Grand - Selected Work/MVG Hero Image.png";
+
+import thirdImage from "../images/Mountain View Grand - Selected Work/MVG 2nd Photo.png";
 import fourthImage from "../images/Mountain View Grand - Selected Work/MVG_4th Photo.jpg";
 import seventhImage from "../images/Mountain View Grand - Selected Work/MVG_7th Photo.jpg";
 import storyBg from "../images/Mountain View Grand - Selected Work/MVG_5th Photo.jpg";
@@ -9,7 +9,9 @@ import videoBg from "../images/Mountain View Grand - Selected Work/MVG_6th Photo
 import llamaLogo from "../images/Mountain View Grand - Selected Work/Yellow llama_Logo.png";
 import llamaProm1 from "../images/Mountain View Grand - Selected Work/MVG_Yellow llama 1.jpg";
 import llamaProm2 from "../images/Mountain View Grand - Selected Work/MVG_Yellow llama 2.jpg";
-
+import canImg1 from "../images/Mountain View Grand - Selected Work/Can 1.png";
+import canImg2 from "../images/Mountain View Grand - Selected Work/Can 2.png";
+import canImg3 from "../images/Mountain View Grand - Selected Work/Can 3.png";
 //Story 1
 import story1_1 from "../images/Mountain View Grand - Selected Work/IG Stories/MVG_Story 1.png";
 import story1_2 from "../images/Mountain View Grand - Selected Work/IG Stories/MVG_Story 2.png";
@@ -22,6 +24,7 @@ import webPageVideo from "../videos/mvg/MVG_Screen Recording.mp4";
 
 //Compontents
 import CarouselAnimation from "../carouselAnimation";
+import SideScrollSection from "../sideScrollAnimation";
 import VideoOverlay from "../videoOverlay";
 import NavBar from "../navbar";
 import Footer from "../footer";
@@ -32,7 +35,7 @@ const storyImages = [story1_1, story1_2, story1_3, story1_4, story1_5];
 export default function MVGSubPage() {
   return (
     <div>
-      <NavBar isTransparent={true} colorTheme="white" showLogo={true} />
+      <NavBar isTransparent={true} colorTheme="black" showLogo={true} />
       <img
         src={heroImage}
         alt="landscape of the front of mountain view grand"
@@ -51,54 +54,77 @@ export default function MVGSubPage() {
           </p>
         </div>
         <div>
-          <p className="font-napzer md:pl-24 text-xs md:text-sm mt-5 md:mt-0">
-            Framed by charming, gabled rooftops and the rolling peaks of New
-            Hampshire's White Mountains, Mountain View Grand Resort & Spa is an
-            enchanted retreat perfect for celebrating all of life's beautiful
-            moments. Mountain View Grand partnered with 10and5 creative to
-            revitalize their online presence, creating a structured and
-            refreshed brand identity without forgetting the rooted history they
-            emerged from.
+          <p className="font-napzer md:pl-24 text-xs md:text-lg mt-5 md:mt-0">
+            Mountain View Grand’s historical reputation in New England was
+            unmatched as a family destination for all of life’s special
+            occasions. Having hosted many celebrity names and some historical
+            figures in the 40’s and 50’s, there was an enormous responsibility
+            10and5 Creative had to preserve the past while helping them become
+            relevant to this new generation of travelers.
           </p>
-          <h3 className="text-xl text-center font-span mt-8">
-            MEASURED SUCCESS
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 text-center text-xs md:text-sm p-5 gap-y-3 -mt-4">
-            <p className="font-napzer">
-              +<span className="font-span text-lg">126%</span> <br></br> Social 
-              growth
-            </p>
-            <p className="font-napzer">
-              +<span className="font-span text-lg">48%</span> <br></br> Profile visits
-            </p>
-            <p className="font-napzer">
-              +<span className="font-span text-lg">249k</span> <br></br> Website Traffic
-            </p>
-            
+        </div>
+      </div>
+      <div className="text-center my-12">
+        <h2 className="font-nazper text-xl md:text-2xl 2xl:text-3xl uppercase">
+          BRAND POSITIONING
+        </h2>
+        <h2 className="font-spanlight text-6xl md:text-7xl 2xl:text-8xl uppercase italic">
+          THE HOLY TRINITY
+        </h2>
+        <h2 className="font-nazper  md:text-2xl 2xl:text-3xl uppercase">
+          ONE GRAND DAME, THREE DISTINCT PERSONAS
+        </h2>
+        <div className="px-16 md:px-44 xl:px-96">
+          <h3 className="font-span text-6xl my-14 uppercase">RICH HISTORY</h3>
+          <p className="font-nazper text-xl md:text-3xl">
+            Striking the appropriate balance between preservation and
+            innovation, and the celebration of the past while giving nod to the
+            future is an art that MVG has perfected as a steward of this
+            historic hotel while now offering all of the modern luxuries that
+            travelers have come to expect.
+          </p>
+          <h3 className="font-span text-6xl my-14 uppercase">FAMILY-FIRST</h3>
+          <p className="font-nazper text-xl md:text-3xl">
+            The Mountain View Grand Resort has been capturing the hearts of
+            families with its New Hampshire hospitality, awe-inspiring views and
+            myriad of activities that leave you wanting for nothing. This
+            special place houses the stuff memories are made of and should be
+            portrayed as such. A destination that becomes the meeting point for
+            family reunions, the resort kids are begging to get back to as soon
+            as the school year ends and a place that becomes synonymous with New
+            England family retreats.
+          </p>
+          <h3 className="font-span text-6xl my-14 uppercase">LUXE LEISURE</h3>
+          <p className="font-nazper text-xl md:text-3xl">
+            Landing on the perfect distance from “boujie” to approachable, from
+            opulence to understated beauty and pretentiousness to quiet luxury
+            is where MVGH can firmly take their seat in the market to cater to
+            those city slickers looking for a respite from their hectic everyday
+            lives. A place to be seen, without being seen, a proper vacay they
+            don’t have to go through security to enjoy, and a destination that
+            understands their affinity for the finer things in life don’t have
+            to cost them a small fortune.
+          </p>
+        </div>
+      </div>
+      <div className="flex justify-center items-center md:h-screen">
+        {" "}
+        {/* Assuming you want it centered in the viewport */}
+        <div className="inline-block">
+          <div className="flex flex-col items-center">
+            <div className="uppercase text-5xl md:text-7xl lg:text-8xl  2xl:text-9xl font-span relative -mb-8 pr-56  md:pr-148  2xl:pr-148 sm:mb-12 md:mb-16 lg:mb-8 2xl:mb-7 sm:ml-6 md:ml-1">
+              If these{" "}
+            </div>
+            <div className="uppercase text-6xl md:text-9xl  2xl:text-13xl font-spanlight italic pl-24 sm:pl-24 md:pr-72 lg:pl-96 xl:pr-64 2xl:pl-114 sm:ml-48 sm:-mt-20 md:-mt-24">
+              walls{" "}
+            </div>
+            <div className="uppercase text-7xl md:text-9xl lg:text-13xl  2xl:text-16xl font-span relative">
+              could talk
+            </div>
           </div>
         </div>
       </div>
-      <div className="textdivder flex justify-center items-center md:p-10 p-6">
-        <img
-          src={secondImage}
-          alt="guest in the lounge at mountain view grand"
-        />
-      </div>
-      <div className="flex flex-col items-center mx-4 md:m-12 mb-5">
-        <div>
-          <h3 className="text-4xl md:text-8xl md:absolute md:left-96 md:ml-2 md:mt-6 2xl:ml-64 mr-44 ml-14 mt-6 font-span">
-            IF THESE
-          </h3>
-        </div>
-        <div>
-          <h3 className="text-5xl md:text-9xl font-spanlight italic ml-36 md:mt-12 md:ml-96 -mt-8">
-            WALLS
-          </h3>
-        </div>
-        <div>
-          <h3 className="text-6xl md:text-13xl font-span">COULD TALK.</h3>
-        </div>
-      </div>
+
       <div className="imageAndText flex flex-col md:grid md:grid-cols-2 p-8">
         <img
           src={thirdImage}
@@ -190,36 +216,46 @@ export default function MVGSubPage() {
           mini bar, and the pool clubhouse.
         </p>
       </div>
-      <div className="flex justify-center">
-        <img
-          src={llamaLogo}
-          alt="Llama Yellow Logo"
-          className="w-96 h-80 p-5"
-        />
-      </div>
-      <div className="flex justify-between flex-col md:grid md:grid-cols-2">
+      <SideScrollSection />
+      <div className="flex justify-between flex-col  md:grid md:grid-cols-2">
         <img
           src={llamaProm1}
           alt="A can of yellow llama being poured out"
-          className="md:p-24 p-12"
+          className=""
         />
         <img
           src={llamaProm2}
           alt="A can of yellow llama next to a full glass of lager"
-          className="md:p-24 p-12"
+          className=""
         />
+      </div>
+      <h3 className="text-xl text-center font-span mt-8">MEASURED SUCCESS</h3>
+      <div className="grid grid-cols-1 md:grid-cols-3 text-center text-xs md:text-sm p-5 gap-y-0 -mt-4">
+        <p className="font-napzer">
+          +<span className="font-span text-lg">126%</span> <br></br> Social
+          growth
+        </p>
+        <p className="font-napzer">
+          +<span className="font-span text-lg">48%</span> <br></br> Profile
+          visits
+        </p>
+        <p className="font-napzer">
+          +<span className="font-span text-lg">249k</span> <br></br> Website
+          Traffic
+        </p>
       </div>
       <div className="m-16">
         <h5 className="text-center font-span text-2xl">MORE WORK</h5>
       </div>
       <div className="md:grid md:grid-cols-2 md:gap-72 md:mt-12 flex flex-col items-center font-span md:text-8xl text-2xl my-6 uppercase">
-        <a href="/noble-kitchen" className="md:py-0 py-2 text-right">
-          Noble Kitchen <br></br>+ Bar
+        <a href="/olive-juice" className="md:py-0 py-2 text-right">
+          OLIVE juice <br></br>Beauty Bar
         </a>
         <a href="/castle-hotel" className="md:py-0 py-2">
           Castle <br></br> Hotel & Spa
         </a>
       </div>
+
       <Footer />
     </div>
   );
