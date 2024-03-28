@@ -125,28 +125,27 @@ export default function MVGSubPage() {
         </div>
       </div>
 
-      <div className="imageAndText flex flex-col md:grid md:grid-cols-2 p-8">
+      <div className="imageAndText flex flex-col md:grid md:grid-cols-2 gap-4 p-8 items-end">
         <img
           src={thirdImage}
-          className="w-full md:w-auto"
+          className="w-full md:w-auto md:row-span-2"
           alt="chairs in the mountain view grand lobby"
         />
-        <div className="text-center md:text-left md:pl-6 md:mt-64 my-8">
-          <h4 className="font-span text-4xl md:text-6xl md:mb-5">
-            Brand Pillars
-          </h4>
-          <ul className="font-spanlight text-xl md:text-3xl md:mb-1">
+        <div className="text-center md:text-left md:pl-6 pr-64 md:pr-0">
+          <h4 className="font-span text-4xl md:text-6xl mb-5">Brand Pillars</h4>
+          <ul className="font-spanlight text-xl md:text-3xl mb-1">
             <li className="py-2">Nostalgic Narrator</li>
             <li className="py-2">Family Centered</li>
             <li className="py-2">Luxe Leisure</li>
           </ul>
-          <img
-            src={fourthImage}
-            className="w-full md:w-auto"
-            alt="chairs around an outdoor campfire"
-          />
         </div>
+        <img
+          src={fourthImage}
+          className="w-full md:w-auto"
+          alt="chairs around an outdoor campfire"
+        />
       </div>
+
       <CarouselAnimation
         portraits={storyImages}
         backgroundImage={storyBg}
