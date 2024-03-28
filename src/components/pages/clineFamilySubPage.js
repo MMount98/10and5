@@ -77,7 +77,7 @@ export default function ClineFamilySubPage() {
         <p className="font-napzer text-lg lg:text-xl uppercase mt-8">
           brand re-positioning{" "}
         </p>
-        <p className="font-napzer text-lg my-8 px-8 lg:px-96 2xl:px-148">
+        <p className="font-napzer text-lg my-8 px-8 lg:px-96 2xl:px-112">
           Dubbed as the #1 Haunted Hotel in America by USA Today’s 10 Best
           Readers’ Choice Awards, 10and5creative saw an opportunity to lean in
           and differentiate the hotel’s position in a crowded hospitality space.
