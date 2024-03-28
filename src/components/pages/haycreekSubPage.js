@@ -59,7 +59,7 @@ export default function HaycreekSubPage() {
       </div>
       <div className="introText grid grid-cols-1 md:grid-cols-2 p-10">
         <div>
-          <h2 className="font-span text-3xl md:text-5xl">HAYCREEK CORPORATE</h2>
+          <h2 className="font-span text-3xl md:text-5xl">HAY CREEK CORPORATE</h2>
           <p className="text-xl md:text-3xl font-spanlight italic">
             Boutique to the bone
           </p>

@@ -90,12 +90,13 @@ const NavBar = ({ isTransparent, colorTheme = "white", showLogo = true }) => {
           className="menu  text-5xl font-span leading-12 text-right"
           style={{ color: "#222122" }}
         >
-          <a href="/previousWork" className="hover:text-gray-800">
-            Selected Works
-          </a>
           <a href="/services" className="hover:text-gray-800">
             Services
           </a>
+          <a href="/previousWork" className="hover:text-gray-800">
+            Selected Works
+          </a>
+
           <a href="/ourteam" className="hover:text-gray-800">
             Our Team
           </a>
