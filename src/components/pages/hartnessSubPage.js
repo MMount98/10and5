@@ -136,7 +136,7 @@ export default function HartnessSubPage() {
         backgroundImage={story1_bg}
         backgroundHeight="100vh"
       />
-      <div className="header flex  h-56 md:h-144 justify-center items-center overflow-hidden">
+      <div className="textBreak flex  h-56 md:h-144 justify-center items-center overflow-hidden">
         <div className="flex flex-col">
           <div className="text-3xl sm:text-4xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-span mb-[-0.75rem] sm:mb-[-1rem] md:mb-[-1.5rem] lg:mb-[-2rem] pl-20 sm:pl-36 md:pl-36 lg:pl-64 xl:pl-80 2xl:pl-96">
             THE WARMTH

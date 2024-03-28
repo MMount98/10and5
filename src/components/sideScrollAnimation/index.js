@@ -51,7 +51,7 @@ const SideScrollSection = () => {
         className="flex items-center space-x-12 lg:-mt-64 2xl:-mt-72"
       >
         {/* Adjust the div below for your text section */}
-        <div className="beer-promo flex-shrink-0 w-[500px] p-5 lg:mt-64 2xl:mt-0 ">
+        <div className="beer-promo flex-shrink-0 w-[500px] p-5 lg:mt-96 2xl:mt-56 ">
           <img src={stamp} alt="stamp" className="w-44" />
           <h4 className="text-center text-2xl font-napzer mb-4">Beer Copy</h4>
           <p className="text-center font-napzer px-24">

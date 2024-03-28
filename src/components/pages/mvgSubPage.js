@@ -164,19 +164,17 @@ export default function MVGSubPage() {
         altText="Video Walkthrough of the Mountain View Grand Website"
       />
 
-      <div className="flex flex-col items-center mx-4 md:m-12">
-        <div>
-          <h3 className="text-4xl md:text-8xl md:absolute md:left-80 md:ml-2 md:mt-6 2xl:ml-64 ml-14 mr-44 mt-6 font-span">
+      <div className="textBreak flex  h-56 md:h-144 justify-center items-center overflow-hidden">
+        <div className="flex flex-col">
+          <div className="text-3xl sm:text-4xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-span mb-[-0.75rem] sm:mb-[-1rem] md:mb-[-1.5rem] lg:mb-[-2rem] pl-2 sm:pl-3 lg:pl-6 xl:pl-8 2xl:pl-9">
             SOMETHING
-          </h3>
-        </div>
-        <div>
-          <h3 className="text-5xl md:text-9xl font-spanlight italic ml-36 md:mt-12 md:ml-96 -mt-8">
+          </div>
+          <div className="text-3xl sm:text-5xl md:text-6xl xl:text-8xl 2xl:text-9xl font-spanlight italic self-end mb-[-0.5rem] sm:mb-[-.75rem] md:mb-[-1rem] lg:mb-[-1rem] pl-20 sm:pl-36 md:pl-72 lg:pl-44 xl:pl-64 2xl:pl-96">
             FOR
-          </h3>
-        </div>
-        <div>
-          <h3 className="text-6xl md:text-13xl font-span">EVERYONE.</h3>
+          </div>
+          <div className="text-5xl sm:text-7xl md:text-8xl xl:text-9xl 2xl:text-10xl font-span">
+            EVERYONE
+          </div>
         </div>
       </div>
 
