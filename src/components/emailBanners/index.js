@@ -68,7 +68,7 @@ const Emailbanner = ({
               key={index}
               src={image}
               alt={`Overlay ${index}`}
-              className="w-full h-72 object-cover rounded-md shadow-lg "
+              className="w-full h-72 xl:h-80 object-cover rounded-md shadow-lg "
             />
           ))}
         </div>
