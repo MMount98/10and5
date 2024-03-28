@@ -96,7 +96,7 @@ export default function CastleSubPage() {
           </div>
         </div>
       </div>
-      
+
       <div className="textDivider mb-14 ">
         <p className="font-span md:text-6xl text-xl text-center">
           A Castle that doesn't deliver<br></br> the
@@ -119,19 +119,23 @@ export default function CastleSubPage() {
           just some <br></br>of the programs we put in place.
         </p>
       </div>
-      <div className="imageAndText flex flex-col md:grid md:grid-cols-2">
+      <div className="imageAndText flex flex-col md:grid md:grid-cols-2 items-end">
         <img
           src={fifthImage}
           alt="The Mountain View Grand Llama and Farmer"
           className="w-full md:w-auto p-8"
         />
-        <div className="text-center md:text-left md:mt-80 mt-0 2xl:mt-114 2xl:pt-6 md:pt-6 pt-0">
-          <h5 className="font-spanlight text-lg md:text-4xl italic md:my-3">
-            DRAG QUEEN BRUNCH<br></br>AS YOU WISH HAPPY HOUR<br></br>
+        <div className="text-center md:text-left md:pl-6">
+          <h5 className="font-spanlight text-lg md:text-4xl italic my-3">
+            DRAG QUEEN BRUNCH
+            <br />
+            AS YOU WISH HAPPY HOUR
+            <br />
             SUMMER FRIDAYS AT THE GROTTO
           </h5>
         </div>
       </div>
+
       <h3 className="text-xl text-center font-span mt-8">MEASURED SUCCESS</h3>
       <div className="flex flex-col md:flex-row justify-center items-center text-center text-xs md:text-sm p-5 gap-4 md:gap-2 -mt-4">
         <p className="font-napzer m-0">
@@ -153,8 +157,8 @@ export default function CastleSubPage() {
           <a href="/haycreek-hotels" className="md:py-0 py-2 text-right">
             Hay Creek Corporate
           </a>
-          <a href="/noble-kitchen" className="md:py-0 py-2">
-            noble Kitchen + Bar
+          <a href="/MVG" className="md:py-0 py-2">
+            Mountain <br></br>View Grand
           </a>
         </div>
       </div>
