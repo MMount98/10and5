@@ -100,28 +100,26 @@ export default function HartnessSubPage() {
           alt="wide photo of a guest lounge at hotel hartness"
         />
       </div>
-      <div className="flex flex-col items-center mx-4 md:m-12">
-        <div>
-          <h3 className="text-4xl md:text-8xl md:absolute md:left-80 md:ml-2 md:mt-6 2xl:ml-56 mr-44 mt-6 font-span">
+      <div className="textBreak flex h-56 md:h-144 justify-center items-center overflow-hidden">
+        <div className="flex flex-col">
+          <div className="text-3xl sm:text-4xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-span mb-[-0.75rem] sm:mb-[-1rem] md:mb-[-1.5rem] lg:mb-[-1rem] ">
             UPGRADE
-          </h3>
-        </div>
-        <div>
-          <h3 className="text-5xl md:text-9xl font-spanlight italic ml-36 md:mt-12 md:ml-96 -mt-8">
+          </div>
+          <div className="text-3xl sm:text-5xl md:text-6xl xl:text-8xl 2xl:text-9xl font-spanlight italic self-end mb-[-0.5rem] sm:mb-[-.75rem] md:mb-[-1rem] lg:mb-[-1rem]">
             THE WAY
-          </h3>
-        </div>
-        <div>
-          <h3 className="text-6xl md:text-13xl font-span">YOU STAY.</h3>
+          </div>
+          <div className="text-5xl sm:text-7xl md:text-8xl xl:text-9xl 2xl:text-10xl font-span">
+            YOU STAY
+          </div>
         </div>
       </div>
-      <div className="imageAndText flex flex-col md:grid md:grid-cols-2">
+      <div className="imageAndText flex flex-col md:flex-row md:items-end lg:grid lg:grid-cols-2 my-8">
         <img
           src={thridImage}
-          className="w-full md:w-auto p-8"
+          className="w-full md:max-w-none p-8 md:p-0"
           alt="photo of lounge at Hotel Hartness"
         />
-        <div className="text-center md:text-left md:pl-6 my-5 md:my-0 md:mt-24 lg:mt-72 2xl:mt-114">
+        <div className="text-center md:text-left md:pl-6 my-5 md:my-0 lg:mt-0">
           <h4 className="font-span text-4xl md:text-6xl">Brand Pillars</h4>
           <ul className="font-spanlight text-xl md:text-3xl">
             <li className="py-1">Quiet Luxury</li>
@@ -132,26 +130,23 @@ export default function HartnessSubPage() {
           </ul>
         </div>
       </div>
+
       <CarouselAnimation
         portraits={story1Images}
         backgroundImage={story1_bg}
         backgroundHeight="100vh"
       />
-      <div className="flex flex-col items-center mx-4 md:m-12">
-        <div>
-          <h3 className="text-3xl md:text-7xl md:absolute md:left-80 md:ml-2 md:mt-6 2xl:ml-56  mr-44 mt-6 font-span">
+      <div className="header flex  h-56 md:h-144 justify-center items-center overflow-hidden">
+        <div className="flex flex-col">
+          <div className="text-3xl sm:text-4xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-span mb-[-0.75rem] sm:mb-[-1rem] md:mb-[-1.5rem] lg:mb-[-2rem] pl-20 sm:pl-36 md:pl-36 lg:pl-64 xl:pl-80 2xl:pl-96">
             THE WARMTH
-          </h3>
-        </div>
-        <div>
-          <h3 className="text-4xl md:text-9xl font-spanlight italic ml-28 md:mt-12 md:ml-96 -mt-8">
+          </div>
+          <div className="text-3xl sm:text-5xl md:text-6xl xl:text-8xl 2xl:text-9xl font-spanlight italic self-end mb-[-0.5rem] sm:mb-[-.75rem] md:mb-[-1rem] lg:mb-[-1rem] pl-20 sm:pl-36 md:pr-72 lg:pr-44 xl:pr-64 2xl:pr-80">
             OF TRUE
-          </h3>
-        </div>
-        <div>
-          <h3 className="text-4xl  md:text-9xl font-span">
-            SOUTHERN HOSPITALITY.
-          </h3>
+          </div>
+          <div className="text-5xl sm:text-7xl md:text-8xl xl:text-9xl 2xl:text-10xl font-span">
+            SOUTHERN HOSPITALITY
+          </div>
         </div>
       </div>
       <VideoOverlay
@@ -189,17 +184,17 @@ export default function HartnessSubPage() {
         backgroundImage={story3_bg}
         backgroundHeight="75vh"
       />
-      <h3 className="text-xl text-center font-span mt-8">MEASURED SUCCESS</h3>
+      <h3 className="text-2xl text-center font-span mt-8">MEASURED SUCCESS</h3>
       <div className="flex flex-col md:flex-row justify-center items-center text-center text-xs md:text-2xl p-5 gap-4 md:gap-24 -mt-4">
         <p className="font-napzer m-0">
-          +<span className="font-span text-lg">60%</span> <br /> Social growth
+          <span className="font-span text-5xl">+60%</span> <br /> Social growth
         </p>
         <p className="font-napzer m-0">
-          +<span className="font-span text-lg">44,344</span> <br /> Website
+          <span className="font-span text-5xl">+44,344</span> <br /> Website
           Traffic
         </p>
         <p className="font-napzer m-0">
-          +<span className="font-span text-lg">2.6k</span> <br /> Interactions
+          <span className="font-span text-5xl">+2.6k</span> <br /> Interactions
         </p>
       </div>
 

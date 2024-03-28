@@ -36,17 +36,15 @@ export default function Homepage() {
               ref={textContainer}
               style={{ opacity: 0 }}
             >
-              <div className="inline-block">
-                <div className="flex flex-col items-start">
-                  <div className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl  2xl:text-8xl font-span relative -mb-5 pl-12 sm:mb-12 md:mb-16 lg:mb-14  2xl:mb-7 sm:ml-6 md:ml-1">
-                    WE ENHANCE{" "}
-                  </div>
-                  <div className="text-3xl sm:text-5xl md:text-6xl  xl:text-8xl   2xl:text-9xl font-spanlight italic pl-44 sm:pl-24 md:pl-28 lg:pl-44 xl:pl-64 2xl:pl-96 sm:ml-48 sm:-mt-20 md:-mt-24">
-                    BRANDS THROUGH{" "}
-                  </div>
-                  <div className="text-5xl sm:text-7xl md:text-8xl xl:text-9xl   2xl:text-13xl font-span relative">
-                    CREATIVE SOLUTIONS
-                  </div>
+              <div className="flex flex-col items-start">
+                <div className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-span mb-[-0.5rem] sm:mb-[-1rem] md:mb-[-1.5rem] lg:mb-[-2rem] pl-4 sm:pl-6 md:pl-8 lg:pl-12 xl:pl-16 2xl:pl-20">
+                  WE ENHANCE
+                </div>
+                <div className="text-3xl sm:text-5xl md:text-6xl xl:text-8xl 2xl:text-9xl font-spanlight italic self-end mb-[-0.5rem] sm:mb-[-1rem] md:mb-[-1.5rem] lg:mb-[-1.5rem]">
+                  BRANDS THROUGH
+                </div>
+                <div className="text-5xl sm:text-7xl md:text-8xl xl:text-9xl 2xl:text-10xl font-span">
+                  CREATIVE SOLUTIONS
                 </div>
               </div>
             </div>

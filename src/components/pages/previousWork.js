@@ -1,7 +1,7 @@
 //Images
 import HHImg1 from "../images/selectedWorks/Hotel Hartness 1.jpg";
 import HHImg2 from "../images/selectedWorks/Hotel Hartness 2.jpg";
-import MVGImg1 from "../images/selectedWorks/Mountain View Grand 1.jpg";
+import MVGImg1 from "../images/selectedWorks/Mountain View Grand 2.jpg";
 import MVGImg2 from "../images/selectedWorks/MVG Building.png";
 import HKImg1 from "../images/selectedWorks/HayCreek Hotels 1.jpg";
 import HKImg2 from "../images/selectedWorks/HayCreek Hotels 2.jpg";
@@ -26,12 +26,12 @@ import Footer from "../footer";
 export default function previousWork() {
   return (
     <div className="bg-custom-white">
-      <NavBar isTransparent={true} showLogo={true} colorTheme="black" />
-      <div>
-        <h1 className="text-6xl md:text-9xl font-span ml-4 md:ml-10 mt-40 md:mt-80">
+      <NavBar isTransparent={false} showLogo={true} colorTheme="black" />
+      <div className="-mt-56">
+        <h1 className="text-6xl md:text-9xl font-span ml-4 md:ml-10 mt-40 md:mt-80 pt-80">
           Selected Work
         </h1>
-        <h2 className="ml-4 md:ml-10 text-2xl md:text-left text-center md:text-3xl font-napzer md:mb-14">
+        <h2 className="ml-4 md:ml-10 text-xl md:text-left text-center md:text-2xl font-napzer md:mb-14">
           Utilizing our Hospitality Expertise and Our Mantra to creatively
           approach each project.
         </h2>
@@ -49,8 +49,8 @@ export default function previousWork() {
         bottomText="VIEW GRAND"
         tagline="Mountain View Grand - Steeped in History, Restored in Luxury"
         link="/MVG"
-        image1={MVGImg1}
-        image2={MVGImg2}
+        image1={MVGImg2}
+        image2={MVGImg1}
       />
       <ScrollSlider
         topText="CLINE FAMILY"

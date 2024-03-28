@@ -1,27 +1,24 @@
-const ServicesList = ({ number, h3, h4, descrpition }) => {
-  const numberStyle = {
-    verticalAlign: "2.5em",
-  };
-
+const ServicesList = ({ number, h3, h4, description }) => {
+  // Removed inline style for better responsiveness
   return (
     <>
-      <div className="collapse ">
+      <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title md:text-8xl font-span uppercase ">
-          <span
-            className="text-lg md:text-2xl font-spanlight italic mr-2"
-            style={numberStyle}
-          >
+        <div className="collapse-title text-lg md:text-8xl font-span uppercase flex items-center gap-2">
+          <span className="text-lg md:text-2xl font-spanlight italic">
             {number}
           </span>
           {h3}
         </div>
         <div className="collapse-content">
-          <div className="flex">
-            <div className="mt-4 flex-grow ">
-              <h4 class="font-napzer md:my-1 text-lg uppercase mr-96">{h4}</h4>
-              <div className="font-napzer md:pr-5 text-lg md:px-0 px-5 mr-114">
-                <p>{descrpition}</p>
+          <div className="flex flex-col md:flex-row">
+            <div className="mt-4">
+              <h4 className="font-napzer text-lg uppercase mb-4">
+                {h4}
+              </h4>
+              {/* Adjusted container for tighter paragraph layout */}
+              <div className="font-napzer text-lg max-w-xl mx-auto md:mx-0 md:max-w-md lg:max-w-lg">
+                <p>{description}</p>
               </div>
             </div>
           </div>

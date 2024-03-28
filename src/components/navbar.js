@@ -2,7 +2,22 @@ import { useState, useEffect } from "react";
 import lightLogo from "./images/Logos/Final_LogoWhite.png";
 import darkLogo from "./images/Logos/Final_Logo Black.png";
 
+import { Link } from "react-router-dom";
+
 import "./customCSS/navbar.css";
+const Mail = ({ email, label }) => {
+  return (
+    <button
+      onClick={(e) => {
+        window.location.href = email;
+        e.preventDefault();
+      }}
+      className="text-right text-5xl font-span leading-12 hover:text-gray-800" // You can adjust the className to style your button as needed
+    >
+      Request Proposal
+    </button>
+  );
+};
 
 const NavBar = ({ isTransparent, colorTheme = "white", showLogo = true }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +39,7 @@ const NavBar = ({ isTransparent, colorTheme = "white", showLogo = true }) => {
   }, []);
 
   const logoSrc = colorTheme === "white" ? lightLogo : darkLogo;
-  const svgColor = colorTheme === "white" ? "#F5F5F5" : "#000000";
+  const svgColor = colorTheme === "white" ? "#F5F5F5" : "#222121";
 
   const navbarClasses = `${
     isTransparent ? "bg-transparent" : "bg-custom-white"
@@ -78,17 +93,16 @@ const NavBar = ({ isTransparent, colorTheme = "white", showLogo = true }) => {
           <a href="/previousWork" className="hover:text-gray-800">
             Selected Works
           </a>
-
           <a href="/services" className="hover:text-gray-800">
             Services
           </a>
-
           <a href="/ourteam" className="hover:text-gray-800">
             Our Team
           </a>
-          <a href="#" className="hover:text-gray-800">
-            Request Proposal
-          </a>
+          <Mail
+            label="Let us Know What we can help with!"
+            email="mailto:hello@10and5creative.com"
+          />
         </div>
         <div className="text-right mt-36 pr-4 font-napzer text-md">
           <p className="font-bold text-xl">Denver</p>
