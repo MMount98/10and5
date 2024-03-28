@@ -51,7 +51,7 @@ module.exports = {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("autoprefixer")],
   daisyui: {
     themes: [
       "light",
