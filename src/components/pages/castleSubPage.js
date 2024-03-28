@@ -55,21 +55,17 @@ export default function CastleSubPage() {
           className="md:p-3 md:w-full mb-6 md:mb-0"
         />
       </div>
-      <div className="flex flex-col items-center mx-4 md:m-12 mt-4">
-        <div>
-          <h3 className="text-2xl md:text-8xl md:absolute md:left-64 md:ml-2 md:mt-6 2xl:ml-56 mr-36 -mt-9 font-span">
+      <div className="textBreak flex  h-56 md:h-144 justify-center items-center overflow-hidden">
+        <div className="flex flex-col">
+          <div className="text-[2.25rem] sm:text-4xl md:text-6xl lg:text-[4rem] xl:text-[6rem] 2xl:text-[7.35rem] font-span mb-[-2.75rem] sm:mb-[-.5rem] md:mb-[-.75rem] lg:mb-[-3rem] sm:pl-3 lg:pl-16 xl:pl-8 2xl:pl-9">
             THE GRAND
-          </h3>
-        </div>
-        <div>
-          <h3 className="text-3xl md:text-9xl font-spanlight italic ml-24 md:mt-12 md:ml-96 -mt-8">
+          </div>
+          <div className="text-[2.5rem] sm:text-5xl md:text-6xl xl:text-8xl 2xl:text-9xl font-spanlight italic self-end mb-[-0.5rem] sm:mb-[-.75rem] md:mb-[-1rem] lg:mb-[-1rem] pl-20 sm:pl-36 md:pl-72 lg:pl-44 xl:pl-64 2xl:pl-96">
             DAME OF
-          </h3>
-        </div>
-        <div>
-          <h3 className="text-4xl md:text-13xl font-span md:mt-12 md:mb-12 mb-4">
+          </div>
+          <div className="text-5xl sm:text-7xl md:text-8xl xl:text-9xl 2xl:text-10xl font-span">
             WESTCHESTER.
-          </h3>
+          </div>
         </div>
       </div>
       <div className="textAnimation">
