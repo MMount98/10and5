@@ -227,17 +227,17 @@ export default function MVGSubPage() {
         />
       </div>
       <h3 className="text-xl text-center font-span mt-8">MEASURED SUCCESS</h3>
-      <div className="grid grid-cols-1 md:grid-cols-3 text-center text-xs md:text-sm p-5 gap-y-0 -mt-4">
+      <div className="flex flex-col md:flex-row justify-center items-center text-center text-xs md:text-2xl p-5 gap-4 md:gap-24 -mt-4">
         <p className="font-napzer">
-          +<span className="font-span text-lg">126%</span> <br></br> Social
+          <span className="font-span text-5xl">+126%</span> <br></br> Social
           growth
         </p>
         <p className="font-napzer">
-          +<span className="font-span text-lg">48%</span> <br></br> Profile
+          <span className="font-span text-5xl">+48%</span> <br></br> Profile
           visits
         </p>
         <p className="font-napzer">
-          +<span className="font-span text-lg">249k</span> <br></br> Website
+          <span className="font-span text-5xl">+249k</span> <br></br> Website
           Traffic
         </p>
       </div>

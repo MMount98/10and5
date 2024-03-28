@@ -164,13 +164,13 @@ export default function HaycreekSubPage() {
       />
 
       <h3 className="text-xl text-center font-span mt-8">MEASURED SUCCESS</h3>
-      <div className="flex flex-col md:flex-row justify-center items-center text-center text-xs md:text-2xl p-5 -mt-4 gap-4 md:gap-10">
+      <div className="flex flex-col md:flex-row justify-center items-center text-center text-xs md:text-2xl p-5 gap-4 md:gap-24 -mt-4">
         <p className="font-napzer m-0">
-          <span className="font-span text-lg">$1,059,233</span> <br /> Total
+          <span className="font-span text-5xl">$1,059,233</span> <br /> Total
           Revenue Booked
         </p>
         <p className="font-napzer m-0">
-          +<span className="font-span text-lg">78.8K</span> <br /> YoY Total
+          +<span className="font-span text-5xl">78.8K</span> <br /> YoY Total
           Revenue
         </p>
       </div>

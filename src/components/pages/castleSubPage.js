@@ -143,15 +143,15 @@ export default function CastleSubPage() {
       <h3 className="text-xl text-center font-span mt-8">MEASURED SUCCESS</h3>
       <div className="flex flex-col md:flex-row justify-center items-center text-center text-xs md:text-sm p-5 gap-4 md:gap-2 -mt-4">
         <p className="font-napzer m-0">
-          +<span className="font-span text-lg">+17.8K</span> <br /> Social
+          <span className="font-span text-5xl">+17.8K</span> <br /> Social
           growth
         </p>
         <p className="font-napzer m-0">
-          +<span className="font-span text-lg">+63K</span> <br /> Website
+          <span className="font-span text-5xl">+63K</span> <br /> Website
           Traffic
         </p>
         <p className="font-napzer m-0">
-          +<span className="font-span text-lg">+13.8K</span> <br /> Interactions
+          <span className="font-span text-5xl">+13.8K</span> <br /> Interactions
         </p>
       </div>
 
