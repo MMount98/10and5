@@ -1,4 +1,4 @@
-import heroImg from "../images/Mountain View Grand - Selected Work/MVG Hero Image.png";
+import heroImg from "../images/clineFamily/Cline Family Hero Image.png";
 import img1 from "../images/clineFamily/Cline Final Logo Section.png";
 import img2 from "../images/clineFamily/Cline Expaned Logo Section.png";
 import img3 from "../images/clineFamily/Custom pages section.png";
