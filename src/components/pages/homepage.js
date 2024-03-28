@@ -43,7 +43,7 @@ export default function Homepage() {
                 <div className="text-3xl sm:text-5xl md:text-6xl xl:text-8xl 2xl:text-9xl font-spanlight italic self-end mb-[-0.5rem] sm:mb-[-1rem] md:mb-[-1.5rem] lg:mb-[-1.5rem]">
                   BRANDS THROUGH
                 </div>
-                <div className="text-5xl sm:text-7xl md:text-8xl xl:text-9xl 2xl:text-10xl font-span">
+                <div className="text-4xl sm:text-7xl md:text-8xl xl:text-9xl 2xl:text-10xl font-span">
                   CREATIVE SOLUTIONS
                 </div>
               </div>
