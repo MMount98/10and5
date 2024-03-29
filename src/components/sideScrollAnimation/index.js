@@ -15,32 +15,51 @@ const SideScrollSection = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    const extraSpace = 2000;
+    // Detect if the browser is Safari
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top top",
-        endTrigger: "footer",
-        end: () =>
-          `+=${
-            horizontalRef.current.scrollWidth - window.innerWidth + extraSpace
-          }`,
-        scrub: true,
-        pin: true,
-        anticipatePin: 1,
-      },
-    });
+    const initializeAnimations = () => {
+      // Place your GSAP animations initialization code here
+      const extraSpace = 2000;
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top top",
+          endTrigger: "footer",
+          end: () =>
+            `+=${
+              horizontalRef.current.scrollWidth - window.innerWidth + extraSpace
+            }`,
+          scrub: true,
+          pin: true,
+          anticipatePin: 1,
+        },
+      });
 
-    // Horizontal scrolling animation
-    tl.to(horizontalRef.current, {
-      x: () => -(horizontalRef.current.scrollWidth - window.innerWidth),
-      ease: "none",
-    });
+      tl.to(horizontalRef.current, {
+        x: () => -(horizontalRef.current.scrollWidth - window.innerWidth),
+        ease: "none",
+      });
+
+      // Optionally, refresh ScrollTrigger after animations are initialized
+      ScrollTrigger.refresh();
+    };
+
+    const loadHandler = () => {
+      if (isSafari) {
+        // For Safari, delay initialization by one animation frame
+        requestAnimationFrame(initializeAnimations);
+      } else {
+        // For other browsers, initialize animations immediately
+        initializeAnimations();
+      }
+    };
+
+    window.addEventListener("load", loadHandler);
 
     return () => {
-      // Clean up ScrollTrigger instances
       ScrollTrigger.getAll().forEach((instance) => instance.kill());
+      window.removeEventListener("load", loadHandler);
     };
   }, []);
 
@@ -77,7 +96,7 @@ const SideScrollSection = () => {
         </div>
 
         {/* Your images here */}
-        
+
         <img src={logo} alt="Logo" className="relative h-96 w-96 2xl:left-24" />
         <img src={canImg1} alt="Can 1" className="w-auto  2xl:p-44" />
         <img src={canImg2} alt="Can 2" className="w-auto 2xl:p-44" />
