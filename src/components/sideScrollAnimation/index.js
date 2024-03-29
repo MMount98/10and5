@@ -1,4 +1,6 @@
-import React, { useRef, useEffect } from "react";
+
+
+import React, { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import canImg1 from "../images/Mountain View Grand - Selected Work/Can 1.png";
@@ -8,44 +10,72 @@ import logo from "../images/Mountain View Grand - Selected Work/Yellow llama_Log
 import stamp from "../images/Mountain View Grand - Selected Work/Join the herd.png";
 import mascot from "../images/Mountain View Grand - Selected Work/Yellow Llama mascot.png";
 
+console.log('Script loaded')
+
 const SideScrollSection = () => {
   const containerRef = useRef(null);
   const horizontalRef = useRef(null);
+  const [forceRender, setForceRender] = useState(false)
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    const extraSpace = 2000;
+    const loadHandler = () => {
+      console.log('Load handler triggered');
+      console.log("Container Width:", containerRef.current.offsetWidth);
+      console.log(
+        "Horizontal Section Width:",
+        horizontalRef.current.scrollWidth
+      );
+      console.log("Window Width:", window.innerWidth);
+      
+      // Initialization of your GSAP timeline and ScrollTrigger
+      const extraSpace = 2000;
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top top",
+          endTrigger: "footer",
+          end: () =>
+            `+=${
+              horizontalRef.current.scrollWidth - window.innerWidth + extraSpace
+            }`,
+          scrub: true,
+          pin: true,
+          anticipatePin: 1,
+          force3D: true,
+        },
+      });
+      console.log('End Value Calculation:', horizontalRef.current.scrollWidth - window.innerWidth + extraSpace);
+      tl.to(horizontalRef.current, {
+        x: () => -(horizontalRef.current.scrollWidth - window.innerWidth),
+        ease: "none",
+      });
 
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top top",
-        endTrigger: "footer",
-        end: () =>
-          `+=${
-            horizontalRef.current.scrollWidth - window.innerWidth + extraSpace
-          }`,
-        scrub: true,
-        pin: true,
-        anticipatePin: 1,
-      },
-    });
+      // Optional: Consider if a targeted fix for Safari can be applied instead of forcing a resize
+      // This part is commented out to reconsider its necessity
+      setTimeout(() => {
+        ScrollTrigger.refresh();
+        console.log('Dispatching resize event');
 
-    // Horizontal scrolling animation
-    tl.to(horizontalRef.current, {
-      x: () => -(horizontalRef.current.scrollWidth - window.innerWidth),
-      ease: "none",
-    });
+        window.dispatchEvent(new Event("resize"));
+        console.log('Refreshing ScrollTrigger post-resize');
+      }, 5);
+      console.log(tl); // Log the GSAP timeline
+      console.log(ScrollTrigger.getAll()); // Log all ScrollTrigger instances
+      setForceRender(prevState => !prevState);
+    };
+
+    window.addEventListener("load", loadHandler);
 
     return () => {
-      // Clean up ScrollTrigger instances
       ScrollTrigger.getAll().forEach((instance) => instance.kill());
+      window.removeEventListener("load", loadHandler);
     };
   }, []);
 
   return (
-    <div ref={containerRef} className="overflow-hidden">
+    <div ref={containerRef} className="overflow-hidden w-screen">
       <div
         ref={horizontalRef}
         className="flex items-center space-x-12 lg:-mt-64 2xl:-mt-72"
@@ -77,7 +107,7 @@ const SideScrollSection = () => {
         </div>
 
         {/* Your images here */}
-        
+
         <img src={logo} alt="Logo" className="relative h-96 w-96 2xl:left-24" />
         <img src={canImg1} alt="Can 1" className="w-auto  2xl:p-44" />
         <img src={canImg2} alt="Can 2" className="w-auto 2xl:p-44" />

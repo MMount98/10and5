@@ -6,12 +6,10 @@ import fourthImage from "../images/Mountain View Grand - Selected Work/MVG_4th P
 import seventhImage from "../images/Mountain View Grand - Selected Work/MVG_7th Photo.jpg";
 import storyBg from "../images/Mountain View Grand - Selected Work/MVG_5th Photo.jpg";
 import videoBg from "../images/Mountain View Grand - Selected Work/MVG_6th Photo.jpg";
-import llamaLogo from "../images/Mountain View Grand - Selected Work/Yellow llama_Logo.png";
+
 import llamaProm1 from "../images/Mountain View Grand - Selected Work/MVG_Yellow llama 1.jpg";
 import llamaProm2 from "../images/Mountain View Grand - Selected Work/MVG_Yellow llama 2.jpg";
-import canImg1 from "../images/Mountain View Grand - Selected Work/Can 1.png";
-import canImg2 from "../images/Mountain View Grand - Selected Work/Can 2.png";
-import canImg3 from "../images/Mountain View Grand - Selected Work/Can 3.png";
+
 //Story 1
 import story1_1 from "../images/Mountain View Grand - Selected Work/IG Stories/MVG_Story 1.png";
 import story1_2 from "../images/Mountain View Grand - Selected Work/IG Stories/MVG_Story 2.png";
