@@ -15,46 +15,34 @@ const SideScrollSection = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // Define the function that handles the load event
-    const loadHandler = () => {
-      const extraSpace = 2000;
+    const extraSpace = 2000;
 
-      // Initialize your GSAP timeline and ScrollTrigger here
-      let tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: containerRef.current,
-          start: "top top",
-          endTrigger: "footer",
-          end: () => `+=${horizontalRef.current.scrollWidth - window.innerWidth + extraSpace}`,
-          scrub: true,
-          pin: true,
-          anticipatePin: 1,
-        },
-      });
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: "top top",
+        endTrigger: "footer",
+        end: () =>
+          `+=${
+            horizontalRef.current.scrollWidth - window.innerWidth + extraSpace
+          }`,
+        scrub: true,
+        pin: true,
+        anticipatePin: 1,
+      },
+    });
 
-      // Horizontal scrolling animation
-      tl.to(horizontalRef.current, {
-        x: () => -(horizontalRef.current.scrollWidth - window.innerWidth),
-        ease: "none",
-      });
+    // Horizontal scrolling animation
+    tl.to(horizontalRef.current, {
+      x: () => -(horizontalRef.current.scrollWidth - window.innerWidth),
+      ease: "none",
+    });
 
-      // Manually refresh ScrollTrigger to ensure correct layout
-      ScrollTrigger.refresh();
-    };
-
-    // Add the event listener for the window load event
-    window.addEventListener('load', loadHandler);
-
-    // Cleanup function to remove the event listener
     return () => {
       // Clean up ScrollTrigger instances
-      ScrollTrigger.getAll().forEach(instance => instance.kill());
-      
-      // Remove the load event listener to prevent leaks
-      window.removeEventListener('load', loadHandler);
+      ScrollTrigger.getAll().forEach((instance) => instance.kill());
     };
   }, []);
-
 
   return (
     <div ref={containerRef} className="overflow-hidden">
