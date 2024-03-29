@@ -9,8 +9,8 @@ import CasImg1 from "../images/selectedWorks/Castle Hotel & Spa 1.jpg";
 import CasImg2 from "../images/selectedWorks/Castle Hotel & Spa 2.jpg";
 import CCImg1 from "../images/selectedWorks/Cline Family 1.jpg";
 import CCImg2 from "../images/selectedWorks/Cline Family 2.jpg";
-import OBImg1 from "../images/selectedWorks/Olive Juice 1.png"
-import OBImg2 from "../images/selectedWorks/Olive Juice 2.png"
+import OBImg1 from "../images/selectedWorks/Olive Juice 1.png";
+import OBImg2 from "../images/selectedWorks/Olive Juice 2.png";
 
 //Will use once we get wireframes for sub pages
 // import GSImg1 from "../images/selectedWorks/Grand Summit 1.jpg";
@@ -76,15 +76,15 @@ export default function previousWork() {
         image1={OBImg1}
         image2={OBImg2}
       />
-       <ScrollSlider
+      <ScrollSlider
         topText="HAY CREEK"
         bottomText="HOTELS"
-        tagline="Haycreek Hotels - Boutique to the Bone"
+        tagline="Hay creek Hotels - Boutique to the Bone"
         link="/haycreek-hotels"
         image1={HKImg1}
         image2={HKImg2}
       />
-      
+
       <div className="text-center text-5xl font-span my-12 uppercase md:hidden lg:hidden xl:hidden">
         {/*mobile build*/}
         <ul>
