@@ -79,7 +79,7 @@ export default function previousWork() {
       <ScrollSlider
         topText="HAY CREEK"
         bottomText="HOTELS"
-        tagline="Hay creek Hotels - Boutique to the Bone"
+        tagline="Hay Creek Hotels - Boutique to the Bone"
         link="/haycreek-hotels"
         image1={HKImg1}
         image2={HKImg2}
