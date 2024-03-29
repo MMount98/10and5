@@ -8,31 +8,30 @@ import logo from "../images/Mountain View Grand - Selected Work/Yellow llama_Log
 import stamp from "../images/Mountain View Grand - Selected Work/Join the herd.png";
 import mascot from "../images/Mountain View Grand - Selected Work/Yellow Llama mascot.png";
 
+console.log("file loaded");
+
 const SideScrollSection = () => {
+  console.log("top");
   const containerRef = useRef(null);
   const horizontalRef = useRef(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // Detect if the browser is Safari
-    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
+    // Define your initialization function before any calls are made
     const initializeAnimations = () => {
-      // Place your GSAP animations initialization code here
+      console.log("top-initialized");
       const extraSpace = 2000;
       let tl = gsap.timeline({
         scrollTrigger: {
           trigger: containerRef.current,
           start: "top top",
           endTrigger: "footer",
-          end: () =>
-            `+=${
-              horizontalRef.current.scrollWidth - window.innerWidth + extraSpace
-            }`,
+          end: `+=${horizontalRef.current.scrollWidth - window.innerWidth + extraSpace}`,
           scrub: true,
           pin: true,
           anticipatePin: 1,
+          onUpdate: (self) => console.log("Progress:", self.progress), // Debugging ScrollTrigger progress
         },
       });
 
@@ -40,31 +39,31 @@ const SideScrollSection = () => {
         x: () => -(horizontalRef.current.scrollWidth - window.innerWidth),
         ease: "none",
       });
-
-      // Optionally, refresh ScrollTrigger after animations are initialized
-      ScrollTrigger.refresh();
     };
 
+    // Immediately call initializeAnimations for direct testing
+    initializeAnimations();
+    
+    // You may still keep the load event listener for your original setup
+    // Especially if testing reveals that direct invocation works, but load event does not
     const loadHandler = () => {
-      if (isSafari) {
-        // For Safari, delay initialization by one animation frame
-        requestAnimationFrame(initializeAnimations);
-      } else {
-        // For other browsers, initialize animations immediately
-        initializeAnimations();
-      }
+      console.log("Load event fired, setting timeout for animation initialization.");
+      setTimeout(() => {
+        ScrollTrigger.refresh();
+        console.log("Forced ScrollTrigger refresh in Safari.");
+      }, 500); // Adjust delay as needed
     };
 
     window.addEventListener("load", loadHandler);
 
     return () => {
-      ScrollTrigger.getAll().forEach((instance) => instance.kill());
       window.removeEventListener("load", loadHandler);
+      ScrollTrigger.getAll().forEach(instance => instance.kill());
     };
   }, []);
 
   return (
-    <div ref={containerRef} className="overflow-hidden">
+    <div ref={containerRef} className="overflow-hidden w-screen">
       <div
         ref={horizontalRef}
         className="flex items-center space-x-12 lg:-mt-64 2xl:-mt-72"

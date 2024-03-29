@@ -37,6 +37,7 @@ export default function MVGSubPage() {
       <img
         src={heroImage}
         alt="landscape of the front of mountain view grand"
+        className="w-screen"
       />
       <div className="introText grid grid-cols-1 md:grid-cols-2 p-10">
         <div>
