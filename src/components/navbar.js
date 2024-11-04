@@ -106,12 +106,10 @@ const NavBar = ({ isTransparent, colorTheme = "white", showLogo = true }) => {
           />
         </div>
         <div className="text-right mt-36 pr-4 font-napzer text-md">
-          {/* <p className="font-bold text-xl">Denver</p>
+          <p className="font-bold text-xl">Denver</p>
           <p>
-            720.470.2577 <br></br>
-            383 Corona Street #581<br></br>
-            Denver, CO 80218
-          </p> */}
+            626.807.2221 <br></br>
+          </p>
         </div>
       </div>
     </div>
