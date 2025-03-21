@@ -18,7 +18,7 @@ const SideScrollSection = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // Define your initialization function before any calls are made
+   
     const initializeAnimations = () => {
       console.log("top-initialized");
       const extraSpace = 2000;
@@ -27,11 +27,13 @@ const SideScrollSection = () => {
           trigger: containerRef.current,
           start: "top top",
           endTrigger: "footer",
-          end: `+=${horizontalRef.current.scrollWidth - window.innerWidth + extraSpace}`,
+          end: `+=${
+            horizontalRef.current.scrollWidth - window.innerWidth + extraSpace
+          }`,
           scrub: true,
           pin: true,
           anticipatePin: 1,
-          onUpdate: (self) => console.log("Progress:", self.progress), // Debugging ScrollTrigger progress
+          onUpdate: (self) => console.log("Progress:", self.progress), 
         },
       });
 
@@ -41,24 +43,25 @@ const SideScrollSection = () => {
       });
     };
 
-    // Immediately call initializeAnimations for direct testing
+  
     initializeAnimations();
-    
-    // You may still keep the load event listener for your original setup
-    // Especially if testing reveals that direct invocation works, but load event does not
+
+  
     const loadHandler = () => {
-      console.log("Load event fired, setting timeout for animation initialization.");
+      console.log(
+        "Load event fired, setting timeout for animation initialization."
+      );
       setTimeout(() => {
         ScrollTrigger.refresh();
         console.log("Forced ScrollTrigger refresh in Safari.");
-      }, 500); // Adjust delay as needed
+      }, 500); 
     };
 
     window.addEventListener("load", loadHandler);
 
     return () => {
       window.removeEventListener("load", loadHandler);
-      ScrollTrigger.getAll().forEach(instance => instance.kill());
+      ScrollTrigger.getAll().forEach((instance) => instance.kill());
     };
   }, []);
 
@@ -68,7 +71,7 @@ const SideScrollSection = () => {
         ref={horizontalRef}
         className="flex items-center space-x-12 lg:-mt-64 2xl:-mt-72"
       >
-        {/* Adjust the div below for your text section */}
+       
         <div className="beer-promo flex-shrink-0 w-[500px] p-5 lg:mt-64 2xl:mt-72 ">
           <img src={stamp} alt="stamp" className="w-44" />
           <h4 className="text-center text-2xl font-napzer mb-4">Beer Copy</h4>
@@ -94,16 +97,18 @@ const SideScrollSection = () => {
           </p>
         </div>
 
-        {/* Your images here */}
+       
 
         <img src={logo} alt="Logo" className="relative h-96 w-96 2xl:left-24" />
         <img src={canImg1} alt="Can 1" className="w-auto  2xl:p-44" />
         <img src={canImg2} alt="Can 2" className="w-auto 2xl:p-44" />
         <img src={canImg3} alt="Can 3" className="w-auto 2xl:p-44" />
-        {/* Add as many images as needed */}
+      
       </div>
     </div>
   );
 };
 
 export default SideScrollSection;
+
+

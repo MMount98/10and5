@@ -7,6 +7,8 @@ import image4 from "../images/headShots/SS_Team Picture.png";
 import image5 from "../images/headShots/CK_Team Picture.png";
 import image6 from "../images/headShots/MM_Team.png";
 
+import image7 from "../images/headShots/MA_Team Picture.png";
+
 const imageData = [
   { src: image1, topText: "Roxanne Rabasco", bottomText: "Founder" },
   {
