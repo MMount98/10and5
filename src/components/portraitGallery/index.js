@@ -6,16 +6,22 @@ import image3 from "../images/headShots/FO_TeamPicture.png";
 import image4 from "../images/headShots/SS_Team Picture.png";
 import image5 from "../images/headShots/CK_Team Picture.png";
 import image6 from "../images/headShots/MM_Team.png";
-import image7 from "../images/headShots/MA_Team Picture.png";
 
 const imageData = [
   { src: image1, topText: "Roxanne Rabasco", bottomText: "Founder" },
-  { src: image2, topText: "Ashley Branstter", bottomText: "Creative Operations Director" },
+  {
+    src: image2,
+    topText: "Ashley Branstter",
+    bottomText: "Creative Operations Director",
+  },
   { src: image3, topText: "Folabomi Oyewo", bottomText: "Creative Director" },
   { src: image4, topText: "Sarah Sutton", bottomText: "Creative Strategist" },
-  { src: image5, topText: "Carly Koemptgen", bottomText: "Digital Marketing Manager" },
+  {
+    src: image5,
+    topText: "Carly Koemptgen",
+    bottomText: "Digital Marketing Manager",
+  },
   { src: image6, topText: "Michael Mount", bottomText: "Head Web Developer" },
-  { src: image7, topText: "Mia Alvarez", bottomText: "Graphic Designer" },
 ];
 
 const PortraitGallery = () => {
@@ -39,8 +45,12 @@ const PortraitGallery = () => {
               transition={{ duration: 1 }}
               className="mx-auto w-full h-auto object-cover"
             />
-            <p className="mt-2 text-xl md:text-2xl font-spanlight">{item.topText}</p>
-            <p className="font-napzer text-md md:text-lg -mt-2">{item.bottomText}</p>
+            <p className="mt-2 text-xl md:text-2xl font-spanlight">
+              {item.topText}
+            </p>
+            <p className="font-napzer text-md md:text-lg -mt-2">
+              {item.bottomText}
+            </p>
           </motion.div>
         ))}
       </div>
@@ -53,4 +63,3 @@ const PortraitGallery = () => {
 };
 
 export default PortraitGallery;
-
