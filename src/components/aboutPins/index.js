@@ -16,7 +16,7 @@ const pinpoints = [
     info: "Lee Summit, MO",
   },
 
-  { id: 7, label: "Mia Alvarez", x: 68, y: 30, info: "Chicago, IL" },
+ 
   // Add more pinpoints as needed
 ];
 
