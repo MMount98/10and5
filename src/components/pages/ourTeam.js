@@ -64,12 +64,7 @@ export default function OurTeam() {
         <h6 className="text-center text-2xl md:text-3xl font-span">
           OUR VIRTUAL VILLAGE
         </h6>
-        <div className="grid grid-cols-1 md:grid-cols-2 px-24 py-10 m-8 md:gap-12 mx-5 md:mx-10">
-          <FlapClock timezone={17} location="COLORADO" />
-          <FlapClock timezone={16} location="WASHINGTON" />
-          <FlapClock timezone={19} location="ILLINOIS" />
-          <FlapClock timezone={18} location="MISSOURI" />
-        </div>
+        
       </div>
       <Footer />
     </div>
