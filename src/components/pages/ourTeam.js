@@ -60,10 +60,6 @@ export default function OurTeam() {
         </h5>
 
         <PortraitGallery />
-
-        <h6 className="text-center text-2xl md:text-3xl font-span">
-          OUR VIRTUAL VILLAGE
-        </h6>
         
       </div>
       <Footer />
