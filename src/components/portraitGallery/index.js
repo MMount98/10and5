@@ -1,23 +1,25 @@
 import React from "react";
 import { motion } from "framer-motion";
 import image1 from "../images/headShots/RR_Team Picture.png";
-import image2 from "../images/headShots/AB_Team Picture.png";
+import image2 from "../images/headShots/HannahHeadshot.png";
 import image3 from "../images/headShots/FO_TeamPicture.png";
-import image4 from "../images/headShots/SS_Team Picture.png";
+import image4 from "../images/headShots/BrandiHeadshot.jpg";
 
 import image6 from "../images/headShots/MM_Team.png";
-
-
 
 const imageData = [
   { src: image1, topText: "Roxanne Rabasco", bottomText: "Founder" },
   {
     src: image2,
-    topText: "Ashley Branstter",
+    topText: "Hannah Brautigan",
     bottomText: "Creative Operations Director",
   },
   { src: image3, topText: "Folabomi Oyewo", bottomText: "Creative Director" },
-  { src: image4, topText: "Sarah Sutton", bottomText: "Creative Strategist" },
+  {
+    src: image4,
+    topText: "Brandi E. Ashman",
+    bottomText: "Creative Strategist",
+  },
   { src: image6, topText: "Michael Mount", bottomText: "Head Web Developer" },
 ];
 

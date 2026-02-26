@@ -7,16 +7,21 @@ const pinpoints = [
   { id: 1, label: "Roxanne Robasco", x: 40, y: 39.8, info: "Castle Rock, CO" },
 
   { id: 3, label: "Folabomni Oyewo", x: 41.5, y: 37.5, info: "Denver, CO" },
-  { id: 4, label: "Sarah Sutton", x: 42, y: 43, info: "Colorado Springs, CO" },
+  {
+    id: 4,
+    label: "Brandi E. Ashman",
+    x: 40,
+    y: 37,
+    info: "Denver, CO",
+  },
   {
     id: 5,
-    label: "Ashley Branstetter",
-    x: 58,
-    y: 39.5,
-    info: "Lee Summit, MO",
+    label: "Hannah Brautigan",
+    x: 81.5,
+    y: 75.5,
+    info: "Tampa, CO",
   },
 
- 
   // Add more pinpoints as needed
 ];
 
